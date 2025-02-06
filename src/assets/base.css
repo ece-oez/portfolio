@@ -5,3 +5,8 @@
 .bg-navbar{
     background-color: #2d2d2d;
 }
+.aldrich-regular {
+    font-family: "Aldrich", serif;
+    font-weight: 400;
+    font-style: normal;
+}
