@@ -1,0 +1,72 @@
+export const projectItems = [
+  {
+    icon: "fa-solid fa-mobile-screen-button",
+    title: "Eier Uhr",
+    link: "https://github.com/ece-oez/eier_uhr",
+    beschreibung: "Eier-Uhr ...",
+    month: "Februar",
+    year: "2022",
+    technologies: [
+      "fa-brands fa-html5",
+      "fa-brands fa-css3",
+      "fa-brands fa-js",
+    ],
+  },
+  {
+    icon: "fa-solid fa-hand-scissors",
+    title: "Schere-Stein-Papier",
+    link: "https://github.com/ece-oez/schere_stein_papier",
+    beschreibung: "Schere-Stein-Papier ...",
+    month: "Februar",
+    year: "2022",
+    technologies: [
+      "fa-brands fa-html5",
+      "fa-brands fa-css3",
+      "fa-brands fa-js",
+    ],
+  },
+  {
+    icon: "fa-solid fa-gamepad",
+    title: "Whack-A-Mole",
+    link: "https://github.com/ece-oez/whack-a-mole",
+    beschreibung: "Schere-Stein-Papier ...",
+    month: "Februar",
+    year: "2022",
+    technologies: [
+      "fa-brands fa-html5",
+      "fa-brands fa-css3",
+      "fa-brands fa-js",
+    ],
+  },
+  {
+    icon: "bi bi-chat-dots-fill",
+    title: "Chat-Web-App",
+    link: "https://github.com/ece-oez/chat-web-app",
+    beschreibung: "Messenger App ...",
+    month: "Februar",
+    year: "2022",
+    technologies: [
+      "fa-brands fa-html5",
+      "fa-brands fa-css3",
+      "fa-brands fa-js",
+      "fa-brands fa-vuejs",
+      "fa-solid fa-fire",
+    ],
+  },
+  // {
+  //   icon: "fa-solid fa-book-bookmark",
+  //   title: "Hardware-Asset-Management",
+  //   link: "https://github.com/ece-oez/hardware-asset-management",
+  //   beschreibung:
+  //     "Stellt einen Unterbereich der IT Verwaltung dar, der sich exklusiv auf die physischen Komponenten der Informationstechnologie konzentriert.",
+  //   month: "Februar",
+  //   year: "2022",
+  //   technologies: [
+  //     "fa-brands fa-html5",
+  //     "fa-brands fa-css3",
+  //     "fa-brands fa-js",
+  //     "fa-brands fa-vuejs",
+  //     "fa-brands fa-node",
+  //   ],
+  // },
+];
