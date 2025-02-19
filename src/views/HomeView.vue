@@ -16,3 +16,12 @@ import ButtonElements from "@/components/ButtonElement.vue";
     </div>
   </section>
 </template>
+<style scoped>
+.bild {
+  background-image: linear-gradient(rgba(31, 32, 32, 0.7), rgba(31, 32, 32, 10)),
+    url(../assets/img/home-bg.jpg);
+  /* background-image: url(../assets/img/home-bg.jpg); */
+  background-position: center;
+  background-size: cover;
+}
+</style>

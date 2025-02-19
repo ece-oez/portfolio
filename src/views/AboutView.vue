@@ -4,24 +4,16 @@ import { aboutmeItems } from "../config/aboutmeItems";
 </script>
 
 <template>
-  <section
-    id="aboutme"
-    class="text-white h-screen background w-full flex flex-col">
-    <div class="h-full flex flex-col items-center pt-20">
-      <TheSphere
-        v-for="aboutmeItem in aboutmeItems"
-        :icon="aboutmeItem.icon"
-        :icon-width="aboutmeItem.iconWidth"
-        :text="aboutmeItem.text"
-        :text-width="aboutmeItem.textWidth"
-        :class="aboutmeItem.styling">
-      </TheSphere>
+  <section id="aboutme" class="text-stone-600 h-screen bild flex flex-col">
     </div>
   </section>
 </template>
 
 <style scoped>
-.background {
-  background-color: #1f2020;
+.bild {
+  background-image: url(../assets/img/about-bg.png);
+  /* background-image: url(../assets/img/home-bg.jpg); */
+  background-position: center;
+  background-size: cover;
 }
 </style>
