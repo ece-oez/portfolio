@@ -10,7 +10,8 @@ import ContactView from "./views/ContactView.vue";
 </script>
 
 <template>
-  <TheNavbar class="top-0 fixed bg-navbar aldrich-regular" />
+  <TheNavbar
+    class="top-0 fixed bg-navbar aldrich-regular z-[9000] opacity-90" />
 
   <main class="aldrich-regular">
     <HomeView />
