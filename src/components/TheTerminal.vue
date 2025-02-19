@@ -1,7 +1,29 @@
-<script></script>
+<script setup>
+import { ref, onMounted } from "vue";
+
+const parentElement = ref(null);
+
+// onMounted(() => {
+//   // Create the observer
+//   const observer = new IntersectionObserver((entries) => {
+//     if (entries[0].intersectionRatio > 0.9) {
+//       // Add the animation class
+//       entries[0].target.classList.add("pop-up");
+//       entries[0].target.classList.remove("scale-0");
+//       return;
+//     }
+//     entries[0].target.classList.add("scale-0");
+//     entries[0].target.classList.remove("pop-up");
+//   });
+
+//   // Tell the observer which elements to track
+//   observer.observe(parentElement.value);
+// });
+</script>
 <template>
   <div
-    class="bg-black h-1/4 w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500">
+    ref="parentElement"
+    class="bg-black h-1/4 w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500 pop-up">
     <div
       class="bg-stone-700 flex justify-between items-center p-1 rounded-t-2xl">
       <div class="pl-1 flex gap-1 w-1/3">
@@ -29,6 +51,32 @@
   </div>
 </template>
 <style scoped>
+.pop-up {
+  animation-name: pop-up;
+  animation-duration: 1s;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(1);
+  }
+  95% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .terminal-shadow {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
