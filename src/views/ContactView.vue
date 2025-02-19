@@ -2,9 +2,9 @@
 
 <template>
   <section
-    id="skills"
+    id="contact"
     class="text-white h-screen background w-full flex flex-col bg-home">
-    <div class="h-full flex flex-col items-center pt-20">CONTACT</div>
+    <div class="flex flex-col items-center pt-20 text-6xl">Contact</div>
   </section>
 </template>
 
