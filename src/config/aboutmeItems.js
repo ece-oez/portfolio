@@ -101,14 +101,14 @@ export const aboutmeItems = [
     styling:
       "w-30 h-30 translate-x-165 translate-y-70 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
-  {
-    text: "Database",
-    textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 translate-x-140 translate-y-136 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  },
+  // {
+  //   text: "Database",
+  //   textWidth: "text-xl",
+  //   icon: "",
+  //   iconWidth: "text-6xl",
+  //   styling:
+  //     "w-30 h-30 translate-x-140 translate-y-136 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  // },
   {
     text: "Interesse",
     textWidth: "text-3xl",
@@ -279,14 +279,14 @@ export const aboutmeItems = [
     styling:
       "w-30 h-30 -translate-x-35 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
-  {
-    text: "Blender",
-    textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-105 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  },
+  // {
+  //   text: "Blender",
+  //   textWidth: "text-xl",
+  //   icon: "",
+  //   iconWidth: "text-6xl",
+  //   styling:
+  //     "w-30 h-30 -translate-x-105 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  // },
   {
     text: "Procreate",
     textWidth: "text-xl",

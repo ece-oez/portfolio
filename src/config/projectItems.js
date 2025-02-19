@@ -53,20 +53,20 @@ export const projectItems = [
       "fa-solid fa-fire",
     ],
   },
-  // {
-  //   icon: "fa-solid fa-book-bookmark",
-  //   title: "Hardware-Asset-Management",
-  //   link: "https://github.com/ece-oez/hardware-asset-management",
-  //   beschreibung:
-  //     "Stellt einen Unterbereich der IT Verwaltung dar, der sich exklusiv auf die physischen Komponenten der Informationstechnologie konzentriert.",
-  //   month: "Februar",
-  //   year: "2022",
-  //   technologies: [
-  //     "fa-brands fa-html5",
-  //     "fa-brands fa-css3",
-  //     "fa-brands fa-js",
-  //     "fa-brands fa-vuejs",
-  //     "fa-brands fa-node",
-  //   ],
-  // },
+  {
+    icon: "fa-solid fa-book-bookmark",
+    title: "Hardware-Asset-Management",
+    link: "https://github.com/ece-oez/hardware-asset-management",
+    beschreibung:
+      "Stellt einen Unterbereich der IT Verwaltung dar, der sich exklusiv auf die physischen Komponenten der Informationstechnologie konzentriert.",
+    month: "Februar",
+    year: "2022",
+    technologies: [
+      "fa-brands fa-html5",
+      "fa-brands fa-css3",
+      "fa-brands fa-js",
+      "fa-brands fa-vuejs",
+      "fa-brands fa-node",
+    ],
+  },
 ];
