@@ -1,6 +1,6 @@
 <script></script>
 <template>
-  <div class="text-white text-xl w-full h-1/12 flex justify-around opacity-95">
+  <div class="text-white text-xl w-full h-1/12 flex justify-around">
     <div class="w-full flex items-center">
       <div
         class="bg-stone-600 flex items-center h-1/2 w-11 rounded-lg ml-5 border-b-solid border-stone-700">

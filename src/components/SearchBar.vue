@@ -1,4 +1,4 @@
 <script setup></script>
 <template>
-  <input class="border w-3/4 p-3 rounded-2xl" placeholder="Suche..." />
+  <input class="border w-100 p-3 rounded-2xl" placeholder="Suche..." />
 </template>

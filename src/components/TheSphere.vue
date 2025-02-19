@@ -13,11 +13,9 @@ const showIcon = ref(true);
 const showText = ref(false);
 
 onMounted(() => {
-  // console.log(document.querySelector(".bubble"));
-
   // Create the observer
   const observer = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio > 0.8) {
+    if (entries[0].intersectionRatio > 0.9) {
       // Add the animation class
       entries[0].target.classList.add("pop-up");
       entries[0].target.classList.remove("scale-0");
@@ -48,7 +46,7 @@ function flipBubble() {
   <div
     ref="parentElement"
     @click="flipBubble()"
-    class="self-center rounded-full flex flex-col items-center justify-center gap-3 sphere-shadow-light-top absolute">
+    class="self-center rounded-full flex flex-col items-center justify-center gap-3 sphere-shadow-dark-top absolute">
     <div class="text-neutral-400 text-center">
       <div v-show="showIcon" :class="props.iconWidth">
         <i :class="props.icon"></i>
@@ -65,13 +63,21 @@ function flipBubble() {
   </div>
 </template>
 <style scoped>
-.sphere-shadow-light-top {
+.sphere-shadow-dark-top {
   box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset,
     rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset,
     rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset,
     rgba(213, 213, 213, 0.06) 0px 2px 1px, rgba(189, 189, 189, 0.09) 0px 4px 2px,
     rgba(112, 112, 112, 0.09) 0px 8px 4px, rgba(64, 64, 64, 0.09) 0px 16px 8px,
     rgba(81, 81, 81, 0.09) 0px 32px 16px;
+}
+
+.sphere-shadow-light-top {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .sphere-shadow-light-bottom {
@@ -107,6 +113,6 @@ function flipBubble() {
 
 .pop-up {
   animation-name: pop-up;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 </style>
