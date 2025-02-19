@@ -10,8 +10,16 @@ import ButtonElements from "@/components/ButtonElement.vue";
 
       <div
         class="text-neutral-500 h-1/12 w-full flex flex-row items-center justify-center gap-16">
-        <ButtonElements icon="bi bi-person-plus-fill" text="Contact Me" />
-        <ButtonElements icon="bi bi-arrow-right-short" text="To Projects" />
+        <ButtonElements
+          icon="bi bi-person-plus-fill"
+          text="Contact Me"
+          class="cursor-pointer"
+          link="#contact" />
+        <ButtonElements
+          icon="bi bi-arrow-right-short"
+          text="To Projects"
+          class="cursor-pointer"
+          link="#projects" />
       </div>
     </div>
   </section>
