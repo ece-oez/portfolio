@@ -1,6 +1,6 @@
 <script setup>
 import TheSphere from "../components/TheSphere.vue";
-import { aboutmeItems } from "../config/aboutmeItems";
+import { skillsItems } from "../config/skillsItems";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import { aboutmeItems } from "../config/aboutmeItems";
     class="text-white h-screen background w-full flex flex-col">
     <div class="h-full flex flex-col items-center pt-20">
       <TheSphere
-        v-for="aboutmeItem in aboutmeItems"
+        v-for="aboutmeItem in skillsItems"
         :icon="aboutmeItem.icon"
         :icon-width="aboutmeItem.iconWidth"
         :text="aboutmeItem.text"
