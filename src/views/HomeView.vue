@@ -1,5 +1,5 @@
 <script setup>
-import TheTerminal from "@/components/TheTerminal.vue";
+import TheTerminal from "@/components/mac/TheTerminal.vue";
 import ButtonElements from "@/components/ButtonElement.vue";
 </script>
 

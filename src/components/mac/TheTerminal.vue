@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import ThreeDots from "./ThreeDots.vue";
 
 const parentElement = ref(null);
 
@@ -26,19 +27,15 @@ const parentElement = ref(null);
     class="bg-black h-1/4 w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500 pop-up">
     <div
       class="bg-stone-700 flex justify-between items-center p-1 rounded-t-2xl">
-      <div class="pl-1 flex gap-1 w-1/3">
-        <div class="bg-red-500 w-4 h-4 rounded-full"></div>
-        <div class="bg-yellow-500 w-4 h-4 rounded-full"></div>
-        <div class="bg-green-500 w-4 h-4 rounded-full"></div>
-      </div>
+      <ThreeDots />
 
       <div
         class="w-full flex items-center justify-center gap-1 font-bold text-stone-300">
-        <img src="../assets/img/ordner.png" class="w-4 h-4" alt="" />
+        <img src="../../assets/img/ordner.png" class="w-4 h-4" alt="" />
         users/eceoezmen/documents/portfolio
       </div>
 
-      <div class="w-1/3"></div>
+      <ThreeDots class="invisible" />
     </div>
 
     <!-- <h2 class="noto-sans">
