@@ -6,6 +6,7 @@ const props = defineProps({
   icon: String,
   title: String,
   link: String,
+  github: String,
   beschreibung: String,
   month: String,
   year: String,
@@ -23,7 +24,10 @@ const props = defineProps({
         {{ props.title }}
       </span>
       <a :href="props.link">
-        <IconsBorder icon="fa-solid fa-link" />
+        <IconsBorder icon="fa-solid fa-link"></IconsBorder>
+      </a>
+      <a :href="props.github">
+        <IconsBorder icon="bi bi-github" />
       </a>
     </div>
     <div class="text-lg mt-6 border-t pt-6 h-65 overflow-hidden">

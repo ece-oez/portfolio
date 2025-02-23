@@ -59,6 +59,7 @@ function slideLeft() {
             :icon="projectsItem.icon"
             :title="projectsItem.title"
             :link="projectsItem.link"
+            :github="projectsItem.github"
             :beschreibung="projectsItem.beschreibung"
             :month="projectsItem.month"
             :year="projectsItem.year"
