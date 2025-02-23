@@ -15,8 +15,10 @@ const props = defineProps({
   <div
     v-if="tabStore.currentTab === props.tab"
     class="w-full h-full border-t border-stone-300 p-5">
-    <h2 class="caveat text-5xl">{{ props.title }}</h2>
-    <h3>{{ props.text }}</h3>
+    <h2 class="caveat text-5xl pb-3 border-b-2 border-stone-400">
+      {{ props.title }}
+    </h2>
+    <div class="pt-4">{{ props.text }}</div>
   </div>
 </template>
 <style scoped>

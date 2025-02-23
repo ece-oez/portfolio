@@ -23,7 +23,6 @@ const tabStore = useTabStore();
         v-for="aboutmeItem in aboutmeItems"
         :tab="aboutmeItem.tab"
         :heading="aboutmeItem.heading"
-        :picture="aboutmeItem.picture"
         :url="aboutmeItem.url" />
     </div>
 
