@@ -2,12 +2,18 @@
 import { ref } from "vue";
 import { useTabStore } from "@/stores/tab";
 
+// Picture imports
+import hallo from "../../assets/img/hallo.png";
+import work from "../../assets/img/codierung.png";
+import learned from "../../assets/img/lehrbuch.png";
+import beruf from "../../assets/img/werdegang.png";
+import zukunft from "../../assets/img/work-life-balance.png";
+
 const tabStore = useTabStore();
 
 const props = defineProps({
   tab: Int32Array,
   heading: String,
-  picture: String,
   url: String,
 });
 </script>
@@ -24,7 +30,11 @@ const props = defineProps({
       'bg-white border-none': tabStore.currentTab === props.tab,
       'border-none': tabStore.neighbourTab === props.tab,
     }">
-    <img :src="require(`${props.picture}`)" class="w-7" alt="" />
+    <img v-if="props.tab === 1" :src="hallo" class="w-7" alt="" />
+    <img v-if="props.tab === 2" :src="work" class="w-7" alt="" />
+    <img v-if="props.tab === 3" :src="learned" class="w-7" alt="" />
+    <img v-if="props.tab === 4" :src="beruf" class="w-7" alt="" />
+    <img v-if="props.tab === 5" :src="zukunft" class="w-7" alt="" />
     {{ props.heading }}
   </div>
 </template>
