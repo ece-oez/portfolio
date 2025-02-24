@@ -1,8 +1,8 @@
 <template>
-  <div class="flex justify-end">
+  <div class="xl:flex justify-end hidden">
     <i class="cursor-pointer bi bi-shield-shaded"></i>
   </div>
-  <div class="bg-stone-300 flex justify-between rounded-md w-3/6 p-0.5">
+  <div class="bg-stone-300 flex justify-between rounded-md xl:w-3/6 p-0.5">
     <div class="w-full flex justify-center gap-1">
       <i class="cursor-pointer bi bi-lock-fill"></i>
       <slot></slot>

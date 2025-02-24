@@ -12,7 +12,7 @@ import zukunft from "../../assets/img/work-life-balance.png";
 const tabStore = useTabStore();
 
 const props = defineProps({
-  tab: Int32Array,
+  tab: Number,
   heading: String,
   url: String,
 });
