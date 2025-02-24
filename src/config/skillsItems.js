@@ -1,9 +1,9 @@
 export const skillsItems = [
   {
     text: "git",
-    textWidth: "text-xl",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "fa-brands fa-git-alt",
-    iconWidth: "text-6xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling: "w-40 h-40",
   },
   {
@@ -12,7 +12,7 @@ export const skillsItems = [
     icon: "fa-brands fa-github",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-20 -translate-y-40",
   },
   {
     text: "BitBucket",
@@ -20,7 +20,7 @@ export const skillsItems = [
     icon: "fa-brands fa-bitbucket",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-20 translate-y-40",
   },
 
   {
@@ -29,16 +29,16 @@ export const skillsItems = [
     icon: "fa-brands fa-gitlab",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-40 translate-y-70",
   },
 
   {
     text: "OS",
-    textWidth: "text-xl",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "bi bi-pc-display-horizontal",
-    iconWidth: "text-6xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling:
-      "w-40 h-40 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-40 h-40",
   },
 
   {
@@ -47,7 +47,7 @@ export const skillsItems = [
     icon: "fa-brands fa-windows",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-90 -translate-y-40",
   },
   {
     text: "Linux",
@@ -55,13 +55,13 @@ export const skillsItems = [
     icon: "fa-brands fa-linux",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-110 -translate-y-70",
   },
   {
     text: "Container",
-    textWidth: "text-xl",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "fa-solid fa-boxes-stacked",
-    iconWidth: "text-6xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling: "w-40 h-40",
   },
 
@@ -71,14 +71,14 @@ export const skillsItems = [
     icon: "fa-brands fa-docker",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-160 -translate-y-40 ",
   },
 
   {
     text: "Web-Dev",
-    textWidth: "text-3xl",
+    textWidth: "tlg:text-2xl xl:text-3xl",
     icon: "bi bi-code-slash",
-    iconWidth: "text-7xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling: "w-40 h-40  ",
   },
 
@@ -88,16 +88,16 @@ export const skillsItems = [
     icon: "fa-solid fa-table-columns",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40",
   },
 
   {
     text: "HTML",
     textWidth: "text-xl",
-    icon: "",
+    icon: "bi bi-filetype-html",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40  hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
 
   {
@@ -106,7 +106,7 @@ export const skillsItems = [
     icon: "fa-brands fa-css3",
     iconWidth: "text-6xl",
     styling:
-      "w-25 h-25  hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
 
   {
@@ -115,7 +115,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
 
   {
@@ -124,7 +124,7 @@ export const skillsItems = [
     icon: "fa-brands fa-js",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
 
   {
@@ -133,7 +133,7 @@ export const skillsItems = [
     icon: "fa-brands fa-vuejs",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
 
   {
@@ -142,7 +142,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40",
   },
 
   {
@@ -151,16 +151,7 @@ export const skillsItems = [
     icon: "bi bi-person-badge",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  },
-
-  {
-    text: "UI/UX Design",
-    textWidth: "text-xl",
-    icon: "bi bi-kanban",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 -translate-y-40",
   },
 
   {
@@ -169,7 +160,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 translate-y-40",
   },
 
   {
@@ -178,7 +169,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
   {
     text: "C#",
@@ -186,7 +177,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
   {
     text: "DotNet",
@@ -194,7 +185,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
   {
     text: "Node",
@@ -202,25 +193,16 @@ export const skillsItems = [
     icon: "fa-brands fa-node",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-230 translate-y-40 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
-
-  // {
-  //   text: "Game Dev",
-  //   textWidth: "text-xl",
-  //   icon: "",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
 
   {
     text: "Database",
-    textWidth: "text-xl",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "bi bi-database",
-    iconWidth: "text-6xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling:
-      "w-40 h-40  hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-40 h-40",
   },
 
   {
@@ -229,7 +211,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 -translate-y-40",
   },
 
   {
@@ -238,7 +220,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 -translate-y-40",
   },
 
   {
@@ -247,16 +229,16 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
     text: "Thunderclient",
     textWidth: "text-xl",
-    icon: "",
+    icon: "bi bi-lightning-charge-fill",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
@@ -265,7 +247,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
@@ -274,41 +256,41 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
     text: "JSON",
     textWidth: "text-xl",
-    icon: "",
+    icon: "bi bi-filetype-json",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
     text: "YAML",
     textWidth: "text-xl",
-    icon: "",
+    icon: "bi bi-filetype-yml",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
     text: "XML",
     textWidth: "text-xl",
-    icon: "",
+    icon: "bi bi-filetype-xml",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-300 translate-y-40",
   },
 
   {
     text: "Design",
-    textWidth: "text-3xl",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "bi bi-pencil-fill",
-    iconWidth: "text-7xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling: "w-40 h-40",
   },
   {
@@ -317,7 +299,7 @@ export const skillsItems = [
     icon: "fa-brands fa-figma",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-370 -translate-y-40",
   },
   {
     text: "Canva",
@@ -325,7 +307,7 @@ export const skillsItems = [
     icon: "fa-solid fa-c",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-370 -translate-y-40",
   },
   // {
   //   text: "Blender",
@@ -333,7 +315,7 @@ export const skillsItems = [
   //   icon: "",
   //   iconWidth: "text-6xl",
   //   styling:
-  //     "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  //     "w-30 h-30 absolute translate-x-370 -translate-y-40",
   // },
   {
     text: "Procreate",
@@ -341,16 +323,43 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-370 -translate-y-40",
+  },
+
+  {
+    text: "UI/UX Design",
+    textWidth: "text-xl",
+    icon: "bi bi-kanban",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 absolute translate-x-370 translate-y-40",
+  },
+
+  {
+    text: "Font Awesome",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-font-awesome",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 absolute translate-x-370 translate-y-40",
+  },
+
+  {
+    text: "Bootstrap",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-bootstrap",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 absolute translate-x-370 translate-y-40",
   },
 
   {
     text: "IDE",
-    textWidth: "text-xl",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "",
-    iconWidth: "text-6xl",
+    iconWidth: "lg:text-6xl xl:text-7xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-40 h-40",
   },
 
   {
@@ -359,7 +368,7 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-440 -translate-y-40",
   },
 
   {
@@ -368,6 +377,6 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 absolute translate-x-440 translate-y-40",
   },
 ];

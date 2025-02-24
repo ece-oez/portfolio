@@ -10,7 +10,7 @@ import { skillsItems } from "../config/skillsItems";
     <div class="h-full flex flex-col items-center pt-20">
       <div class="text-6xl">Skills</div>
 
-      <div class="flex items-center h-full bg-amber-300">
+      <div class="flex items-center h-full lg:gap-30">
         <TheSphere
           v-for="aboutmeItem in skillsItems"
           :icon="aboutmeItem.icon"
