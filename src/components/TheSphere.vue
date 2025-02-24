@@ -46,7 +46,7 @@ function flipBubble() {
   <div
     ref="parentElement"
     @click="flipBubble()"
-    class="self-center rounded-full flex flex-col items-center justify-center gap-3 sphere-shadow-dark-top absolute">
+    class="rounded-full items-center flex flex-row justify-center gap-3 sphere-shadow-dark-top">
     <div class="text-neutral-400 text-center">
       <div v-show="showIcon" :class="props.iconWidth">
         <i :class="props.icon"></i>

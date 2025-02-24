@@ -15,7 +15,6 @@ import ContactView from "./views/ContactView.vue";
 
   <main class="aldrich-regular">
     <HomeView />
-    <!-- <IntroView /> -->
     <AboutView />
     <ProjectsView />
     <SkillsView />

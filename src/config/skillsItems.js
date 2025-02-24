@@ -1,283 +1,331 @@
 export const skillsItems = [
   {
-    text: "AboutMe",
-    textWidth: "text-4xl",
-    icon: "bi bi-person-arms-up",
-    iconWidth: "text-8xl",
-    styling: "w-50 h-50 translate-y-80",
-  },
-  {
-    text: "Arbeit",
-    textWidth: "text-3xl",
-    icon: "bi bi-building-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 translate-x-70 translate-y-20",
-  },
-  {
-    text: "Fachin formatiker",
+    text: "git",
     textWidth: "text-xl",
-    icon: "",
+    icon: "fa-brands fa-git-alt",
+    iconWidth: "text-6xl",
+    styling: "w-40 h-40",
+  },
+  {
+    text: "GitHub",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-github",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 translate-x-90 translate-y-63 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
   {
-    text: "Ausbildung",
+    text: "BitBucket",
     textWidth: "text-xl",
-    icon: "",
+    icon: "fa-brands fa-bitbucket",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 translate-x-110 translate-y-10 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "ROLLER",
+    text: "GitLab",
     textWidth: "text-xl",
-    // icon: "fa-solid fa-r",
+    icon: "fa-brands fa-gitlab",
     iconWidth: "text-6xl",
     styling:
-      "w-25 h-25 translate-x-145 translate-y-20 hover:scale-140 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "OS",
+    textWidth: "text-xl",
+    icon: "bi bi-pc-display-horizontal",
+    iconWidth: "text-6xl",
+    styling:
+      "w-40 h-40 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "Windows",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-windows",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
   {
-    text: "Coden",
+    text: "Linux",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-linux",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+  {
+    text: "Container",
+    textWidth: "text-xl",
+    icon: "fa-solid fa-boxes-stacked",
+    iconWidth: "text-6xl",
+    styling: "w-40 h-40",
+  },
+
+  {
+    text: "Docker",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-docker",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "Web-Dev",
     textWidth: "text-3xl",
     icon: "bi bi-code-slash",
     iconWidth: "text-7xl",
-    styling: "w-40 h-40 translate-x-130 translate-y-90",
+    styling: "w-40 h-40  ",
   },
-  // {
-  //   text: "GitHub",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-github",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-160 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
 
-  // {
-  //   text: "git",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-git-alt",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-160 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Windows",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-windows",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-190 translate-y-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Linux",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-linux",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-190 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Docker",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-docker",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-160 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
   {
-    text: "Web Dev",
+    text: "Frontend",
+    textWidth: "text-xl",
+    icon: "fa-solid fa-table-columns",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "HTML",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 translate-x-170 translate-y-110 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Game Dev",
+    text: "CSS",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-css3",
+    iconWidth: "text-6xl",
+    styling:
+      "w-25 h-25  hover:scale-140 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "Tailwind",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 translate-x-165 translate-y-70 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
-  // {
-  //   text: "Database",
-  //   textWidth: "text-xl",
-  //   icon: "",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-140 translate-y-136 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
+
   {
-    text: "Interesse",
-    textWidth: "text-3xl",
-    icon: "fa-solid fa-glasses",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 translate-x-80 translate-y-160",
-  },
-  {
-    text: "UI/UX Design",
+    text: "JS",
     textWidth: "text-xl",
-    icon: "",
+    icon: "fa-brands fa-js",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 translate-x-120 translate-y-180 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Know Hows",
-    textWidth: "text-3xl",
-    icon: "fa-solid fa-brain",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-60 translate-y-140",
-  },
-  {
-    text: "Responsive Design",
-    textWidth: "text-lg",
-    icon: "",
+    text: "Vue",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-vuejs",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-25 translate-y-170 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
   },
+
   {
     text: "Reactive Programming",
     textWidth: "text-md",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-70 translate-y-104 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
+  {
+    text: "Responsive Design",
+    textWidth: "text-lg",
+    icon: "bi bi-person-badge",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "UI/UX Design",
+    textWidth: "text-xl",
+    icon: "bi bi-kanban",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "Backend",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "PHP",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+  },
+  {
+    text: "C#",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+  },
+  {
+    text: "DotNet",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+  },
+  {
+    text: "Node",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-node",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-140 hover:duration-300 not-focus:duration-300",
+  },
+
   // {
-  //   text: "Vue",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-vuejs",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-200 translate-y-95 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "CSS",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-css3",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-200 translate-y-130 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Tailwind",
+  //   text: "Game Dev",
   //   textWidth: "text-xl",
   //   icon: "",
   //   iconWidth: "text-6xl",
   //   styling:
-  //     "w-25 h-25 translate-x-200 translate-y-130 hover:scale-140 hover:duration-300 not-focus:duration-300",
+  //     "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   // },
-  // {
-  //   text: "JS",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-js",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-150 translate-y-140 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Node",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-node",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-150 translate-y-140 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
+
   {
-    text: "Alter",
-    textWidth: "text-3xl",
-    icon: "bi bi-cake2-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-180 translate-y-110",
+    text: "Database",
+    textWidth: "text-xl",
+    icon: "bi bi-database",
+    iconWidth: "text-6xl",
+    styling:
+      "w-40 h-40  hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "22",
+    text: "MariaDB",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-145 translate-y-90 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Hobbys",
-    textWidth: "text-3xl",
-    icon: "bi bi-bookmark-heart-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-150 translate-y-170",
-  },
-  {
-    text: "Gaming",
+    text: "HeidiSQL",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-193 translate-y-180 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Lesen",
+    text: "REST",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-124 translate-y-140 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Zeichnen",
+    text: "Thunderclient",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-108 translate-y-180 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Wohnort",
-    textWidth: "text-3xl",
-    icon: "fa-solid fa-house",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-180 translate-y-40",
-  },
-  {
-    text: "Herne",
+    text: "Postman",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-215 translate-y-20 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "44649",
+    text: "Bruno",
     textWidth: "text-xl",
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-215 translate-y-70 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
+
   {
-    text: "Designen",
+    text: "JSON",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "YAML",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "XML",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "Design",
     textWidth: "text-3xl",
     icon: "bi bi-pencil-fill",
     iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-70 translate-y-20",
+    styling: "w-40 h-40",
   },
   {
     text: "Figma",
     textWidth: "text-xl",
-    // icon: "fa-brands fa-figma",
+    icon: "fa-brands fa-figma",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-30 translate-y-10 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
   {
     text: "Canva",
     textWidth: "text-xl",
-    // icon: "fa-solid fa-c",
+    icon: "fa-solid fa-c",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-35 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
   // {
   //   text: "Blender",
@@ -285,7 +333,7 @@ export const skillsItems = [
   //   icon: "",
   //   iconWidth: "text-6xl",
   //   styling:
-  //     "w-30 h-30 -translate-x-105 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  //     "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   // },
   {
     text: "Procreate",
@@ -293,6 +341,33 @@ export const skillsItems = [
     icon: "",
     iconWidth: "text-6xl",
     styling:
-      "w-30 h-30 -translate-x-110 translate-y-10 hover:scale-150 hover:duration-300 not-focus:duration-300",
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "IDE",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "VS Code",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
+  },
+
+  {
+    text: "VS",
+    textWidth: "text-xl",
+    icon: "",
+    iconWidth: "text-6xl",
+    styling:
+      "w-30 h-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
   },
 ];
