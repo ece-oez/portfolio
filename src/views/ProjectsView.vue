@@ -79,10 +79,6 @@ function slideLeft() {
 </template>
 
 <style scoped>
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
 .bild {
   background-image: url(../assets/img/projekte-bg.png);
   /* background-image: url(../assets/img/home-bg.jpg); */

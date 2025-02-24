@@ -2,6 +2,10 @@
     background-color: #1f2020;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
 .aldrich-regular {
     font-family: "Aldrich", serif;
     font-weight: 400;
