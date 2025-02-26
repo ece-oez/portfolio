@@ -1,5 +1,13 @@
-.bg-body{
-    background-color: #1f2020;
+.bg-hellgrau {
+  background-color: #ececec;
+}
+
+.bg-dunkelgrau {
+  background-color: #1f2020;
+}
+
+.bg-text{
+  color: #545454;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

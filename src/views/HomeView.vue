@@ -27,8 +27,7 @@ import ButtonElements from "@/components/ButtonElement.vue";
 <style scoped>
 .bild {
   background-image: linear-gradient(rgba(31, 32, 32, 0.7), rgba(31, 32, 32, 10)),
-    url(../assets/img/home-bg.jpg);
-  /* background-image: url(../assets/img/home-bg.jpg); */
+    url(../assets/img/backgrounds/home.jpg);
   background-position: center;
   background-size: cover;
 }

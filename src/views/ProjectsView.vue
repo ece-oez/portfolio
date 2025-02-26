@@ -84,8 +84,7 @@ function slideLeft() {
 
 <style scoped>
 .bild {
-  background-image: url(../assets/img/projekte-bg.png);
-  /* background-image: url(../assets/img/home-bg.jpg); */
+  background-image: url(../assets/img/backgrounds/projekte.png);
   background-position: center;
   background-size: cover;
 }

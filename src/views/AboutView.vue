@@ -24,8 +24,7 @@ const tabStore = useTabStore();
 
 <style scoped>
 .bild {
-  background-image: url(../assets/img/about-bg.png);
-  /* background-image: url(../assets/img/home-bg.jpg); */
+  background-image: url(../assets/img/backgrounds/about.png);
   background-position: center;
   background-size: cover;
 }

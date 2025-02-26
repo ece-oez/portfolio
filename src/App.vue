@@ -7,6 +7,8 @@ import AboutView from "./views/AboutView.vue";
 import ProjectsView from "./views/ProjectsView.vue";
 import SkillsView from "./views/SkillsView.vue";
 import ContactView from "./views/ContactView.vue";
+import ResponsiveView from "./views/ResponsiveView.vue";
+import WorkView from "./views/WorkView.vue";
 </script>
 
 <template>
@@ -17,6 +19,8 @@ import ContactView from "./views/ContactView.vue";
     <HomeView />
     <AboutView />
     <ProjectsView />
+    <ResponsiveView />
+    <!-- <WorkView /> -->
     <SkillsView />
     <ContactView />
   </main>
