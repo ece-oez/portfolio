@@ -22,7 +22,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="parentElement" class="items-center text-6xl">
+  <div
+    ref="parentElement"
+    class="text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
     <slot> </slot>
   </div>
 </template>

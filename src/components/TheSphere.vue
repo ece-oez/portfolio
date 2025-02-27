@@ -30,14 +30,14 @@ onMounted(() => {
 });
 
 function flipBubble() {
-  parentElement.value.classList.remove("pop-sphere");
-  parentElement.value.classList.add("flip-bubble");
+  spheres.value.classList.remove("pop-sphere");
+  spheres.value.classList.add("flip-bubble");
   setTimeout(() => {
     showIcon.value = !showIcon.value;
     showText.value = !showText.value;
   }, 500);
   setTimeout(() => {
-    parentElement.value.classList.remove("flip-bubble");
+    spheres.value.classList.remove("flip-bubble");
   }, 1000);
 }
 </script>
@@ -45,7 +45,7 @@ function flipBubble() {
   <div
     ref="spheres"
     @click="flipBubble()"
-    class="rounded-full items-center flex flex-row justify-center gap-3 bg-amber-300 sphere-shadow-light-top">
+    class="rounded-full items-center flex flex-row justify-center gap-3 sphere-shadow-light-top">
     <div class="text-stone-600 text-center">
       <div v-show="showIcon" :class="props.iconWidth">
         <i :class="props.icon"></i>
@@ -56,8 +56,6 @@ function flipBubble() {
           {{ props.text }}
         </span>
       </div>
-
-      <slot> </slot>
     </div>
   </div>
 </template>
@@ -103,7 +101,7 @@ function flipBubble() {
 
 .pop-sphere {
   animation-name: pop-sphere;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 @keyframes pop-sphere {

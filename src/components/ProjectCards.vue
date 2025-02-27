@@ -12,31 +12,9 @@ const props = defineProps({
   year: String,
   technologies: Array,
 });
-
-import { ref, onMounted } from "vue";
-
-const parentElement = ref(null);
-
-onMounted(() => {
-  // Create the observer
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio > 0.3) {
-      // Add the animation class
-      entries[0].target.classList.add("open-card");
-      entries[0].target.classList.remove("scale-0");
-      return;
-    }
-    entries[0].target.classList.add("scale-0");
-    entries[0].target.classList.remove("open-card");
-  });
-
-  // Tell the observer which elements to track
-  observer.observe(parentElement.value);
-});
 </script>
 <template>
   <div
-    ref="parentElement"
     class="w-70 h-110 xl:w-96 xl:h-150 p-6 border border-neutral-600 rounded-xl hover:duration-300 hover:shadow-xl hover:shadow-neutral-600 hover:border-white hover:mx-6 not-focus:duration-300">
     <div class="text-5xl">
       <i :class="props.icon"></i>
@@ -72,21 +50,4 @@ onMounted(() => {
     </div>
   </div>
 </template>
-<style scoped>
-.open-card {
-  animation-name: open-card;
-  animation-duration: 1s;
-}
-
-@keyframes open-card {
-  0% {
-    transform: scaleX(0);
-  }
-  50% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-</style>
+<style scoped></style>

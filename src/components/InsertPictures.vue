@@ -1,9 +1,9 @@
 <script setup>
-import me from "../assets/img/me.jpg";
-import toDo from "../assets/img/do.jpg";
-import education from "../assets/img/education.jpg";
-import work from "../assets/img/work.jpg";
-import future from "../assets/img/future.jpg";
+import me from "../assets/img/aboutmepics/me.jpg";
+import toDo from "../assets/img/aboutmepics/do.jpg";
+import education from "../assets/img/aboutmepics/education.jpg";
+import work from "../assets/img/aboutmepics/work.jpg";
+import future from "../assets/img/aboutmepics/future.jpg";
 import { useTabStore } from "@/stores/tab";
 import { ref, onMounted } from "vue";
 

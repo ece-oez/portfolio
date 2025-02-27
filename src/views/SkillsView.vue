@@ -5,7 +5,7 @@ import { skillsItems } from "../config/skillsItems";
 import { onMounted, ref } from "vue";
 import TheHeading from "@/components/TheHeading.vue";
 
-const parentElement = ref(null);
+const lines = ref(null);
 
 onMounted(() => {
   // Create the observer
@@ -19,7 +19,7 @@ onMounted(() => {
   });
 
   // Tell the observer which elements to track
-  observer.observe(parentElement.value);
+  observer.observe(lines.value);
 });
 </script>
 
@@ -28,9 +28,9 @@ onMounted(() => {
     id="skills"
     class="text-white h-screen bg-hellgrau w-full flex flex-col">
     <div class="h-full flex flex-col items-center pt-20">
-      <TheHeading class="text-6xl text-stone-600">Skills</TheHeading>
+      <TheHeading class="text-stone-600">Skills</TheHeading>
 
-      <div class="hidden xl:flex items-center h-full lg:gap-30 w-full">
+      <div class="hidden 2xl:flex items-center h-full lg:gap-30 w-full">
         <TheSphere
           class="z-50"
           v-for="aboutmeItem in skillsItems"
@@ -40,9 +40,9 @@ onMounted(() => {
           :text-width="aboutmeItem.textWidth"
           :class="aboutmeItem.styling">
         </TheSphere>
-        <div ref="parentElement" class="absolute w-full lines-anim">
+        <div ref="lines" class="absolute w-full lines-anim">
           <div
-            class="absolute w-1/16 border-b border-2 border-stone-500"
+            class="absolute w-1/16 border-b border-2 border-stone-400"
             v-for="linesItem in linesItems"
             :class="linesItem.style"></div>
         </div>
@@ -54,7 +54,7 @@ onMounted(() => {
 <style scoped>
 .lines-anim {
   animation: lines-animation;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 @keyframes lines-animation {

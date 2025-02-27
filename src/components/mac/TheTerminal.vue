@@ -30,7 +30,7 @@ onMounted(() => {
       <ThreeDots />
 
       <div
-        class="hidden w-full xl:flex items-center justify-center gap-1 font-bold text-stone-300">
+        class="hidden w-full xl:flex items-center justify-center gap-1 font-bold text-stone-300 select-none">
         <img src="../../assets/img/ordner.png" class="w-4 h-4" alt="" />
         users/eceoezmen/documents/portfolio
       </div>

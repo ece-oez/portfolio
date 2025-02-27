@@ -9,7 +9,7 @@ const showMenuState = ref(false);
   <div class="text-white w-full h-1/12 flex justify-around">
     <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
-        <img src="../../public/logo.png" alt="" class="w-20" />
+        <img src="../../logo.png" alt="" class="w-20" />
       </a>
     </div>
 
