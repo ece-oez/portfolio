@@ -30,7 +30,6 @@ onMounted(() => {
 });
 
 function flipBubble() {
-  console.log(parentElement.value);
   parentElement.value.classList.remove("pop-up");
   parentElement.value.classList.add("flip-bubble");
   setTimeout(() => {

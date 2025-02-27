@@ -5,7 +5,7 @@ import { useTabStore } from "@/stores/tab";
 const tabStore = useTabStore();
 
 const props = defineProps({
-  tab: String,
+  tab: Number,
   title: String,
   text: String,
 });
