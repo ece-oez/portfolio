@@ -8,7 +8,7 @@ const props = defineProps({
   textWidth: String,
 });
 
-const parentElement = ref(null);
+const spheres = ref(null);
 const showIcon = ref(true);
 const showText = ref(false);
 
@@ -17,20 +17,20 @@ onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].intersectionRatio > 0.9) {
       // Add the animation class
-      entries[0].target.classList.add("pop-up");
+      entries[0].target.classList.add("pop-sphere");
       entries[0].target.classList.remove("scale-0");
       return;
     }
     entries[0].target.classList.add("scale-0");
-    entries[0].target.classList.remove("pop-up");
+    entries[0].target.classList.remove("pop-sphere");
   });
 
   // Tell the observer which elements to track
-  observer.observe(parentElement.value);
+  observer.observe(spheres.value);
 });
 
 function flipBubble() {
-  parentElement.value.classList.remove("pop-up");
+  parentElement.value.classList.remove("pop-sphere");
   parentElement.value.classList.add("flip-bubble");
   setTimeout(() => {
     showIcon.value = !showIcon.value;
@@ -43,10 +43,10 @@ function flipBubble() {
 </script>
 <template>
   <div
-    ref="parentElement"
+    ref="spheres"
     @click="flipBubble()"
-    class="rounded-full items-center flex flex-row justify-center gap-3 sphere-shadow-light-top">
-    <div class="text-neutral-400 text-center">
+    class="rounded-full items-center flex flex-row justify-center gap-3 bg-amber-300 sphere-shadow-light-top">
+    <div class="text-stone-600 text-center">
       <div v-show="showIcon" :class="props.iconWidth">
         <i :class="props.icon"></i>
       </div>
@@ -84,15 +84,6 @@ function flipBubble() {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-@keyframes pop-up {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 @keyframes flip {
   0% {
     transform: scaleX(1);
@@ -110,8 +101,17 @@ function flipBubble() {
   animation-duration: 1s;
 }
 
-.pop-up {
-  animation-name: pop-up;
+.pop-sphere {
+  animation-name: pop-sphere;
   animation-duration: 3s;
+}
+
+@keyframes pop-sphere {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>

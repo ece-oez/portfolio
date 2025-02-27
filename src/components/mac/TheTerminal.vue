@@ -4,26 +4,27 @@ import ThreeDots from "./ThreeDots.vue";
 
 const parentElement = ref(null);
 
-// onMounted(() => {
-//   // Create the observer
-//   const observer = new IntersectionObserver((entries) => {
-//     if (entries[0].intersectionRatio > 0.9) {
-//       // Add the animation class
-//       entries[0].target.classList.add("pop-up");
-//       entries[0].target.classList.remove("scale-0");
-//       return;
-//     }
-//     entries[0].target.classList.add("scale-0");
-//     entries[0].target.classList.remove("pop-up");
-//   });
+onMounted(() => {
+  // Create the observer
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].intersectionRatio > 0.8) {
+      // Add the animation class
+      entries[0].target.classList.add("pop-terminal");
+      entries[0].target.classList.remove("scale-0");
+      return;
+    }
+    entries[0].target.classList.add("scale-0");
+    entries[0].target.classList.remove("pop-terminal");
+  });
 
-//   // Tell the observer which elements to track
-//   observer.observe(parentElement.value);
-// });
+  // Tell the observer which elements to track
+  observer.observe(parentElement.value);
+});
 </script>
 <template>
   <div
-    class="bg-black h-1/4 w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500 pop-up">
+    ref="parentElement"
+    class="bg-black h-1/4 w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500">
     <div
       class="bg-stone-700 flex justify-between items-center p-1 rounded-t-2xl">
       <ThreeDots />
@@ -43,12 +44,12 @@ const parentElement = ref(null);
   </div>
 </template>
 <style scoped>
-.pop-up {
-  animation-name: pop-up;
+.pop-terminal {
+  animation-name: pop-terminal;
   animation-duration: 1s;
 }
 
-@keyframes pop-up {
+@keyframes pop-terminal {
   0% {
     transform: scale(0);
   }

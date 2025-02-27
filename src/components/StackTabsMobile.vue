@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import WebPage from "./safari/WebPage.vue";
 import { aboutmeItems } from "@/config/aboutmeItems";
 import SearchTab from "./safari/SearchTab.vue";
@@ -7,10 +7,31 @@ import SearchTab from "./safari/SearchTab.vue";
 import { useTabStore } from "@/stores/tab";
 
 const tabStore = useTabStore();
+
+const parentElement = ref(null);
+
+onMounted(() => {
+  // Create the observer
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].intersectionRatio > 0.8) {
+      // Add the animation class
+      entries[0].target.classList.add("slide-mobile-tab");
+      entries[0].target.classList.remove("scale-0");
+      return;
+    }
+    entries[0].target.classList.add("scale-0");
+    entries[0].target.classList.remove("slide-mobile-tab");
+  });
+
+  // Tell the observer which elements to track
+  observer.observe(parentElement.value);
+});
 </script>
 
 <template>
-  <div class="w-5/6 lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
+  <div
+    ref="parentElement"
+    class="w-5/6 lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
     <WebPage
       v-for="aboutmeItem in aboutmeItems"
       :tab="aboutmeItem.tab"
@@ -41,5 +62,19 @@ const tabStore = useTabStore();
 <style scoped>
 .mac-shadow {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.slide-mobile-tab {
+  animation-name: slide-mobile-tab;
+  animation-duration: 1s;
+}
+
+@keyframes slide-mobile-tab {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 </style>

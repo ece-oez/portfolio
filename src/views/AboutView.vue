@@ -1,6 +1,7 @@
 <script setup>
 import StackTabs from "../components/StackTabs.vue";
 import StackTabsMobile from "../components/StackTabsMobile.vue";
+import TheHeading from "../components/TheHeading.vue";
 import { useTabStore } from "@/stores/tab";
 import InsertPictures from "@/components/InsertPictures.vue";
 
@@ -11,7 +12,7 @@ const tabStore = useTabStore();
   <section id="aboutme" class="text-stone-600 h-screen bild flex flex-col">
     <div
       class="h-full w-full pt-15 xl:pt-5 flex flex-col items-center justify-center gap-15">
-      <div class="text-6xl">About Me</div>
+      <TheHeading>About Me</TheHeading>
 
       <div class="h-2/3 w-full flex flex-row justify-around">
         <InsertPictures class="hidden lg:flex"></InsertPictures>
