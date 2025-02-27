@@ -49,8 +49,6 @@ const message = ref(null);
         style="height: 150px"
         class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none"></textarea>
 
-      <input type="text" v-model="name" />
-
       <a
         href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
         class="flex gap-3 p-2 rounded-lg bg-white text-stone-600 cursor-pointer w-max">
