@@ -1,7 +1,6 @@
 <script setup></script>
 <template>
   <div>
-    <a href="#home" class="select-none">Home</a>
     <a href="#aboutme" class="select-none">AboutMe</a>
     <a href="#projects" class="select-none">Projects</a>
     <a href="#responsive" class="select-none">Responsive</a>

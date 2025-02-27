@@ -7,7 +7,11 @@ const showMenuState = ref(false);
 </script>
 <template>
   <div class="text-white w-full h-1/12 flex justify-around">
-    <div class="flex items-center -top-1">Ece</div>
+    <div class="flex items-center w-1/2 xl:w-full">
+      <a href="#home" class="select-none">
+        <img src="../../public/logo.png" alt="" class="w-20" />
+      </a>
+    </div>
 
     <MenuItems
       class="xl:text-xl lg:text-lg sm:text-sm uppercase xl:flex items-center justify-around w-full h-full hidden" />
