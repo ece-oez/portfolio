@@ -1,6 +1,22 @@
-.bg-body{
-    background-color: #1f2020;
+.bg-hellgrau {
+  background-color: #ececec;
 }
+
+.bg-dunkelgrau {
+  background-color: #1f2020;
+}
+
+.bg-inputbox{
+  background-color: #292929;
+}
+
+.bg-text{
+  color: #545454;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 
 .aldrich-regular {
     font-family: "Aldrich", serif;

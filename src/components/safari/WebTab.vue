@@ -3,16 +3,16 @@ import { ref } from "vue";
 import { useTabStore } from "@/stores/tab";
 
 // Picture imports
-import hallo from "../../assets/img/hallo.png";
-import work from "../../assets/img/codierung.png";
-import learned from "../../assets/img/lehrbuch.png";
-import beruf from "../../assets/img/werdegang.png";
-import zukunft from "../../assets/img/work-life-balance.png";
+import hallo from "../../assets/img/tabicons/hallo.png";
+import work from "../../assets/img/tabicons/codierung.png";
+import learned from "../../assets/img/tabicons/lehrbuch.png";
+import beruf from "../../assets/img/tabicons/werdegang.png";
+import zukunft from "../../assets/img/tabicons/work-life-balance.png";
 
 const tabStore = useTabStore();
 
 const props = defineProps({
-  tab: Int32Array,
+  tab: Number,
   heading: String,
   url: String,
 });

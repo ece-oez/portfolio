@@ -2,14 +2,10 @@
 
 <template>
   <section
-    id="skills"
-    class="text-white h-screen background w-full flex flex-col bg-home">
-    <div class="flex flex-col items-center pt-20 text-6xl">Skills</div>
+    id=""
+    class="text-white h-screen bg-dunkelgrau w-full flex flex-col bg-home">
+    <div class="flex flex-col items-center pt-20 text-6xl">Project</div>
   </section>
 </template>
 
-<style scoped>
-.background {
-  background-color: #1f2020;
-}
-</style>
+<style scoped></style>

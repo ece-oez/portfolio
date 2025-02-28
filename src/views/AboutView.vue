@@ -1,47 +1,23 @@
 <script setup>
 import StackTabs from "../components/StackTabs.vue";
-import me from "../assets/img/me.jpg";
-import toDo from "../assets/img/do.jpg";
-import education from "../assets/img/education.jpg";
-import work from "../assets/img/work.jpg";
-import future from "../assets/img/future.jpg";
+import StackTabsMobile from "../components/StackTabsMobile.vue";
+import TheHeading from "../components/TheHeading.vue";
 import { useTabStore } from "@/stores/tab";
+import InsertPictures from "@/components/InsertPictures.vue";
 
 const tabStore = useTabStore();
 </script>
 
 <template>
   <section id="aboutme" class="text-stone-600 h-screen bild flex flex-col">
-    <div class="h-full w-full flex flex-col justify-evenly items-center">
-      <div class="flex flex-col items-center text-6xl">About Me</div>
+    <div
+      class="h-full w-full pt-15 xl:pt-5 flex flex-col items-center justify-center gap-15">
+      <TheHeading>About Me</TheHeading>
 
-      <div class="flex justify-around h-2/3">
-        <img
-          :src="me"
-          class="w-1/4 shadow-2xl rounded-2xl slide-in"
-          :class="{ hidden: tabStore.currentTab !== 1 }" />
-
-        <img
-          :src="toDo"
-          class="w-1/4 shadow-2xl rounded-2xl slide-in"
-          :class="{ hidden: tabStore.currentTab !== 2 }" />
-
-        <img
-          :src="education"
-          class="w-1/4 shadow-2xl rounded-2xl slide-in"
-          :class="{ hidden: tabStore.currentTab !== 3 }" />
-
-        <img
-          :src="work"
-          class="w-1/4 shadow-2xl rounded-2xl slide-in"
-          :class="{ hidden: tabStore.currentTab !== 4 }" />
-
-        <img
-          :src="future"
-          class="w-1/4 shadow-2xl rounded-2xl slide-in"
-          :class="{ 'hidden slide-out': tabStore.currentTab !== 5 }" />
-
-        <StackTabs></StackTabs>
+      <div class="h-2/3 w-full flex flex-row justify-around">
+        <InsertPictures class="hidden lg:flex"></InsertPictures>
+        <StackTabs class="xl:flex hidden" />
+        <StackTabsMobile class="xl:hidden" />
       </div>
     </div>
   </section>
@@ -49,37 +25,7 @@ const tabStore = useTabStore();
 
 <style scoped>
 .bild {
-  background-image: url(../assets/img/about-bg.png);
-  /* background-image: url(../assets/img/home-bg.jpg); */
-  background-position: center;
-  background-size: cover;
-}
-
-.bg-me {
-  background-image: url(../assets/img/me.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.bg-toDo {
-  background-image: url(../assets/img/do.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.bg-education {
-  background-image: url(../assets/img/education.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.bg-work {
-  background-image: url(../assets/img/work.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.bg-future {
-  background-image: url(../assets/img/future.jpg);
+  background-image: url(../assets/img/backgrounds/about.png);
   background-position: center;
   background-size: cover;
 }

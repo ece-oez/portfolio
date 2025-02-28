@@ -1,298 +1,243 @@
 export const skillsItems = [
   {
-    text: "AboutMe",
-    textWidth: "text-4xl",
-    icon: "bi bi-person-arms-up",
-    iconWidth: "text-8xl",
-    styling: "w-50 h-50 translate-y-80",
+    text: "git",
+    textWidth: "lg:text-2xl xl:text-3xl",
+    icon: "fa-brands fa-git-alt",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
   },
   {
-    text: "Arbeit",
-    textWidth: "text-3xl",
-    icon: "bi bi-building-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 translate-x-70 translate-y-20",
-  },
-  {
-    text: "Fachin formatiker",
+    text: "GitHub",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 translate-x-90 translate-y-63 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-github",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-20 -translate-y-40",
   },
   {
-    text: "Ausbildung",
+    text: "BitBucket",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 translate-x-110 translate-y-10 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-bitbucket",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-20 translate-y-40",
   },
-  {
-    text: "ROLLER",
-    textWidth: "text-xl",
-    // icon: "fa-solid fa-r",
-    iconWidth: "text-6xl",
-    styling:
-      "w-25 h-25 translate-x-145 translate-y-20 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  },
-  {
-    text: "Coden",
-    textWidth: "text-3xl",
-    icon: "bi bi-code-slash",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 translate-x-130 translate-y-90",
-  },
-  // {
-  //   text: "GitHub",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-github",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-160 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
 
-  // {
-  //   text: "git",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-git-alt",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-160 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Windows",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-windows",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-190 translate-y-30 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Linux",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-linux",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-190 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Docker",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-docker",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-160 translate-y-65 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
   {
-    text: "Web Dev",
+    text: "GitLab",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 translate-x-170 translate-y-110 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-gitlab",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-40 translate-y-70",
   },
+
   {
-    text: "Game Dev",
+    text: "OS",
+    textWidth: "lg:text-2xl xl:text-3xl",
+    icon: "bi bi-pc-display-horizontal",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
+  },
+
+  {
+    text: "Windows",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 translate-x-165 translate-y-70 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  },
-  // {
-  //   text: "Database",
-  //   textWidth: "text-xl",
-  //   icon: "",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 translate-x-140 translate-y-136 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
-  {
-    text: "Interesse",
-    textWidth: "text-3xl",
-    icon: "fa-solid fa-glasses",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 translate-x-80 translate-y-160",
+    icon: "fa-brands fa-windows",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-90 -translate-y-40",
   },
   {
-    text: "UI/UX Design",
+    text: "Linux",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 translate-x-120 translate-y-180 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-linux",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-110 -translate-y-70",
   },
   {
-    text: "Know Hows",
-    textWidth: "text-3xl",
-    icon: "fa-solid fa-brain",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-60 translate-y-140",
+    text: "Container",
+    textWidth: "lg:text-2xl xl:text-3xl",
+    icon: "fa-solid fa-boxes-stacked",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
   },
+
   {
-    text: "Responsive Design",
-    textWidth: "text-lg",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-25 translate-y-170 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  },
-  {
-    text: "Reactive Programming",
-    textWidth: "text-md",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-70 translate-y-104 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  },
-  // {
-  //   text: "Vue",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-vuejs",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-200 translate-y-95 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "CSS",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-css3",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-200 translate-y-130 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Tailwind",
-  //   textWidth: "text-xl",
-  //   icon: "",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-200 translate-y-130 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "JS",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-js",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-150 translate-y-140 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  // {
-  //   text: "Node",
-  //   textWidth: "text-xl",
-  //   icon: "fa-brands fa-node",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-25 h-25 translate-x-150 translate-y-140 hover:scale-140 hover:duration-300 not-focus:duration-300",
-  // },
-  {
-    text: "Alter",
-    textWidth: "text-3xl",
-    icon: "bi bi-cake2-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-180 translate-y-110",
-  },
-  {
-    text: "22",
+    text: "Docker",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-145 translate-y-90 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-docker",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-160 -translate-y-40 ",
   },
+
   {
-    text: "Hobbys",
-    textWidth: "text-3xl",
-    icon: "bi bi-bookmark-heart-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-150 translate-y-170",
+    text: "Web-Dev",
+    textWidth: "tlg:text-2xl xl:text-3xl",
+    icon: "bi bi-code-slash",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
   },
+
   {
-    text: "Gaming",
+    text: "CSS",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-193 translate-y-180 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-css3",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-230 -translate-y-40",
   },
+
   {
-    text: "Lesen",
+    text: "JS",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-124 translate-y-140 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-js",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-250 -translate-y-70",
   },
+
   {
-    text: "Zeichnen",
+    text: "Vue",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-108 translate-y-180 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-vuejs",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-270 -translate-y-100",
   },
+
   {
-    text: "Wohnort",
-    textWidth: "text-3xl",
-    icon: "fa-solid fa-house",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-180 translate-y-40",
-  },
-  {
-    text: "Herne",
+    text: "PHP",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-215 translate-y-20 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-php",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-230 translate-y-35",
   },
   {
-    text: "44649",
+    text: "C#",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-215 translate-y-70 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-solid fa-square-binary",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-250 translate-y-60",
   },
   {
-    text: "Designen",
-    textWidth: "text-3xl",
+    text: "Node",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-node",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-270 translate-y-85",
+  },
+
+  {
+    text: "Database",
+    textWidth: "lg:text-2xl xl:text-3xl",
+    icon: "bi bi-database",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
+  },
+
+  {
+    text: "MariaDB",
+    textWidth: "text-xl",
+    icon: "bi bi-hdd-stack",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-300 -translate-y-40",
+  },
+
+  {
+    text: "HeidiSQL",
+    textWidth: "text-xl",
+    icon: "bi bi-filetype-sql",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-320 -translate-y-70",
+  },
+
+  {
+    text: "REST",
+    textWidth: "text-xl",
+    icon: "bi bi-braces",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-300 translate-y-35",
+  },
+
+  {
+    text: "Thunderclient",
+    textWidth: "text-xl",
+    icon: "bi bi-lightning-charge-fill",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-320 translate-y-60",
+  },
+
+  {
+    text: "JSON",
+    textWidth: "text-xl",
+    icon: "bi bi-filetype-json",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-340 translate-y-85",
+  },
+
+  {
+    text: "Design",
+    textWidth: "lg:text-2xl xl:text-3xl",
     icon: "bi bi-pencil-fill",
-    iconWidth: "text-7xl",
-    styling: "w-40 h-40 -translate-x-70 translate-y-20",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
   },
+
   {
     text: "Figma",
     textWidth: "text-xl",
-    // icon: "fa-brands fa-figma",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-30 translate-y-10 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-brands fa-figma",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-370 -translate-y-40",
   },
+
   {
     text: "Canva",
     textWidth: "text-xl",
-    // icon: "fa-solid fa-c",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-35 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "fa-solid fa-c",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-390 -translate-y-70",
   },
-  // {
-  //   text: "Blender",
-  //   textWidth: "text-xl",
-  //   icon: "",
-  //   iconWidth: "text-6xl",
-  //   styling:
-  //     "w-30 h-30 -translate-x-105 translate-y-50 hover:scale-150 hover:duration-300 not-focus:duration-300",
-  // },
+
   {
     text: "Procreate",
     textWidth: "text-xl",
-    icon: "",
-    iconWidth: "text-6xl",
-    styling:
-      "w-30 h-30 -translate-x-110 translate-y-10 hover:scale-150 hover:duration-300 not-focus:duration-300",
+    icon: "bi bi-brush",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-410 -translate-y-100",
+  },
+
+  {
+    text: "UI/UX Design",
+    textWidth: "text-xl",
+    icon: "bi bi-layout-wtf",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-370 translate-y-40",
+  },
+
+  {
+    text: "Bootstrap",
+    textWidth: "text-xl",
+    icon: "fa-brands fa-bootstrap",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-390 translate-y-70",
+  },
+
+  {
+    text: "IDE",
+    textWidth: "lg:text-2xl xl:text-3xl",
+    icon: "bi bi-window-sidebar",
+    iconWidth: "lg:text-6xl xl:text-7xl",
+    styling: "w-40 h-40",
+  },
+
+  {
+    text: "VS Code",
+    textWidth: "text-xl",
+    icon: "bi bi-window",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-440 -translate-y-40",
+  },
+
+  {
+    text: "Visual Studio",
+    textWidth: "text-xl",
+    icon: "bi bi-window-split",
+    iconWidth: "text-5xl",
+    styling: "w-30 h-30 absolute translate-x-440 translate-y-40",
   },
 ];
