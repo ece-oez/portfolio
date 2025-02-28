@@ -53,10 +53,10 @@ onMounted(() => {
   animation-duration: 1s;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1440px) {
   @keyframes slide-footer {
     0% {
-      transform: translate(0px, 240px);
+      transform: translate(0px, 150px);
     }
     100% {
       transform: translate(0px, 0px);

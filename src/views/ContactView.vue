@@ -10,12 +10,12 @@ import TheHeading from "@/components/TheHeading.vue";
     id="contact"
     class="text-white bg-hellgrau h-screen w-full flex flex-col">
     <div class="h-full flex flex-col xl:pt-30">
-      <div class="xl:flex xl:py-10">
+      <div class="xl:flex xl:py-10 xl:h-2/3">
         <div
           class="flex flex-col items-center pt-20 px-20 text-6xl text-stone-600 xl:w-3/4">
           <TheHeading> Contact </TheHeading>
           <TextElement
-            class="hidden xl:flex p-20 flex-col text-2xl self-baseline">
+            class="hidden xl:flex p-20 flex-col text-2xl self-baseline lg:text-lg xl:text-xl 2xl:text-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             accusantium veniam reprehenderit perspiciatis explicabo corrupti
             facilis tempore accusamus sit officia nobis, repudiandae enim, culpa
