@@ -42,11 +42,11 @@ onMounted(() => {
         </TheSphere>
         <div ref="lines" class="absolute w-full lines-anim">
           <div
-            class="absolute w-1/16 border-b border-2 border-stone-600"
-            v-for="linesItem in linesItems"
-            :class="linesItem.style"></div>
+            class="absolute left-20 w-420 border-b border-2 border-stone-600"></div>
         </div>
       </div>
+
+      <div class=""></div>
     </div>
   </section>
 </template>

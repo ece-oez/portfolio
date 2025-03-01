@@ -2,8 +2,11 @@
 import { ref } from "vue";
 import MenuItems from "./MenuItems.vue";
 import IconsBorder from "./IconsBorder.vue";
+import { useLanguageStore } from "@/stores/language";
 
 const showMenuState = ref(false);
+
+const languageStore = useLanguageStore();
 </script>
 <template>
   <div class="text-white w-full h-1/12 flex justify-around">
@@ -12,6 +15,10 @@ const showMenuState = ref(false);
         <img src="../../logo.png" alt="" class="w-20" />
       </a>
     </div>
+
+    <button @click="languageStore.toggleLanguage" class="">
+      <IconsBorder icon="bi bi-translate"></IconsBorder>
+    </button>
 
     <MenuItems
       class="xl:text-xl lg:text-lg sm:text-sm uppercase xl:flex items-center justify-around w-full h-full hidden" />
