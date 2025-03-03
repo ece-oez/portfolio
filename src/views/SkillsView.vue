@@ -49,8 +49,6 @@ onMounted(() => {
       </div>
 
       <SkillsCards class="2xl:hidden"></SkillsCards>
-
-      <div class=""></div>
     </div>
   </section>
 </template>
