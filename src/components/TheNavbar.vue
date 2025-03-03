@@ -7,6 +7,8 @@ import { useLanguageStore } from "@/stores/language";
 const showMenuState = ref(false);
 
 const languageStore = useLanguageStore();
+
+const showTooltip = ref(false);
 </script>
 <template>
   <div class="text-white w-full h-1/12 flex justify-around">
@@ -16,9 +18,24 @@ const languageStore = useLanguageStore();
       </a>
     </div>
 
-    <button @click="languageStore.toggleLanguage" class="">
-      <IconsBorder icon="bi bi-translate"></IconsBorder>
+    <button @click="showTooltip = !showTooltip">
+      <IconsBorder icon="bi bi-translate"> </IconsBorder>
     </button>
+
+    <div
+      v-if="showTooltip"
+      class="tooltiptext absolute translate-y-18 border border-stone-600 bg-stone-800 w-30 text-center rounded-lg">
+      <div
+        @click="(languageStore.currentLanguage = 'de'), (showTooltip = false)"
+        class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
+        Deutsch
+      </div>
+      <div
+        @click="(languageStore.currentLanguage = 'en'), (showTooltip = false)"
+        class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
+        Englisch
+      </div>
+    </div>
 
     <MenuItems
       class="xl:text-xl lg:text-lg sm:text-sm uppercase xl:flex items-center justify-around w-full h-full hidden" />
@@ -35,5 +52,44 @@ const languageStore = useLanguageStore();
 <style scoped>
 .bg-navbar {
   background-color: #2d2d2d;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 </style>

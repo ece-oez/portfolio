@@ -1,15 +1,15 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import ProjectTags from "@/components/ProjectTags.vue";
 import ProjectCards from "../components/ProjectCards.vue";
-import SearchBar from "../components/SearchBar.vue";
 import TheHeading from "../components/TheHeading.vue";
 import TheArrow from "../components/TheArrow.vue";
 import { useProjectItems } from "@/config/projectItemsComposable";
+import { skillsItems } from "@/config/skillsItems";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const { projectItems } = useProjectItems();
 
-const cardsElements = ref(null);
+const skillsCardsElements = ref(null);
 
 onMounted(() => {
   // Create the observer
@@ -25,7 +25,7 @@ onMounted(() => {
   });
 
   // Tell the observer which elements to track
-  observer.observe(cardsElements.value);
+  observer.observe(skillsCardsElements.value);
 });
 
 let projectsIdState = 1;
@@ -56,52 +56,42 @@ function slideLeft() {
 </script>
 
 <template>
-  <section
-    id="projects"
-    class="text-white h-screen flex flex-col justify-center gap-9 pt-6 xl:gap-2 bild">
-    <TheHeading> Projects</TheHeading>
+  <div class="flex w-full items-center justify-around">
+    <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
+      <i
+        id="leftArrow"
+        class="fa-solid fa-circle-arrow-left hover:text-stone-400 hover:duration-300 not-focus:duration-300"
+        @click="slideLeft()"></i>
+    </TheArrow>
 
-    <!-- <SearchBar class="ms-4" />
-    <ProjectTags
-      class="ms-4 cursor-pointer hover:bg-amber-50 hover:duration-300 hover:text-black not-focus:duration-300"
-      >Javascript</ProjectTags
-    > -->
-
-    <div class="flex w-full items-center justify-around">
-      <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
-        <i
-          id="leftArrow"
-          class="fa-solid fa-circle-arrow-left hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-          @click="slideLeft()"></i>
-      </TheArrow>
-
+    <div
+      ref="skillsCardsElements"
+      class="px-5 py-15 h-full w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide">
       <div
-        ref="cardsElements"
-        class="mx-3 xl:mx-6 pt-5 h-full w-full flex flex-row gap-8 overflow-x-scroll xl:px-12 scrollbar-hide">
-        <div v-for="(projectsItem, index) in projectItems">
-          <ProjectCards
-            :index="index"
-            :id="index"
-            :icon="projectsItem.icon"
-            :title="projectsItem.title"
-            :link="projectsItem.link"
-            :github="projectsItem.github"
-            :beschreibung="projectsItem.beschreibung"
-            :month="projectsItem.month"
-            :year="projectsItem.year"
-            :technologies="projectsItem.technologies"
-            class="cursor-pointer" />
+        v-for="(skillsItem, index) in skillsItems"
+        class="border border-stone-400 p-5 rounded-xl bg-inputbox shadow-lg shadow-stone-900 w-700 h-full text-4xl flex flex-col items-center justify-center gap-2">
+        <div class="border-b pb-1 w-full text-center">
+          {{ skillsItem.text }}
         </div>
+        <div class="flex items-center justify-center gap-2 text-sm">
+          <i class="bi bi-star-fill border px-0.5 rounded-full"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <i :class="skillsItem.icon" class="text-9xl"></i>
       </div>
-
-      <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
-        <i
-          id="rightArrow"
-          class="fa-solid fa-circle-arrow-right hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-          @click="slideRight()"></i>
-      </TheArrow>
     </div>
-  </section>
+
+    <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
+      <i
+        id="rightArrow"
+        class="fa-solid fa-circle-arrow-right hover:text-stone-400 hover:duration-300 not-focus:duration-300"
+        @click="slideRight()"></i>
+    </TheArrow>
+  </div>
 </template>
 
 <style scoped>

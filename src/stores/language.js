@@ -1,22 +1,16 @@
-import { reactive, ref } from "vue";
+import { computed, reactive, ref } from "vue";
 import { defineStore } from "pinia";
 import { textDeutsch } from "@/config/textDeutsch";
-import { textEnglisch } from "@/config/textEnglisch";
+import { textEnglish } from "@/config/textEnglisch";
 
 export const useLanguageStore = defineStore("language", () => {
   let currentLanguage = ref("de");
-  let textObj = ref(textDeutsch);
 
-  function toggleLanguage() {
-    if (currentLanguage === "de") currentLanguage = "en";
-    if (currentLanguage === "en") currentLanguage = "de";
-    checkLanguage();
-  }
+  const textObj = computed(() => {
+    if (currentLanguage.value === "de") return textDeutsch;
 
-  function checkLanguage() {
-    if (currentLanguage === "de") textObj = textDeutsch;
-    if (currentLanguage === "en") textObj = textEnglisch;
-  }
+    if (currentLanguage.value === "en") return textEnglish;
+  });
 
-  return { toggleLanguage, textObj };
+  return { currentLanguage, textObj };
 });

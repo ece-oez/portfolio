@@ -4,6 +4,7 @@ import TheSphere from "../components/TheSphere.vue";
 import { skillsItems } from "../config/skillsItems";
 import { onMounted, ref } from "vue";
 import TheHeading from "@/components/TheHeading.vue";
+import SkillsCards from "@/components/SkillsCards.vue";
 
 const lines = ref(null);
 
@@ -27,7 +28,8 @@ onMounted(() => {
   <section
     id="skills"
     class="text-white h-screen bg-hellgrau w-full flex flex-col">
-    <div class="h-full flex flex-col items-center pt-20">
+    <div
+      class="h-full flex flex-col items-center justify-center 2xl:justify-normal pt-20">
       <TheHeading class="text-stone-600">Skills</TheHeading>
 
       <div class="hidden 2xl:flex items-center h-full lg:gap-30 w-full">
@@ -45,6 +47,8 @@ onMounted(() => {
             class="absolute left-20 w-420 border-b border-2 border-stone-600"></div>
         </div>
       </div>
+
+      <SkillsCards class="2xl:hidden"></SkillsCards>
 
       <div class=""></div>
     </div>

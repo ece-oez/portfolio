@@ -1,6 +1,9 @@
 <script setup>
 import TheTerminal from "@/components/mac/TheTerminal.vue";
 import ButtonElements from "@/components/ButtonElement.vue";
+import { useLanguageStore } from "@/stores/language";
+
+const LanguageStore = useLanguageStore();
 </script>
 
 <template>
@@ -12,12 +15,12 @@ import ButtonElements from "@/components/ButtonElement.vue";
         class="text-neutral-500 text-sm mt-10 xl:mt-0 xl:text-lg h-1/8 xl:h-1/12 w-2/3 xl:w-1/2 flex flex-col xl:flex-row items-center justify-around gap-6 xl:gap-16">
         <ButtonElements
           icon="bi bi-person-plus-fill"
-          text="Contact Me"
+          :text="LanguageStore.textObj.home.contactBtn"
           class="cursor-pointer w-2/4 xl:w-1/4"
           link="#contact" />
         <ButtonElements
           icon="bi bi-arrow-right-short"
-          text="To Projects"
+          :text="LanguageStore.textObj.home.projectBtn"
           class="cursor-pointer w-2/4 xl:w-1/4"
           link="#projects" />
       </div>

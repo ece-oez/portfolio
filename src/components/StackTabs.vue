@@ -2,11 +2,13 @@
 import { ref, onMounted } from "vue";
 import WebPage from "./safari/WebPage.vue";
 import WebTab from "./safari/WebTab.vue";
-import { aboutmeItems } from "@/config/aboutmeItems";
 import SearchTab from "./safari/SearchTab.vue";
 import IconsRight from "./safari/IconsRight.vue";
 import IconsLeft from "./safari/IconsLeft.vue";
 import { useTabStore } from "@/stores/tab";
+import { useAboutmeItems } from "@/config/aboutmeComposable";
+
+const { items } = useAboutmeItems();
 
 const tabStore = useTabStore();
 
@@ -41,14 +43,14 @@ onMounted(() => {
     </div>
     <div class="flex mt-2">
       <WebTab
-        v-for="aboutmeItem in aboutmeItems"
+        v-for="aboutmeItem in items"
         :tab="aboutmeItem.tab"
         :heading="aboutmeItem.heading"
         :url="aboutmeItem.url" />
     </div>
 
     <WebPage
-      v-for="aboutmeItem in aboutmeItems"
+      v-for="aboutmeItem in items"
       :tab="aboutmeItem.tab"
       :title="aboutmeItem.title"
       :text="aboutmeItem.text" />

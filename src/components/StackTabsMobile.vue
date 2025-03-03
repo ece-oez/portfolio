@@ -1,8 +1,11 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import WebPage from "./safari/WebPage.vue";
-import { aboutmeItems } from "@/config/aboutmeItems";
 import SearchTab from "./safari/SearchTab.vue";
+
+import { useAboutmeItems } from "@/config/aboutmeComposable";
+
+const { items } = useAboutmeItems();
 
 import { useTabStore } from "@/stores/tab";
 
@@ -33,14 +36,14 @@ onMounted(() => {
     ref="parentElement"
     class="w-5/6 lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
     <WebPage
-      v-for="aboutmeItem in aboutmeItems"
+      v-for="aboutmeItem in items"
       :tab="aboutmeItem.tab"
       :title="aboutmeItem.title"
       :text="aboutmeItem.text" />
 
     <div
       class="flex w-6/7 p-2 self-center gap-2 overflow-x-scroll scrollbar-hide">
-      <SearchTab v-for="aboutmeItem in aboutmeItems" class="w-3/4">
+      <SearchTab v-for="aboutmeItem in items" class="w-3/4">
         <button @click="tabStore.currentTab = aboutmeItem.tab">
           {{ aboutmeItem.url }}
         </button>

@@ -24,7 +24,7 @@ onMounted(() => {
   <input
     ref="searchElement"
     class="border p-3 rounded-2xl xl:w-1/3"
-    placeholder="Suche..." />
+    placeholder="HTML, C#, ..." />
 </template>
 <style scoped>
 .opacity-elements {

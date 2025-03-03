@@ -1,5 +1,8 @@
 <script setup>
 import FooterIcon from "./footer/FooterIcon.vue";
+import { useLanguageStore } from "@/stores/language";
+
+const LanguageStore = useLanguageStore();
 
 import { onMounted, ref } from "vue";
 
@@ -27,7 +30,8 @@ onMounted(() => {
     ref="footer"
     class="bg-dunkelgrau h-full flex flex-col justify-center items-center gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-9">
     <div class="text-sm sm:text-md md:text-lg lg:text-xl">
-      © 2025 Ece Özmen. All rights reserved.
+      © 2025 Ece Özmen.
+      {{ LanguageStore.textObj.footer.rights }}
     </div>
 
     <div
@@ -43,7 +47,7 @@ onMounted(() => {
     </div>
 
     <div class="text-sm sm:text-md md:text-lg lg:text-xl">
-      Made by Ece Özmen
+      {{ LanguageStore.textObj.footer.made }} Ece Özmen
     </div>
   </div>
 </template>

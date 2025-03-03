@@ -1,5 +1,8 @@
 <script setup>
 import { onMounted, ref } from "vue";
+import { useLanguageStore } from "@/stores/language";
+
+const LanguageStore = useLanguageStore();
 
 const formular = ref(false);
 
@@ -28,31 +31,37 @@ const message = ref(null);
   <div ref="formular">
     <form
       class="w-full flex flex-col gap-4 p-3 md:p-4 bg-inputbox rounded-2xl shadow-xl shadow-stone-600">
-      <label for="name" class="text-stone-300">Ihr Name</label>
+      <label for="name" class="text-stone-300">
+        {{ LanguageStore.textObj.form.name.label }}</label
+      >
       <input
         ref="name"
         type="text"
-        placeholder="Max Mustermann"
+        :placeholder="LanguageStore.textObj.form.name.placeholder"
         class="bg-dunkelgrau text-stone-400 p-2 px-5 rounded-lg" />
-      <label for="betreff" class="text-stone-300">Betreff</label>
+      <label for="betreff" class="text-stone-300">{{
+        LanguageStore.textObj.form.subject.label
+      }}</label>
       <input
         ref="subject"
         type="text"
-        placeholder="Vorstellungsgespräch"
+        :placeholder="LanguageStore.textObj.form.subject.placeholder"
         class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg" />
 
-      <label for="nachricht" class="text-stone-300">Nachricht</label>
+      <label for="nachricht" class="text-stone-300">{{
+        LanguageStore.textObj.form.message.label
+      }}</label>
       <textarea
         ref="message"
         id="subject"
-        placeholder="Hiermit würden wir Sie gerne zum Vorstellungsgespräch einladen."
+        :placeholder="LanguageStore.textObj.form.message.placeholder"
         style="height: 150px"
         class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none"></textarea>
 
       <a
         href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
         class="flex gap-3 p-2 rounded-lg bg-white text-stone-600 cursor-pointer w-max">
-        Senden
+        {{ LanguageStore.textObj.form.button }}
         <i class="bi bi-envelope-plus-fill"></i>
       </a>
     </form>

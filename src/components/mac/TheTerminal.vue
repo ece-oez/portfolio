@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <div
     ref="parentElement"
-    class="bg-black h-1/4 w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500">
+    class="bg-black h-1/4 lg:h-2/4 xl:h-1/4 w-2/3 md:w-2/3 lg:w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500">
     <div
       class="bg-stone-700 flex justify-between items-center p-1 rounded-t-2xl">
       <ThreeDots />
@@ -265,13 +265,13 @@ h1 {
       content: "developer";
     }
     25% {
-      content: "writer";
+      content: "designer";
     }
     50% {
-      content: "reader";
+      content: "tester";
     }
     75% {
-      content: "human";
+      content: "engineer";
     }
   }
 
