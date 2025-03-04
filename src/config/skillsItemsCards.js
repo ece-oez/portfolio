@@ -1,4 +1,4 @@
-export const skillsItemsCards = [
+const staticSkillsItemsCards = [
   {
     text: "git",
     textWidth: "lg:text-2xl xl:text-3xl",
@@ -6,10 +6,9 @@ export const skillsItemsCards = [
     starCount: 9,
     atk: 200,
     def: 400,
-    ability: "Verwalte Versionen und Quellcode.",
-    description:
-      "Git ist ein verteiltes Versionskontrollsystem, das Entwicklern hilft, Code zu verwalten und zusammenzuarbeiten.",
-    cardType: "Tool",
+    ability: text.skills.git.ability,
+    description: text.skills.git.description,
+    cardType: text.skills.git.cardType,
   },
   {
     text: "GitHub",
@@ -18,10 +17,9 @@ export const skillsItemsCards = [
     starCount: 9,
     atk: 400,
     def: 400,
-    ability: "Hosting für Git-Repositories.",
-    description:
-      "GitHub ist eine Plattform, die Entwicklern hilft, Code zu hosten, zu teilen und mit anderen zu kollaborieren.",
-    cardType: "Plattform",
+    ability: text.skills.github.ability,
+    description: text.skills.github.description,
+    cardType: text.skills.github.cardType,
   },
   {
     text: "BitBucket",
@@ -30,10 +28,9 @@ export const skillsItemsCards = [
     starCount: 8,
     atk: 800,
     def: 800,
-    ability: "Git und Mercurial Repositories für Teams.",
-    description:
-      "Bitbucket bietet Git- und Mercurial-Repository-Hosting sowie eine Plattform für Codezusammenarbeit.",
-    cardType: "Plattform",
+    ability: text.skills.bitbucket.ability,
+    description: text.skills.bitbucket.description,
+    cardType: text.skills.bitbucket.cardType,
   },
   {
     text: "GitLab",
@@ -42,10 +39,9 @@ export const skillsItemsCards = [
     starCount: 3,
     atk: 800,
     def: 800,
-    ability: "DevOps- und CI/CD-Tools.",
-    description:
-      "GitLab ist eine vollständige DevOps-Plattform, die Git-Repositories, CI/CD und DevOps-Management umfasst.",
-    cardType: "Plattform",
+    ability: text.skills.gitlab.ability,
+    description: text.skills.gitlab.description,
+    cardType: text.skills.gitlab.cardType,
   },
   {
     text: "Windows",
@@ -54,10 +50,9 @@ export const skillsItemsCards = [
     starCount: 10,
     atk: 500,
     def: 100,
-    ability: "Windows-Betriebssystem.",
-    description:
-      "Microsoft Windows ist ein weit verbreitetes Betriebssystem für Computer, das eine benutzerfreundliche Oberfläche bietet.",
-    cardType: "Betriebssystem",
+    ability: text.skills.windows.ability,
+    description: text.skills.windows.description,
+    cardType: text.skills.windows.cardType,
   },
   {
     text: "Linux",
@@ -66,10 +61,9 @@ export const skillsItemsCards = [
     starCount: 7,
     atk: 1000,
     def: 1500,
-    ability: "Offenes Betriebssystem.",
-    description:
-      "Linux ist ein Open-Source-Betriebssystem, das für seine Stabilität, Sicherheit und Anpassbarkeit bekannt ist.",
-    cardType: "Betriebssystem",
+    ability: text.skills.linux.ability,
+    description: text.skills.linux.description,
+    cardType: text.skills.linux.cardType,
   },
   {
     text: "Docker",
@@ -78,10 +72,9 @@ export const skillsItemsCards = [
     starCount: 3,
     atk: 600,
     def: 500,
-    ability: "Containerisierung von Anwendungen.",
-    description:
-      "Docker ermöglicht es Entwicklern, Anwendungen in isolierten Containern zu erstellen und auszuführen.",
-    cardType: "Tool",
+    ability: text.skills.docker.ability,
+    description: text.skills.docker.description,
+    cardType: text.skills.docker.cardType,
   },
   {
     text: "CSS",
@@ -90,10 +83,9 @@ export const skillsItemsCards = [
     starCount: 10,
     atk: 250,
     def: 500,
-    ability: "Gestaltung von Webseiten.",
-    description:
-      "CSS (Cascading Style Sheets) wird verwendet, um das Design und Layout von Webseiten zu gestalten.",
-    cardType: "Sprache",
+    ability: text.skills.css.ability,
+    description: text.skills.css.description,
+    cardType: text.skills.css.cardType,
   },
   {
     text: "JS",
@@ -102,10 +94,9 @@ export const skillsItemsCards = [
     starCount: 10,
     atk: 500,
     def: 100,
-    ability: "Interaktive Webseitenfunktionen.",
-    description:
-      "JavaScript ist eine Programmiersprache, die verwendet wird, um interaktive und dynamische Funktionen auf Webseiten zu erstellen.",
-    cardType: "Sprache",
+    ability: text.skills.js.ability,
+    description: text.skills.js.description,
+    cardType: text.skills.js.cardType,
   },
   {
     text: "Vue",
@@ -114,10 +105,9 @@ export const skillsItemsCards = [
     starCount: 10,
     atk: 900,
     def: 600,
-    ability: "Fortschrittliches JavaScript-Framework.",
-    description:
-      "Vue.js ist ein JavaScript-Framework, das Entwicklern hilft, moderne Benutzeroberflächen und SPAs zu erstellen.",
-    cardType: "Framework",
+    ability: text.skills.vue.ability,
+    description: text.skills.vue.description,
+    cardType: text.skills.vue.cardType,
   },
   {
     text: "Node",
@@ -126,10 +116,9 @@ export const skillsItemsCards = [
     starCount: 5,
     atk: 700,
     def: 400,
-    ability: "Serverseitige JavaScript-Ausführung.",
-    description:
-      "Node.js ist eine serverseitige JavaScript-Umgebung, die auf der V8 JavaScript Engine basiert.",
-    cardType: "Runtime",
+    ability: text.skills.node.ability,
+    description: text.skills.node.description,
+    cardType: text.skills.node.cardType,
   },
   {
     text: "Bootstrap",
@@ -138,10 +127,9 @@ export const skillsItemsCards = [
     starCount: 10,
     atk: 0,
     def: 10,
-    ability: "Responsive Frontend-Framework.",
-    description:
-      "Bootstrap ist ein Frontend-Framework, das Entwicklern hilft, schnell responsive Webseiten zu erstellen.",
-    cardType: "Framework",
+    ability: text.skills.bootstrap.ability,
+    description: text.skills.bootstrap.description,
+    cardType: text.skills.bootstrap.cardType,
   },
   {
     text: "VS Code",
@@ -150,10 +138,9 @@ export const skillsItemsCards = [
     starCount: 10,
     atk: 500,
     def: 500,
-    ability: "Code-Editor mit vielen Erweiterungen.",
-    description:
-      "Visual Studio Code ist ein leistungsstarker und flexibler Code-Editor mit umfangreichen Erweiterungsmöglichkeiten.",
-    cardType: "IDE",
+    ability: text.skills.vscode.ability,
+    description: text.skills.vscode.description,
+    cardType: text.skills.vscode.cardType,
   },
   {
     text: "Visual Studio",
@@ -162,9 +149,8 @@ export const skillsItemsCards = [
     starCount: 4,
     atk: 1500,
     def: 1000,
-    ability: "Entwicklungsumgebung für verschiedene Programmiersprachen.",
-    description:
-      "Visual Studio ist eine integrierte Entwicklungsumgebung (IDE) für verschiedene Programmiersprachen wie C#, C++, und Python.",
-    cardType: "IDE",
+    ability: text.skills.vstudio.ability,
+    description: text.skills.vstudio.description,
+    cardType: text.skills.vstudio.cardType,
   },
 ];

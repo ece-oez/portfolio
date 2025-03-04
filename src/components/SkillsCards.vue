@@ -1,7 +1,10 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import TheArrow from "../components/TheArrow.vue";
-import { skillsItemsCards } from "@/config/skillsItemsCards";
+import { staticSkillsItemsCards } from "@/config/skillsItemsCards";
+import { useSkillsItemsCards } from "@/config/skillsItemsCardsComposable";
+
+const { skillsItemsCards } = useSkillsItemsCards();
 
 const skillsCardsElements = ref(null);
 
@@ -25,15 +28,17 @@ onMounted(() => {
 let skillsIdState = 1;
 
 function slideRight() {
-  if (skillsIdState === skillsItemsCards.length - 2) {
+  if (skillsIdState === staticSkillsItemsCards.length - 2) {
     return;
   }
   skillsIdState = skillsIdState + 2;
-  document.getElementById(skillsItemsCards[skillsIdState].text).scrollIntoView({
-    behavior: "smooth",
-    block: "nearest",
-    inline: "center",
-  });
+  document
+    .getElementById(staticSkillsItemsCards[skillsIdState].text)
+    .scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
 }
 
 function slideLeft() {
@@ -41,11 +46,13 @@ function slideLeft() {
     return;
   }
   skillsIdState = skillsIdState - 2;
-  document.getElementById(skillsItemsCards[skillsIdState].text).scrollIntoView({
-    behavior: "smooth",
-    block: "nearest",
-    inline: "center",
-  });
+  document
+    .getElementById(staticSkillsItemsCards[skillsIdState].text)
+    .scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
 }
 </script>
 

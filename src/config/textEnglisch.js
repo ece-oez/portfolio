@@ -84,4 +84,91 @@ export const textEnglish = {
     rights: "All rights reserved.",
     made: "Created by ",
   },
+
+  skills: {
+    git: {
+      ability: "Manage versions and source code.",
+      description:
+        "Git is a distributed version control system that helps developers manage and collaborate on code.",
+      cardType: "Tool",
+    },
+    github: {
+      ability: "Hosting for Git repositories.",
+      description:
+        "GitHub is a platform that helps developers host, share, and collaborate on code.",
+      cardType: "Platform",
+    },
+    bitbucket: {
+      ability: "Git and Mercurial repositories for teams.",
+      description:
+        "Bitbucket provides Git and Mercurial repository hosting and a platform for code collaboration.",
+      cardType: "Platform",
+    },
+    gitlab: {
+      ability: "DevOps and CI/CD tools.",
+      description:
+        "GitLab is a complete DevOps platform that includes Git repositories, CI/CD, and DevOps management.",
+      cardType: "Platform",
+    },
+    windows: {
+      ability: "Windows operating system.",
+      description:
+        "Microsoft Windows is a widely used operating system for computers, providing a user-friendly interface.",
+      cardType: "Operating System",
+    },
+    linux: {
+      ability: "Open-source operating system.",
+      description:
+        "Linux is an open-source operating system known for its stability, security, and customization.",
+      cardType: "Operating System",
+    },
+    docker: {
+      ability: "Containerization of applications.",
+      description:
+        "Docker allows developers to create and run applications in isolated containers.",
+      cardType: "Tool",
+    },
+    css: {
+      ability: "Designing webpages.",
+      description:
+        "CSS (Cascading Style Sheets) is used to style and layout webpages.",
+      cardType: "Language",
+    },
+    js: {
+      ability: "Interactive website features.",
+      description:
+        "JavaScript is a programming language used to create interactive and dynamic features on websites.",
+      cardType: "Language",
+    },
+    vue: {
+      ability: "Advanced JavaScript framework.",
+      description:
+        "Vue.js is a JavaScript framework that helps developers build modern user interfaces and SPAs.",
+      cardType: "Framework",
+    },
+    node: {
+      ability: "Server-side JavaScript execution.",
+      description:
+        "Node.js is a server-side JavaScript environment built on the V8 JavaScript engine.",
+      cardType: "Runtime",
+    },
+    bootstrap: {
+      ability: "Responsive frontend framework.",
+      description:
+        "Bootstrap is a frontend framework that helps developers quickly create responsive websites.",
+      cardType: "Framework",
+    },
+    vscode: {
+      ability: "Code editor with many extensions.",
+      description:
+        "Visual Studio Code is a powerful and flexible code editor with extensive extension capabilities.",
+      cardType: "IDE",
+    },
+    vstudio: {
+      ability: "Development environment for various programming languages.",
+      description:
+        "Visual Studio is an integrated development environment (IDE) for various programming languages like C#, C++, and Python.",
+      cardType: "IDE",
+    },
+  },
 };

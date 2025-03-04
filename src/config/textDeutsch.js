@@ -84,4 +84,91 @@ export const textDeutsch = {
     rights: " Alle Rechte vorbehalten.",
     made: "Erstellt von ",
   },
+
+  skills: {
+    git: {
+      ability: "Verwalte Versionen und Quellcode.",
+      description:
+        "Git ist ein verteiltes Versionskontrollsystem, das Entwicklern hilft, Code zu verwalten und zusammenzuarbeiten.",
+      cardType: "Tool",
+    },
+    github: {
+      ability: "Hosting für Git-Repositories.",
+      description:
+        "GitHub ist eine Plattform, die Entwicklern hilft, Code zu hosten, zu teilen und mit anderen zu kollaborieren.",
+      cardType: "Plattform",
+    },
+    bitbucket: {
+      ability: "Git und Mercurial Repositories für Teams.",
+      description:
+        "Bitbucket bietet Git- und Mercurial-Repository-Hosting sowie eine Plattform für Codezusammenarbeit.",
+      cardType: "Plattform",
+    },
+    gitlab: {
+      ability: "DevOps- und CI/CD-Tools.",
+      description:
+        "GitLab ist eine vollständige DevOps-Plattform, die Git-Repositories, CI/CD und DevOps-Management umfasst.",
+      cardType: "Plattform",
+    },
+    windows: {
+      ability: "Windows-Betriebssystem.",
+      description:
+        "Microsoft Windows ist ein weit verbreitetes Betriebssystem für Computer, das eine benutzerfreundliche Oberfläche bietet.",
+      cardType: "Betriebssystem",
+    },
+    linux: {
+      ability: "Offenes Betriebssystem.",
+      description:
+        "Linux ist ein Open-Source-Betriebssystem, das für seine Stabilität, Sicherheit und Anpassbarkeit bekannt ist.",
+      cardType: "Betriebssystem",
+    },
+    docker: {
+      ability: "Containerisierung von Anwendungen.",
+      description:
+        "Docker ermöglicht es Entwicklern, Anwendungen in isolierten Containern zu erstellen und auszuführen.",
+      cardType: "Tool",
+    },
+    css: {
+      ability: "Gestaltung von Webseiten.",
+      description:
+        "CSS (Cascading Style Sheets) wird verwendet, um das Design und Layout von Webseiten zu gestalten.",
+      cardType: "Sprache",
+    },
+    js: {
+      ability: "Interaktive Webseitenfunktionen.",
+      description:
+        "JavaScript ist eine Programmiersprache, die verwendet wird, um interaktive und dynamische Funktionen auf Webseiten zu erstellen.",
+      cardType: "Sprache",
+    },
+    vue: {
+      ability: "Fortschrittliches JavaScript-Framework.",
+      description:
+        "Vue.js ist ein JavaScript-Framework, das Entwicklern hilft, moderne Benutzeroberflächen und SPAs zu erstellen.",
+      cardType: "Framework",
+    },
+    node: {
+      ability: "Serverseitige JavaScript-Ausführung.",
+      description:
+        "Node.js ist eine serverseitige JavaScript-Umgebung, die auf der V8 JavaScript Engine basiert.",
+      cardType: "Runtime",
+    },
+    bootstrap: {
+      ability: "Responsive Frontend-Framework.",
+      description:
+        "Bootstrap ist ein Frontend-Framework, das Entwicklern hilft, schnell responsive Webseiten zu erstellen.",
+      cardType: "Framework",
+    },
+    vscode: {
+      ability: "Code-Editor mit vielen Erweiterungen.",
+      description:
+        "Visual Studio Code ist ein leistungsstarker und flexibler Code-Editor mit umfangreichen Erweiterungsmöglichkeiten.",
+      cardType: "IDE",
+    },
+    vstudio: {
+      ability: "Entwicklungsumgebung für verschiedene Programmiersprachen.",
+      description:
+        "Visual Studio ist eine integrierte Entwicklungsumgebung (IDE) für verschiedene Programmiersprachen wie C#, C++, und Python.",
+      cardType: "IDE",
+    },
+  },
 };
