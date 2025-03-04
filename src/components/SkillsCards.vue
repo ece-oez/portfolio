@@ -1,13 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import ProjectCards from "../components/ProjectCards.vue";
-import TheHeading from "../components/TheHeading.vue";
 import TheArrow from "../components/TheArrow.vue";
-import { useProjectItems } from "@/config/projectItemsComposable";
-import { skillsItems } from "@/config/skillsItems";
-import { icon } from "@fortawesome/fontawesome-svg-core";
-
-const { projectItems } = useProjectItems();
+import { skillsItemsCards } from "@/config/skillsItemsCards";
 
 const skillsCardsElements = ref(null);
 
@@ -28,14 +22,14 @@ onMounted(() => {
   observer.observe(skillsCardsElements.value);
 });
 
-let projectsIdState = 1;
+let skillsIdState = 1;
 
 function slideRight() {
-  if (projectsIdState === projectItems.length - 2) {
+  if (skillsIdState === skillsItemsCards.length - 2) {
     return;
   }
-  projectsIdState = projectsIdState + 2;
-  document.getElementById(projectsIdState).scrollIntoView({
+  skillsIdState = skillsIdState + 2;
+  document.getElementById(skillsItemsCards[skillsIdState].text).scrollIntoView({
     behavior: "smooth",
     block: "nearest",
     inline: "center",
@@ -43,11 +37,11 @@ function slideRight() {
 }
 
 function slideLeft() {
-  if (projectsIdState === 1) {
+  if (skillsIdState === 1) {
     return;
   }
-  projectsIdState = projectsIdState - 2;
-  document.getElementById(projectsIdState).scrollIntoView({
+  skillsIdState = skillsIdState - 2;
+  document.getElementById(skillsItemsCards[skillsIdState].text).scrollIntoView({
     behavior: "smooth",
     block: "nearest",
     inline: "center",
@@ -58,39 +52,60 @@ function slideLeft() {
 <template>
   <div class="flex w-full items-center justify-around">
     <TheArrow
-      class="text-6xl lg:flex justify-center cursor-pointer text-shadow-500">
+      class="hidden text-6xl lg:flex justify-center cursor-pointer text-shadow-500">
       <i
         id="leftArrow"
-        class="fa-solid fa-circle-arrow-left hover:text-stone-400 hover:duration-300 not-focus:duration-300"
+        class="fa-solid fa-circle-arrow-left text-stone-600 hover:text-stone-400 hover:duration-300 not-focus:duration-300"
         @click="slideLeft()"></i>
     </TheArrow>
 
     <div
       ref="skillsCardsElements"
-      class="px-5 py-15 h-[150%] w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide">
+      class="xl:px-12 px-5 py-15 h-full w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide">
       <!-- cards -->
       <div
-        v-for="(skillsItem, index) in skillsItems"
-        class="border border-stone-400 p-5 rounded-xl bg-inputbox shadow-lg shadow-stone-900 w-700 h-full text-4xl flex flex-col items-center justify-center gap-2">
-        <div class="border-b pb-1 w-[200px] text-center">
+        v-for="skillsItem in skillsItemsCards"
+        :id="skillsItem.text"
+        class="h-140 xl:w-96 xl:h-150 p-5 rounded-lg bg-inputbox shadow-lg shadow-stone-500 text-4xl flex flex-col items-center gap-2">
+        <div
+          class="border border-b-2 border-r-2 border-b-stone-600 border-r-stone-600 shadow-2xl rounded-lg pb-1 w-[300px] text-center">
           {{ skillsItem.text }}
         </div>
-        <div class="flex items-center justify-center gap-2 text-sm">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
+        <div class="w-full flex justify-end gap-2 text-sm">
+          <i v-for="n in 10 - skillsItem.starCount" class="bi bi-star-fill"></i>
+          <i
+            v-for="n in skillsItem.starCount"
+            class="bi bi-star-fill text-yellow-300"></i>
         </div>
-        <i :class="skillsItem.icon" class="text-9xl"></i>
+        <div
+          class="w-full h-[250px] lg:h-[350px] rounded-sm shadow-lg shadow-stone-700 text-9xl flex items-center justify-center bg-stone-900 border border-t-stone-400 border-s-stone-400 border-b border-e border-b-stone-600 border-r-stone-600">
+          <div
+            class="bg-inputbox w-[90%] h-[90%] flex items-center justify-center rounded-sm">
+            <i :class="skillsItem.icon"></i>
+          </div>
+        </div>
+        <div class="text-xs text-start w-full">
+          {{ skillsItem.ability }}
+        </div>
+        <div
+          class="text-lg bg-stone-400 text-stone-600 rounded-md w-full h-2/5 lg:h-2/4 flex items-center justify-center">
+          <div class="bg-white w-[95%] h-[90%] rounded-md p-2 flex flex-col">
+            <div>[ {{ skillsItem.cardType }} ]</div>
+            <div class="text-sm">{{ skillsItem.description }}</div>
+
+            <div class="border-t flex gap-2 text-xs justify-end items-end">
+              <div>ATK/ {{ skillsItem.atk }}</div>
+              <div>DEF/ {{ skillsItem.def }}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <TheArrow class="text-6xl lg:flex justify-center cursor-pointer">
+    <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
       <i
         id="rightArrow"
-        class="fa-solid fa-circle-arrow-right hover:text-stone-400 hover:duration-300 not-focus:duration-300"
+        class="fa-solid fa-circle-arrow-right text-stone-600 hover:text-stone-400 hover:duration-300 not-focus:duration-300"
         @click="slideRight()"></i>
     </TheArrow>
   </div>

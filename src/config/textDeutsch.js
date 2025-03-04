@@ -62,7 +62,7 @@ export const textDeutsch = {
   },
   contact: {
     heading: "Kontakt",
-    text: "Ich freue mich darauf, von Ihnen zu hören! Wenn Sie mehr über meine Arbeit erfahren möchten oder an einer Zusammenarbeit interessiert sind, können Sie mich jederzeit über das Kontaktformular erreichen. Ich werde mich schnellstmöglich bei Ihnen melden.",
+    text: "Wenn Sie mehr über meine Arbeit erfahren möchten oder an einer Zusammenarbeit interessiert sind, können Sie mich jederzeit über das Kontaktformular erreichen. Ich werde mich schnellstmöglich bei Ihnen melden.",
   },
   form: {
     name: {

@@ -29,7 +29,7 @@ onMounted(() => {
     id="skills"
     class="text-white h-screen bg-hellgrau w-full flex flex-col">
     <div
-      class="h-full flex flex-col items-center justify-center 2xl:justify-normal pt-20">
+      class="h-full flex flex-col items-center justify-center 2xl:justify-normal pt-20 gap-5">
       <TheHeading class="text-stone-600">Skills</TheHeading>
 
       <div class="hidden 2xl:flex items-center h-full lg:gap-30 w-full">

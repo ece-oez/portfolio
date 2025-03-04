@@ -17,8 +17,7 @@ const props = defineProps({
     <h2 class="caveat text-5xl pb-3 border-b-2 border-stone-400">
       {{ props.title }}
     </h2>
-    <div
-      class="pt-4 h-4/5 xl:h-full xl:text-xl overflow-y-scroll scrollbar-hide">
+    <div class="pt-4 h-90 xl:text-xl overflow-y-scroll pe-5">
       {{ props.text }}
     </div>
   </div>

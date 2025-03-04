@@ -63,7 +63,7 @@ export const textEnglish = {
   },
   contact: {
     heading: "Contact",
-    text: "I look forward to hearing from you! If you would like to learn more about my work or are interested in collaborating, feel free to contact me via the contact form. I will get back to you as soon as possible.",
+    text: "If you would like to learn more about my work or are interested in collaborating, feel free to contact me via the contact form. I will get back to you as soon as possible.",
   },
   form: {
     name: {
