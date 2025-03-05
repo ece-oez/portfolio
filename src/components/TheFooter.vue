@@ -1,11 +1,10 @@
 <script setup>
-import { links } from "@/config/links";
 import FooterIcon from "./footer/FooterIcon.vue";
 import { useLanguageStore } from "@/stores/language";
+import { onMounted, ref } from "vue";
+import { useModalStore } from "@/stores/modal";
 
 const LanguageStore = useLanguageStore();
-
-import { onMounted, ref } from "vue";
 
 const footer = ref(false);
 
@@ -26,28 +25,7 @@ onMounted(() => {
   observer.observe(footer.value);
 });
 
-function showLinks() {
-  let copyText = ref("");
-
-  copyText.value += "Icons: ";
-
-  links.icons.forEach((element) => {
-    const currentLink = element[0] + ": " + element[1] + ", ";
-    console.log(currentLink);
-    copyText.value += currentLink;
-  });
-
-  copyText.value += "Pictures: ";
-
-  links.pictures.forEach((element) => {
-    const currentLink = element[0] + ": " + element[1] + ", ";
-    console.log(currentLink);
-    copyText.value += currentLink;
-  });
-
-  navigator.clipboard.writeText(copyText.value);
-  alert(LanguageStore.textObj.footer.alertMessage);
-}
+const modalStore = useModalStore();
 </script>
 <template>
   <div
@@ -72,7 +50,7 @@ function showLinks() {
         target="_blank"
         link="https://github.com/ece-oez" />
       <FooterIcon
-        @click="showLinks()"
+        @click="(modalStore.modalState = true), modalStore.showLinks()"
         icon="bi bi-link-45deg"
         class="cursor-pointer" />
     </div>
