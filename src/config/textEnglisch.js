@@ -67,12 +67,12 @@ export const textEnglish = {
   },
   form: {
     name: {
-      label: "Your Name",
+      label: "Name",
       placeholder: "John Doe",
     },
-    subject: {
-      label: "Subject",
-      placeholder: "Job Interview",
+    email: {
+      label: "Email",
+      placeholder: "doe@gmail.com",
     },
     message: {
       label: "Message",
@@ -83,6 +83,8 @@ export const textEnglish = {
   footer: {
     rights: "All rights reserved.",
     made: "Created by ",
+    alertMessage:
+      "Links copied to the clipboard and also logged in the console.",
   },
 
   skills: {

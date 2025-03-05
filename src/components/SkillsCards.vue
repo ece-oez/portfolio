@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import TheArrow from "../components/TheArrow.vue";
-import { staticSkillsItemsCards } from "@/config/skillsItemsCards";
+import { skillsTextCards } from "@/config/skillsTextCards";
 import { useSkillsItemsCards } from "@/config/skillsItemsCardsComposable";
 
 const { skillsItemsCards } = useSkillsItemsCards();
@@ -28,17 +28,15 @@ onMounted(() => {
 let skillsIdState = 1;
 
 function slideRight() {
-  if (skillsIdState === staticSkillsItemsCards.length - 2) {
+  if (skillsIdState === skillsTextCards.length - 2) {
     return;
   }
   skillsIdState = skillsIdState + 2;
-  document
-    .getElementById(staticSkillsItemsCards[skillsIdState].text)
-    .scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
+  document.getElementById(skillsTextCards[skillsIdState].text).scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
 }
 
 function slideLeft() {
@@ -46,13 +44,11 @@ function slideLeft() {
     return;
   }
   skillsIdState = skillsIdState - 2;
-  document
-    .getElementById(staticSkillsItemsCards[skillsIdState].text)
-    .scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
-    });
+  document.getElementById(skillsTextCards[skillsIdState].text).scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
 }
 </script>
 
@@ -68,12 +64,12 @@ function slideLeft() {
 
     <div
       ref="skillsCardsElements"
-      class="xl:px-12 px-5 py-15 h-full w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide">
+      class="xl:px-12 px-5 py-15 h-full w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide snap-x">
       <!-- cards -->
       <div
         v-for="skillsItem in skillsItemsCards"
         :id="skillsItem.text"
-        class="h-140 xl:w-96 xl:h-150 p-5 rounded-lg bg-inputbox shadow-lg shadow-stone-500 text-4xl flex flex-col items-center gap-2">
+        class="snap-center h-140 xl:w-96 xl:h-150 p-5 rounded-lg bg-inputbox shadow-lg shadow-stone-500 text-4xl flex flex-col items-center gap-2">
         <div
           class="border border-b-2 border-r-2 border-b-stone-600 border-r-stone-600 shadow-2xl rounded-lg pb-1 w-[300px] text-center">
           {{ skillsItem.text }}

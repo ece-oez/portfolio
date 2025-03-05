@@ -22,48 +22,52 @@ onMounted(() => {
   // Tell the observer which elements to track
   observer.observe(formular.value);
 });
-
-const name = ref(null);
-const subject = ref(null);
-const message = ref(null);
 </script>
 <template>
   <div ref="formular">
     <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
       class="w-full flex flex-col gap-4 p-3 md:p-4 bg-inputbox rounded-2xl shadow-xl shadow-stone-600">
+      <input
+        type="hidden"
+        name="access_key"
+        value="9b46dc84-bc0b-430d-8998-984d161363d0" />
+
       <label for="name" class="text-stone-300">
         {{ LanguageStore.textObj.form.name.label }}</label
       >
       <input
-        ref="name"
         type="text"
+        name="name"
         :placeholder="LanguageStore.textObj.form.name.placeholder"
-        class="bg-dunkelgrau text-stone-400 p-2 px-5 rounded-lg" />
+        class="bg-dunkelgrau text-stone-400 p-2 px-5 rounded-lg"
+        required />
       <label for="betreff" class="text-stone-300">{{
-        LanguageStore.textObj.form.subject.label
+        LanguageStore.textObj.form.email.label
       }}</label>
       <input
-        ref="subject"
         type="text"
-        :placeholder="LanguageStore.textObj.form.subject.placeholder"
-        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg" />
+        name="email"
+        :placeholder="LanguageStore.textObj.form.email.placeholder"
+        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg"
+        required />
 
       <label for="nachricht" class="text-stone-300">{{
         LanguageStore.textObj.form.message.label
       }}</label>
       <textarea
-        ref="message"
-        id="subject"
         :placeholder="LanguageStore.textObj.form.message.placeholder"
-        style="height: 150px"
-        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none"></textarea>
+        name="message"
+        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none"
+        required></textarea>
 
-      <a
-        href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
-        class="flex gap-3 p-2 rounded-lg bg-white text-stone-600 cursor-pointer w-max">
+      <button
+        type="submit"
+        class="flex gap-3 p-2 rounded-lg bg-white text-stone-600 cursor-pointer w-max hover:text-white hover:bg-stone-500 hover:duration-300 not-focus:duration-300">
         {{ LanguageStore.textObj.form.button }}
         <i class="bi bi-envelope-plus-fill"></i>
-      </a>
+      </button>
     </form>
   </div>
 </template>

@@ -77,7 +77,7 @@ function slideLeft() {
 
       <div
         ref="cardsElements"
-        class="mx-3 xl:mx-6 pt-5 h-full w-full flex flex-row gap-8 overflow-x-scroll xl:px-12 scrollbar-hide">
+        class="mx-3 xl:mx-6 pt-5 h-full w-full flex flex-row gap-8 overflow-x-scroll xl:px-12 scrollbar-hide snap-x">
         <div v-for="(projectsItem, index) in projectItems">
           <ProjectCards
             :index="index"
@@ -90,7 +90,7 @@ function slideLeft() {
             :month="projectsItem.month"
             :year="projectsItem.year"
             :technologies="projectsItem.technologies"
-            class="cursor-pointer" />
+            class="cursor-pointer snap-center" />
         </div>
       </div>
 

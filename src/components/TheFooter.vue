@@ -1,4 +1,5 @@
 <script setup>
+import { links } from "@/config/links";
 import FooterIcon from "./footer/FooterIcon.vue";
 import { useLanguageStore } from "@/stores/language";
 
@@ -24,6 +25,29 @@ onMounted(() => {
   // Tell the observer which elements to track
   observer.observe(footer.value);
 });
+
+function showLinks() {
+  let copyText = ref("");
+
+  copyText.value += "Icons: ";
+
+  links.icons.forEach((element) => {
+    const currentLink = element[0] + ": " + element[1] + ", ";
+    console.log(currentLink);
+    copyText.value += currentLink;
+  });
+
+  copyText.value += "Pictures: ";
+
+  links.pictures.forEach((element) => {
+    const currentLink = element[0] + ": " + element[1] + ", ";
+    console.log(currentLink);
+    copyText.value += currentLink;
+  });
+
+  navigator.clipboard.writeText(copyText.value);
+  alert(LanguageStore.textObj.footer.alertMessage);
+}
 </script>
 <template>
   <div
@@ -41,9 +65,16 @@ onMounted(() => {
         link="mailto:oezmen.ece@gmail.com" />
       <FooterIcon
         icon="bi bi-linkedin"
+        target="_blank"
         link="https://linkedin.com/in/eceoezmen" />
-      <FooterIcon icon="bi bi-github" link="https://github.com/ece-oez" />
-      <FooterIcon icon="bi bi-link-45deg" link="oezmen" />
+      <FooterIcon
+        icon="bi bi-github"
+        target="_blank"
+        link="https://github.com/ece-oez" />
+      <FooterIcon
+        @click="showLinks()"
+        icon="bi bi-link-45deg"
+        class="cursor-pointer" />
     </div>
 
     <div class="text-sm sm:text-md md:text-lg lg:text-xl">

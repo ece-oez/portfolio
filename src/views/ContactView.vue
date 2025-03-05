@@ -11,7 +11,8 @@ const LanguageStore = useLanguageStore();
 <template>
   <section
     id="contact"
-    class="text-white bg-hellgrau h-screen w-full flex flex-col">
+    class="text-white bg-hellgrau h-screen w-full flex flex-col"
+    :class="{ 'opacity-85 blur-lg overflow-y-auto': false }">
     <div class="h-full flex flex-col xl:pt-30">
       <div class="xl:flex xl:py-10 xl:h-2/3">
         <div

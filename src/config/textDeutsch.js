@@ -66,12 +66,12 @@ export const textDeutsch = {
   },
   form: {
     name: {
-      label: "Ihr Name",
+      label: "Name",
       placeholder: "Max Mustermann",
     },
-    subject: {
-      label: "Betreff",
-      placeholder: "Vorstellungsgespräch",
+    email: {
+      label: "Email",
+      placeholder: "mustermann@gmail.com",
     },
     message: {
       label: "Nachricht",
@@ -83,6 +83,8 @@ export const textDeutsch = {
   footer: {
     rights: " Alle Rechte vorbehalten.",
     made: "Erstellt von ",
+    alertMessage:
+      "Links in Zwischenablage koopiert und auch in der Konsole ausgegeben.",
   },
 
   skills: {

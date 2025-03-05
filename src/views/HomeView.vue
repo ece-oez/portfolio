@@ -7,8 +7,11 @@ const LanguageStore = useLanguageStore();
 </script>
 
 <template>
-  <section id="home" class="bild text-white h-screen w-full flex flex-col">
-    <div class="h-full flex flex-col items-center justify-center pt-20">
+  <section
+    id="home"
+    class="bild text-white h-screen w-full flex flex-col snap-y">
+    <div
+      class="h-full flex flex-col items-center justify-center pt-20 snap-center">
       <TheTerminal class="w-2/3 xl:w-1/2" />
 
       <div
