@@ -61,11 +61,11 @@ function slideLeft() {
     class="text-white h-screen flex flex-col justify-center gap-9 pt-6 xl:gap-2 bild">
     <TheHeading> Projects</TheHeading>
 
-    <!-- <SearchBar class="ms-4" />
+    <SearchBar class="ms-4" />
     <ProjectTags
       class="ms-4 cursor-pointer hover:bg-amber-50 hover:duration-300 hover:text-black not-focus:duration-300"
       >Javascript</ProjectTags
-    > -->
+    >
 
     <div class="flex w-full items-center justify-around">
       <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">

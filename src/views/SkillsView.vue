@@ -32,7 +32,7 @@ onMounted(() => {
       class="h-full flex flex-col items-center justify-center 2xl:justify-normal pt-20 gap-5">
       <TheHeading class="text-stone-600">Skills</TheHeading>
 
-      <div class="hidden 2xl:flex items-center h-full lg:gap-30 w-full">
+      <div class="hidden max-2xl:flex items-center h-full lg:gap-30 w-full">
         <TheSphere
           class="z-50"
           v-for="aboutmeItem in skillsItems"
@@ -48,7 +48,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <SkillsCards class="2xl:hidden"></SkillsCards>
+      <SkillsCards class="max-2xl:hidden"></SkillsCards>
     </div>
   </section>
 </template>

@@ -14,7 +14,7 @@ const showTooltip = ref(false);
   <div class="text-white w-full h-1/12 flex justify-around">
     <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
-        <img src="../../logo.png" alt="" class="w-20" />
+        <img src="../assets/img/logo.png" alt="" class="w-20" />
       </a>
     </div>
 
@@ -38,7 +38,7 @@ const showTooltip = ref(false);
     </div>
 
     <MenuItems
-      class="text-xl uppercase xl:flex items-center justify-around w-full h-full hidden" />
+      class="text-sm max-2xl:text-xl uppercase xl:flex items-center justify-around w-full h-full hidden" />
 
     <button @click="showMenuState = !showMenuState" class="xl:hidden">
       <IconsBorder icon="bi bi-list"></IconsBorder>
