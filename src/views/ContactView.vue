@@ -4,6 +4,8 @@ import ContactFormular from "../components/ContactFormular.vue";
 import TextElement from "@/components/TextElement.vue";
 import TheHeading from "@/components/TheHeading.vue";
 import { useLanguageStore } from "@/stores/language";
+import { useModalStore } from "@/stores/modal";
+const modalStore = useModalStore();
 
 const LanguageStore = useLanguageStore();
 </script>
@@ -12,9 +14,9 @@ const LanguageStore = useLanguageStore();
   <section
     id="contact"
     class="text-white bg-hellgrau h-screen w-full flex flex-col"
-    :class="{ 'opacity-85 blur-lg overflow-y-auto': false }">
+    :class="{ 'opacity-85 blur-lg overflow-y-auto': modalStore.modalState }">
     <div class="h-full flex flex-col xl:pt-30">
-      <div class="xl:flex xl:py-10 xl:h-2/3">
+      <div class="xl:flex xl:h-2/3">
         <div
           class="flex flex-col items-center pt-20 px-20 text-6xl text-stone-600 xl:w-3/4">
           <TheHeading> {{ LanguageStore.textObj.contact.heading }} </TheHeading>

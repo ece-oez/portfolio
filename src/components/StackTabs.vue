@@ -35,8 +35,8 @@ onMounted(() => {
 <template>
   <div
     ref="parentElement"
-    class="bg-white w-2/4 flex flex-col mac-shadow rounded-3xl">
-    <div class="w-full h-10 flex justify-around items-center gap-5 p-6">
+    class="bg-white w-[50%] flex flex-col mac-shadow rounded-3xl">
+    <div class="w-full h-max flex justify-around items-center gap-5 p-3">
       <IconsLeft />
       <SearchTab> {{ tabStore.currentTabUrl }} </SearchTab>
       <IconsRight />

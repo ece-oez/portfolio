@@ -58,17 +58,17 @@ function slideLeft() {
 <template>
   <section
     id="projects"
-    class="text-white h-screen flex flex-col justify-center gap-9 pt-6 xl:gap-2 bild">
+    class="text-white w-screen h-screen flex flex-col justify-center items-center gap-10 pt-5 xl:gap-2 bild">
     <TheHeading> Projects</TheHeading>
 
-    <SearchBar class="ms-4" />
+    <!-- <SearchBar class="ms-4" />
     <ProjectTags
       class="ms-4 cursor-pointer hover:bg-amber-50 hover:duration-300 hover:text-black not-focus:duration-300"
       >Javascript</ProjectTags
-    >
+    > -->
 
-    <div class="flex w-full items-center justify-around">
-      <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
+    <div class="flex w-full items-center justify-around px-10">
+      <TheArrow class="hidden text-6xl 2xl:flex justify-center cursor-pointer">
         <i
           id="leftArrow"
           class="fa-solid fa-circle-arrow-left hover:text-stone-400 hover:duration-300 not-focus:duration-300"
@@ -77,7 +77,7 @@ function slideLeft() {
 
       <div
         ref="cardsElements"
-        class="mx-3 xl:mx-6 pt-5 h-full w-full flex flex-row gap-8 overflow-x-scroll xl:px-12 scrollbar-hide snap-x">
+        class="flex flex-row gap-8 overflow-x-scroll 2xl:px-10 scrollbar-hide snap-x">
         <div v-for="(projectsItem, index) in projectItems">
           <ProjectCards
             :index="index"
@@ -94,7 +94,7 @@ function slideLeft() {
         </div>
       </div>
 
-      <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
+      <TheArrow class="hidden text-6xl 2xl:flex justify-center cursor-pointer">
         <i
           id="rightArrow"
           class="fa-solid fa-circle-arrow-right hover:text-stone-400 hover:duration-300 not-focus:duration-300"

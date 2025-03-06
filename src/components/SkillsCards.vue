@@ -55,7 +55,7 @@ function slideLeft() {
 <template>
   <div class="flex w-full items-center justify-around">
     <TheArrow
-      class="hidden text-6xl lg:flex justify-center cursor-pointer text-shadow-500">
+      class="hidden text-6xl xl:flex justify-center cursor-pointer text-shadow-500">
       <i
         id="leftArrow"
         class="fa-solid fa-circle-arrow-left text-stone-600 hover:text-stone-400 hover:duration-300 not-focus:duration-300"
@@ -64,7 +64,7 @@ function slideLeft() {
 
     <div
       ref="skillsCardsElements"
-      class="xl:px-12 px-5 py-15 h-full w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide snap-x">
+      class="xl:px-12 px-5 py-15 xl:py-2 h-full w-full flex flex-row gap-8 overflow-x-scroll scrollbar-hide snap-x">
       <!-- cards -->
       <div
         v-for="skillsItem in skillsItemsCards"
@@ -105,7 +105,7 @@ function slideLeft() {
       </div>
     </div>
 
-    <TheArrow class="hidden text-6xl lg:flex justify-center cursor-pointer">
+    <TheArrow class="hidden text-6xl xl:flex justify-center cursor-pointer">
       <i
         id="rightArrow"
         class="fa-solid fa-circle-arrow-right text-stone-600 hover:text-stone-400 hover:duration-300 not-focus:duration-300"

@@ -45,7 +45,7 @@ function flipBubble() {
   <div
     ref="spheres"
     @click="flipBubble()"
-    class="rounded-full items-center flex flex-row justify-center gap-3 sphere-shadow-dark-top bg-inputbox cursor-pointer">
+    class="rounded-full items-center flex flex-row justify-center gap-3 bg-radial-[at_25%_25%] from-stone-100 to-stone-900 to-75% cursor-pointer">
     <div class="text-stone-300 text-center">
       <div v-show="showIcon" :class="props.iconWidth">
         <i :class="props.icon"></i>

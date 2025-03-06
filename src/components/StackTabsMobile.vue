@@ -34,7 +34,7 @@ onMounted(() => {
 <template>
   <div
     ref="parentElement"
-    class="w-5/6 lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
+    class="w-[95%] lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
     <WebPage
       v-for="aboutmeItem in items"
       :tab="aboutmeItem.tab"
@@ -42,8 +42,8 @@ onMounted(() => {
       :text="aboutmeItem.text" />
 
     <div
-      class="flex w-6/7 p-2 self-center gap-2 overflow-x-scroll scrollbar-hide">
-      <SearchTab v-for="aboutmeItem in items" class="w-3/4">
+      class="flex w-6/7 p-2 self-center gap-2 overflow-x-scroll scrollbar-hide snap-x snap-proximity">
+      <SearchTab v-for="aboutmeItem in items" class="snap-center">
         <button @click="tabStore.currentTab = aboutmeItem.tab">
           {{ aboutmeItem.url }}
         </button>

@@ -30,9 +30,7 @@ const tabStore = useTabStore();
 </script>
 
 <template>
-  <div
-    ref="parentElement"
-    class="lg:w-[349px] xl:w-[415px] flex items-center justify-center">
+  <div ref="parentElement" class="flex items-center justify-center">
     <img
       :src="me"
       class="shadow-2xl rounded-2xl slide-in"

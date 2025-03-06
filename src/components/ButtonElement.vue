@@ -7,7 +7,7 @@ let props = defineProps({
   link: String,
 });
 
-const parentElement = ref(null);
+const homeBtnElements = ref(null);
 
 onMounted(() => {
   // Create the observer
@@ -23,18 +23,16 @@ onMounted(() => {
   });
 
   // Tell the observer which elements to track
-  observer.observe(parentElement.value);
+  observer.observe(homeBtnElements.value);
 });
 </script>
 <template>
   <a
-    ref="parentElement"
+    ref="homeBtnElements"
     :href="props.link"
-    class="bg-white w-1/12 h-1/2 rounded-md flex items-center justify-center gap-2">
-    <button class="cursor-pointer">
-      {{ props.text }}
-      <i :class="props.icon"></i>
-    </button>
+    class="cursor-pointer bg-white hover:bg-amber-500 hover:scale-110 w-70 h-14 rounded-lg xl:rounded-sm flex items-center justify-around xl:justify-center px-10 xl:px-0 gap-4 uppercase text-sm xl:text-md text-neutral-500 hover:text-stone-100 hover:duration-300 not-focus:duration-300">
+    {{ props.text }}
+    <i :class="props.icon"></i>
   </a>
 </template>
 <style scoped>

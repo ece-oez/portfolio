@@ -24,7 +24,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div ref="formular">
+  <div class="contact-container" ref="formular">
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
@@ -94,6 +94,26 @@ onMounted(() => {
     100% {
       transform: translate(0px, 0px);
     }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  form {
+    height: max;
+  }
+  .contact-container {
+    padding: 0;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  form {
+    height: max;
+  }
+  .contact-container {
+    padding: 90px;
   }
 }
 </style>

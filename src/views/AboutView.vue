@@ -9,16 +9,15 @@ const tabStore = useTabStore();
 </script>
 
 <template>
-  <section id="aboutme" class="text-stone-600 h-screen bild flex flex-col">
-    <div
-      class="h-full w-full pt-15 xl:pt-5 flex flex-col items-center justify-center gap-15">
-      <TheHeading>About Me</TheHeading>
+  <section
+    id="aboutme"
+    class="w-screen h-screen flex flex-col justify-center items-center text-stone-600 bild pt-5 gap-2">
+    <TheHeading>About Me</TheHeading>
 
-      <div class="h-2/3 w-full flex flex-row justify-around">
-        <InsertPictures class="hidden lg:flex"></InsertPictures>
-        <StackTabs class="xl:flex hidden" />
-        <StackTabsMobile class="xl:hidden" />
-      </div>
+    <div class="w-full flex flex-row justify-around">
+      <InsertPictures class="hidden 2xl:flex w-[25%]"></InsertPictures>
+      <StackTabs class="hidden xl:flex" />
+      <StackTabsMobile class="xl:hidden" />
     </div>
   </section>
 </template>

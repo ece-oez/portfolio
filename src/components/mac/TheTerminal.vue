@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <div
     ref="parentElement"
-    class="bg-black h-1/4 lg:h-2/4 xl:h-1/4 w-2/3 md:w-2/3 lg:w-1/2 flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500">
+    class="bg-black w-[95%] lg:w-[50%] h-[20%] xl:h-[30%] flex flex-col rounded-2xl shadow-lg shadow-neutral-700 border-double border-3 border-stone-500">
     <div
       class="bg-stone-700 flex justify-between items-center p-1 rounded-t-2xl">
       <ThreeDots />
@@ -38,7 +38,7 @@ onMounted(() => {
       <ThreeDots class="invisible" />
     </div>
 
-    <h1 aria-label="I'm a developer" class="noto-sans pe-6 xl:pe-0">
+    <h1 aria-label="I'm a developer" class="noto-sans">
       I'm a&nbsp;<span class="typewriter xl:thick"></span>
     </h1>
   </div>

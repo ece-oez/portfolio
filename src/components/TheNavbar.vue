@@ -11,7 +11,8 @@ const languageStore = useLanguageStore();
 const showTooltip = ref(false);
 </script>
 <template>
-  <div class="text-white w-full h-1/12 flex justify-around">
+  <div
+    class="top-0 fixed bg-navbar z-[9000] opacity-90 text-white w-full h-1/12 flex justify-around">
     <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
         <img src="../assets/img/logo.png" alt="" class="w-20" />
@@ -38,7 +39,7 @@ const showTooltip = ref(false);
     </div>
 
     <MenuItems
-      class="text-sm max-2xl:text-xl uppercase xl:flex items-center justify-around w-full h-full hidden" />
+      class="w-full h-full uppercase text-md hidden 2xl:flex items-center justify-around" />
 
     <button @click="showMenuState = !showMenuState" class="xl:hidden">
       <IconsBorder icon="bi bi-list"></IconsBorder>
