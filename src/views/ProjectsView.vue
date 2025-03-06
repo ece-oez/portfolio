@@ -77,7 +77,7 @@ function slideLeft() {
 
       <div
         ref="cardsElements"
-        class="flex flex-row gap-8 overflow-x-scroll 2xl:px-10 scrollbar-hide snap-x">
+        class="flex flex-row gap-2 2xl:gap-8 overflow-x-scroll 2xl:px-10 scrollbar-hide snap-x">
         <div v-for="(projectsItem, index) in projectItems">
           <ProjectCards
             :index="index"

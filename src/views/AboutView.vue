@@ -11,7 +11,7 @@ const tabStore = useTabStore();
 <template>
   <section
     id="aboutme"
-    class="w-screen h-screen flex flex-col justify-center items-center text-stone-600 bild pt-5 gap-2">
+    class="w-screen h-screen flex flex-col justify-end items-center text-stone-600 bild pt-10 gap-2">
     <TheHeading>About Me</TheHeading>
 
     <div class="w-full flex flex-row justify-around">

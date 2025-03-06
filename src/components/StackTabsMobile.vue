@@ -34,7 +34,7 @@ onMounted(() => {
 <template>
   <div
     ref="parentElement"
-    class="w-[95%] lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
+    class="w-[90%] lg:w-1/2 bg-white flex flex-col mac-shadow rounded-3xl">
     <WebPage
       v-for="aboutmeItem in items"
       :tab="aboutmeItem.tab"

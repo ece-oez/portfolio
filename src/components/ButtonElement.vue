@@ -30,7 +30,7 @@ onMounted(() => {
   <a
     ref="homeBtnElements"
     :href="props.link"
-    class="cursor-pointer bg-white hover:bg-amber-500 hover:scale-110 w-70 h-14 rounded-lg xl:rounded-sm flex items-center justify-around xl:justify-center px-10 xl:px-0 gap-4 uppercase text-sm xl:text-md text-neutral-500 hover:text-stone-100 hover:duration-300 not-focus:duration-300">
+    class="cursor-pointer bg-white hover:bg-stone-500 hover:scale-110 w-70 h-14 rounded-lg xl:rounded-sm flex items-center justify-around xl:justify-center px-10 xl:px-0 gap-4 uppercase text-sm xl:text-md text-neutral-500 hover:text-stone-100 hover:duration-300 not-focus:duration-300">
     {{ props.text }}
     <i :class="props.icon"></i>
   </a>

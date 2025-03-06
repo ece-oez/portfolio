@@ -21,33 +21,31 @@ const showTooltip = ref(false);
 
     <button @click="showTooltip = !showTooltip">
       <IconsBorder icon="bi bi-translate"> </IconsBorder>
+      <div
+        v-if="showTooltip"
+        class="tooltiptext absolute -translate-x-[30%] border border-stone-600 bg-stone-800 w-30 text-center rounded-lg">
+        <div
+          @click="(languageStore.currentLanguage = 'de'), (showTooltip = false)"
+          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
+          Deutsch
+        </div>
+        <div
+          @click="(languageStore.currentLanguage = 'en'), (showTooltip = false)"
+          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
+          Englisch
+        </div>
+      </div>
     </button>
-
-    <div
-      v-if="showTooltip"
-      class="tooltiptext absolute translate-y-18 border border-stone-600 bg-stone-800 w-30 text-center rounded-lg">
-      <div
-        @click="(languageStore.currentLanguage = 'de'), (showTooltip = false)"
-        class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
-        Deutsch
-      </div>
-      <div
-        @click="(languageStore.currentLanguage = 'en'), (showTooltip = false)"
-        class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
-        Englisch
-      </div>
-    </div>
 
     <MenuItems
       class="w-full h-full uppercase text-md hidden 2xl:flex items-center justify-around" />
 
     <button @click="showMenuState = !showMenuState" class="xl:hidden">
       <IconsBorder icon="bi bi-list"></IconsBorder>
+      <MenuItems
+        v-if="showMenuState"
+        class="absolute -translate-x-[45%] sm:-translate-x-[35%] flex flex-col gap-2 bg-stone-800 border rounded-2xl border-stone-600" />
     </button>
-
-    <MenuItems
-      v-if="showMenuState"
-      class="absolute right-0 top-17 flex flex-col p-5 gap-2 bg-stone-500 w-1/2 border rounded-2xl border-stone-300" />
   </div>
 </template>
 <style scoped>

@@ -9,10 +9,10 @@ const LanguageStore = useLanguageStore();
 <template>
   <section
     id="home"
-    class="w-screen h-screen flex flex-col justify-center items-center gap-60 xl:gap-10 bg-cover bg-center bild">
+    class="w-screen h-screen flex flex-col justify-center items-center gap-30 xl:gap-10 bg-cover bg-center bild">
     <TheTerminal />
 
-    <div class="flex flex-col xl:flex-row gap-6 xl:gap-16">
+    <div class="flex flex-col xl:flex-row gap-10 xl:gap-16">
       <ButtonElements
         icon="bi bi-person-plus-fill"
         :text="LanguageStore.textObj.home.contactBtn"
