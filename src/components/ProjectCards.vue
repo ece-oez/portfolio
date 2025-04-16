@@ -24,16 +24,16 @@ const props = defineProps({
       <span class="text-md xl:text-2xl flex justify-center items-center">
         {{ props.title }}
       </span>
-      <a :href="props.link">
+      <a target="_blank" :href="props.link">
         <IconsBorder icon="fa-solid fa-link" class="text-sm"></IconsBorder>
       </a>
-      <a :href="props.github">
+      <a target="_blank" :href="props.github">
         <IconsBorder icon="bi bi-github" class="text-sm" />
       </a>
     </div>
 
     <div
-      class="text-sm xl:text-lg mt-6 border-t pt-6 h-40 xl:h-50 overflow-hidden">
+      class="text-sm xl:text-lg mt-6 border-t pt-6 h-40 xl:h-50 overflow-y-scroll scrollbar-hide">
       {{ props.beschreibung }}
     </div>
 

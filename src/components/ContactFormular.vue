@@ -59,7 +59,7 @@ onMounted(() => {
       <textarea
         :placeholder="LanguageStore.textObj.form.message.placeholder"
         name="message"
-        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none"
+        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none scrollbar-hide"
         required></textarea>
 
       <button

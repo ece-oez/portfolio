@@ -6,7 +6,7 @@ export const projectItems = [
     github: "https://github.com/ece-oez/eier_uhr",
     beschreibung: "Eier-Uhr ...",
     month: "Februar",
-    year: "2022",
+    year: "2023",
     technologies: [
       "fa-brands fa-html5",
       "fa-brands fa-css3",
@@ -19,8 +19,8 @@ export const projectItems = [
     link: "https://project-schere-stein-papier.netlify.app",
     github: "https://github.com/ece-oez/schere_stein_papier",
     beschreibung: "Schere-Stein-Papier ...",
-    month: "Februar",
-    year: "2022",
+    month: "März",
+    year: "2023",
     technologies: [
       "fa-brands fa-html5",
       "fa-brands fa-css3",
@@ -33,8 +33,8 @@ export const projectItems = [
     link: "https://ece-oez.github.io/whack-a-mole/",
     github: "https://github.com/ece-oez/whack-a-mole",
     beschreibung: "Schere-Stein-Papier ...",
-    month: "Februar",
-    year: "2022",
+    month: "juni",
+    year: "2023",
     technologies: [
       "fa-brands fa-html5",
       "fa-brands fa-css3",
@@ -44,11 +44,11 @@ export const projectItems = [
   {
     icon: "bi bi-chat-dots-fill",
     title: "Chat-Web-App",
-    link: "https://eier-uhr.netlify.app",
+    link: "",
     github: "https://github.com/ece-oez/chat-web-app",
     beschreibung: "Messenger App ...",
-    month: "Februar",
-    year: "2022",
+    month: "August",
+    year: "2024",
     technologies: [
       "fa-brands fa-html5",
       "fa-brands fa-css3",
@@ -60,12 +60,12 @@ export const projectItems = [
   {
     icon: "fa-solid fa-book-bookmark",
     title: "Hardware-Asset-Management",
-    link: "https://eier-uhr.netlify.app",
+    link: "",
     github: "https://github.com/ece-oez/hardware-asset-management",
     beschreibung:
       "Stellt einen Unterbereich der IT Verwaltung dar, der sich exklusiv auf die physischen Komponenten der Informationstechnologie konzentriert.",
-    month: "Februar",
-    year: "2022",
+    month: "Mai",
+    year: "2025",
     technologies: [
       "fa-brands fa-html5",
       "fa-brands fa-css3",

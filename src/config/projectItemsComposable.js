@@ -12,7 +12,7 @@ export function useProjectItems() {
         github: "https://github.com/ece-oez/eier_uhr",
         beschreibung: text.projects.eieruhr.beschreibung,
         month: text.projects.eieruhr.month,
-        year: "2022",
+        year: "2023",
         technologies: [
           "fa-brands fa-html5",
           "fa-brands fa-css3",
@@ -26,7 +26,7 @@ export function useProjectItems() {
         github: "https://github.com/ece-oez/schere_stein_papier",
         beschreibung: text.projects.scheresteinpapier.beschreibung,
         month: text.projects.scheresteinpapier.month,
-        year: "2022",
+        year: "2023",
         technologies: [
           "fa-brands fa-html5",
           "fa-brands fa-css3",
@@ -40,7 +40,7 @@ export function useProjectItems() {
         github: "https://github.com/ece-oez/whack-a-mole",
         beschreibung: text.projects.whackamole.beschreibung,
         month: text.projects.whackamole.month,
-        year: "2022",
+        year: "2023",
         technologies: [
           "fa-brands fa-html5",
           "fa-brands fa-css3",
@@ -54,7 +54,7 @@ export function useProjectItems() {
         github: "https://github.com/ece-oez/chat-web-app",
         beschreibung: text.projects.chatwebapp.beschreibung,
         month: text.projects.chatwebapp.month,
-        year: "2022",
+        year: "2024",
         technologies: [
           "fa-brands fa-html5",
           "fa-brands fa-css3",

@@ -32,29 +32,29 @@ export const textEnglish = {
   projects: {
     eieruhr: {
       title: "Egg-Timer",
-      beschreibung: "",
+      beschreibung: "This app functions as a digital egg timer, allowing you to set precise timers for boiling eggs or other time-sensitive tasks.",
       month: "February",
     },
     scheresteinpapier: {
       title: "Rock, Paper, Scissors",
-      beschreibung: "",
-      month: "February",
+      beschreibung: "This app lets you play Rock-Paper-Scissors against a friend or the computer for quick and fun decision-making or entertainment.",
+      month: "March",
     },
     whackamole: {
       title: "Whack-A-Mole",
-      beschreibung: "",
-      month: "February",
+      beschreibung: "This app applies the concept of object-oriented programming (OOP) by modeling various elements like moles, the hammer, and the game field as independent objects with their own properties and methods.",
+      month: "June",
     },
     chatwebapp: {
       title: "Chat-Web-App",
-      beschreibung: "",
-      month: "February",
+      beschreibung: "This is a chat web app that uses Firebase as its backend database to store and sync messages in real-time. Firebase allows for seamless data updates across all users, ensuring that messages are delivered instantly and the app remains responsive.",
+      month: "August",
     },
     ham: {
       title: "Hardware-Asset-Management",
       beschreibung:
-        "Stellt einen Unterbereich der IT Verwaltung dar, der sich exklusiv auf die physischen Komponenten der Informationstechnologie konzentriert.",
-      month: "August",
+        "A subfield of IT management that focuses exclusively on the physical components of information technology.",
+      month: "May",
     },
   },
   responsive: {

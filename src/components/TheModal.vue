@@ -3,7 +3,8 @@ import { useModalStore } from "@/stores/modal";
 const modalStore = useModalStore();
 </script>
 <template>
-  <div
+  <div class="">
+    <div
     v-if="modalStore.modalState"
     class="absolute p-4 sm:left-[8%] md:left-[12%] lg:left-[25%] -translate-y-180 text-xs 2xl:text-sm sm:w-150 2xl:w-250 xl:h-100 rounded-xl opacity-100 bg-white flex flex-col items-center gap-10">
     <div id="modalText">
@@ -32,4 +33,6 @@ const modalStore = useModalStore();
       </button> -->
     </div>
   </div>
+  </div>
+  
 </template>

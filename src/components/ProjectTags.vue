@@ -3,22 +3,22 @@ import { onMounted, ref } from "vue";
 
 const tagElement = ref(null);
 
-onMounted(() => {
-  // Create the observer
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio > 0.8) {
-      // Add the animation class
-      entries[0].target.classList.add("opacity-elements");
-      entries[0].target.classList.remove("scale-0");
-      return;
-    }
-    entries[0].target.classList.add("scale-0");
-    entries[0].target.classList.remove("opacity-elements");
-  });
+// onMounted(() => {
+//   // Create the observer
+//   const observer = new IntersectionObserver((entries) => {
+//     if (entries[0].intersectionRatio > 0.8) {
+//       // Add the animation class
+//       entries[0].target.classList.add("opacity-elements");
+//       entries[0].target.classList.remove("scale-0");
+//       return;
+//     }
+//     entries[0].target.classList.add("scale-0");
+//     entries[0].target.classList.remove("opacity-elements");
+//   });
 
-  // Tell the observer which elements to track
-  observer.observe(tagElement.value);
-});
+//   // Tell the observer which elements to track
+//   observer.observe(tagElement.value);
+// });
 </script>
 <template>
   <div

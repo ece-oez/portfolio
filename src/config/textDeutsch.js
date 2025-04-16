@@ -31,29 +31,29 @@ export const textDeutsch = {
   projects: {
     eieruhr: {
       title: "Eier-Uhr",
-      beschreibung: "",
+      beschreibung: "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern oder andere zeitgesteuerte Aufgaben einzustellen.",
       month: "Februar",
     },
     scheresteinpapier: {
       title: "Schere-Stein-Papier",
-      beschreibung: "",
-      month: "Februar",
+      beschreibung: "Diese App ermöglicht es dir, Schere-Stein-Papier gegen einen Freund oder den Computer zu spielen – ideal für schnelle Entscheidungen oder einfach zum Spaß.",
+      month: "März",
     },
     whackamole: {
       title: "Hau-Den-Maulwurf",
-      beschreibung: "",
-      month: "Februar",
+      beschreibung: "In dieser App wurde das Konzept der objektorientierten Programmierung (OOP) angewendet, indem verschiedene Elemente wie Moles (Mäuse), der Hammer und das Spielfeld als eigenständige Objekte mit ihren eigenen Eigenschaften und Methoden modelliert wurden.",
+      month: "Juni",
     },
     chatwebapp: {
       title: "Chat-Web-App",
-      beschreibung: "",
-      month: "Februar",
+      beschreibung: "Dies ist eine Chat-Web-App, die Firebase als Backend-Datenbank verwendet, um Nachrichten in Echtzeit zu speichern und zu synchronisieren. Firebase ermöglicht nahtlose Datenaktualisierungen für alle Nutzer, sodass Nachrichten sofort zugestellt werden und die App reaktionsschnell bleibt.",
+      month: "August",
     },
     ham: {
       title: "Hardware-Asset-Management",
       beschreibung:
         "Stellt einen Unterbereich der IT Verwaltung dar, der sich exklusiv auf die physischen Komponenten der Informationstechnologie konzentriert.",
-      month: "August",
+      month: "Mai",
     },
   },
   responsive: {
