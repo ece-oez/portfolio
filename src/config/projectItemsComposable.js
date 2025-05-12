@@ -75,6 +75,52 @@ export function useProjectItems() {
         ],
       },
       {
+        icon: "bi bi-grid-3x3",
+        title: text.projects.conwaysgameoflife.title,
+        link: "",
+        github: "https://github.com/ece-oez/conways-game-of-life",
+        beschreibung: text.projects.conwaysgameoflife.beschreibung,
+        month: text.projects.conwaysgameoflife.month,
+        year: "2022",
+        technologies: [
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
+        ],
+      },
+      {
+        icon: "bi bi-gift",
+        title: text.projects.wichteln.title,
+        link: "",
+        github: "https://github.com/ece-oez/wichtel-algorithmus",
+        beschreibung: text.projects.wichteln.beschreibung,
+        month: text.projects.wichteln.month,
+        year: "2024",
+        technologies: [
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
+        ],
+      },
+      {
         icon: "bi bi-chat-dots-fill",
         title: text.projects.chatwebapp.title,
         link: "",

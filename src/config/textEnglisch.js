@@ -32,22 +32,36 @@ export const textEnglish = {
   projects: {
     eieruhr: {
       title: "Egg-Timer",
-      beschreibung: "This app functions as a digital egg timer, allowing you to set precise timers for boiling eggs or other time-sensitive tasks.",
+      beschreibung:
+        "This app functions as a digital egg timer, allowing you to set precise timers for boiling eggs or other time-sensitive tasks.",
       month: "February",
     },
     scheresteinpapier: {
       title: "Rock, Paper, Scissors",
-      beschreibung: "This app lets you play Rock-Paper-Scissors against a friend or the computer for quick and fun decision-making or entertainment.",
+      beschreibung:
+        "This app lets you play Rock-Paper-Scissors against a friend or the computer for quick and fun decision-making or entertainment.",
       month: "March",
     },
     whackamole: {
       title: "Whack-A-Mole",
-      beschreibung: "This app applies the concept of object-oriented programming (OOP) by modeling various elements like moles, the hammer, and the game field as independent objects with their own properties and methods.",
+      beschreibung:
+        "This app applies the concept of object-oriented programming (OOP) by modeling various elements like moles, the hammer, and the game field as independent objects with their own properties and methods.",
       month: "June",
+    },
+    conwaysgameoflife: {
+      title: "Conways-game-of-life",
+      beschreibung: "...",
+      month: "November",
+    },
+    wichteln: {
+      title: "Wichtel-Algorithm",
+      beschreibung: "...",
+      month: "March",
     },
     chatwebapp: {
       title: "Chat-Web-App",
-      beschreibung: "This is a chat web app that uses Firebase as its backend database to store and sync messages in real-time. Firebase allows for seamless data updates across all users, ensuring that messages are delivered instantly and the app remains responsive.",
+      beschreibung:
+        "This is a chat web app that uses Firebase as its backend database to store and sync messages in real-time. Firebase allows for seamless data updates across all users, ensuring that messages are delivered instantly and the app remains responsive.",
       month: "August",
     },
     ham: {
