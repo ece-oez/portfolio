@@ -1,2 +1,13 @@
 @import './base.css';
 @import "tailwindcss";
+
+@font-face {
+        font-family: aldrich;
+        src: url('/fonts/aldrich/Aldrich-Regular.ttf') format('truetype');
+        font-weight: normal;
+      }
+      
+      * {
+        font-family: aldrich, sans-serif;
+      }
+      
