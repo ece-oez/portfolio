@@ -77,7 +77,7 @@ export function useProjectItems() {
       {
         icon: "bi bi-chat-dots-fill",
         title: text.projects.chatwebapp.title,
-        link: "https://eier-uhr.netlify.app",
+        link: "",
         github: "https://github.com/ece-oez/chat-web-app",
         beschreibung: text.projects.chatwebapp.beschreibung,
         month: text.projects.chatwebapp.month,
@@ -108,7 +108,7 @@ export function useProjectItems() {
       {
         icon: "fa-solid fa-book-bookmark",
         title: text.projects.ham.title,
-        link: "https://projects-eier-uhr.netlify.app",
+        link: "",
         github: "https://github.com/ece-oez/hardware-asset-management",
         beschreibung: text.projects.ham.beschreibung,
         month: text.projects.ham.month,

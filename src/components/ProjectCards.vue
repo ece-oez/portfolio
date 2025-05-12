@@ -21,14 +21,21 @@ const props = defineProps({
     </div>
 
     <div class="flex justify-between">
-      <span class="text-md xl:text-2xl flex justify-center items-center">
+      <p class="text-md xl:text-2xl flex justify-start items-center w-2/3">
         {{ props.title }}
-      </span>
-      <a target="_blank" :href="props.link">
-        <IconsBorder icon="fa-solid fa-link" class="text-sm"></IconsBorder>
+      </p>
+      <a
+        v-if="props.link !== ''"
+        title="Demo View"
+        target="_blank"
+        :href="props.link">
+        <IconsBorder icon="bi bi-eye" class="text-md"></IconsBorder>
       </a>
-      <a target="_blank" :href="props.github">
-        <IconsBorder icon="bi bi-github" class="text-sm" />
+      <a v-if="props.link === ''" title="Demo View">
+        <IconsBorder icon="bi bi-eye-slash" class="text-md"></IconsBorder>
+      </a>
+      <a target="_blank" title="Code View" :href="props.github">
+        <IconsBorder icon="bi bi-github" class="text-md" />
       </a>
     </div>
 
