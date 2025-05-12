@@ -13,9 +13,9 @@ const LanguageStore = useLanguageStore();
 </script>
 
 <template>
-  <WindowLayout
+  <section
     id="contact"
-    class="text-white bg-hellgrau"
+    class="text-white bg-hellgrau overflow-hidden"
     :class="{ 'opacity-85 blur-lg overflow-y-none': modalStore.modalState }">
     <div class="h-full flex flex-col xl:pt-30">
       <div class="xl:flex xl:h-2/3">
@@ -32,7 +32,7 @@ const LanguageStore = useLanguageStore();
       </div>
       <TheFooter class="p-6 text-center"></TheFooter>
     </div>
-  </WindowLayout>
+  </section>
 </template>
 
 <style scoped></style>

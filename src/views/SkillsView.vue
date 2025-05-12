@@ -26,7 +26,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <WindowLayout id="skills" class="justify-end bg-hellgrau">
+  <WindowLayout id="skills" class="text-white justify-end bg-hellgrau">
     <TheHeading class="text-stone-600">Skills</TheHeading>
 
     <div class="show-bubbles items-center h-[85%] gap-30 w-full">
