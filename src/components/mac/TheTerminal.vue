@@ -194,28 +194,41 @@ h1 {
   }
 
   78.6279%,
-  96.8605% {
+  99.9999% {
     content: "";
   }
   79.7674%,
-  95.7209% {
-    content: "h";
+  99.7209% {
+    content: "e";
   }
   80.9070%,
-  94.5814% {
-    content: "hu";
+  98.5814% {
+    content: "en";
   }
   82.0465%,
-  93.4419% {
-    content: "hum";
+  97.4419% {
+    content: "eng";
   }
   83.1860%,
-  92.3023% {
-    content: "huma";
+  96.3023% {
+    content: "engi";
   }
   84.3256%,
-  91.1628% {
-    content: "human";
+  95.1628% {
+    content: "engin";
+  }
+  85.4651%,
+  94.0233% {
+    content: "engine";
+  }
+  86.6047%,
+  93.8837% {
+    content: "enginee";
+  }
+  87.7442%,
+  92.8605% {
+    /* Extended visibility */
+    content: "engineer";
   }
 }
 

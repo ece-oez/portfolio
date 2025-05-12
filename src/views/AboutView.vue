@@ -4,14 +4,13 @@ import StackTabsMobile from "../components/StackTabsMobile.vue";
 import TheHeading from "../components/TheHeading.vue";
 import { useTabStore } from "@/stores/tab";
 import InsertPictures from "@/components/InsertPictures.vue";
+import WindowLayout from "@/components/WindowLayout.vue";
 
 const tabStore = useTabStore();
 </script>
 
 <template>
-  <section
-    id="aboutme"
-    class="w-screen h-screen flex flex-col justify-end items-center text-stone-600 bild pt-10 gap-2">
+  <WindowLayout id="aboutme" class="bild pt-10 gap-2">
     <TheHeading>About Me</TheHeading>
 
     <div class="w-full flex flex-row justify-around">
@@ -19,7 +18,7 @@ const tabStore = useTabStore();
       <StackTabs class="hidden xl:flex" />
       <StackTabsMobile class="xl:hidden" />
     </div>
-  </section>
+  </WindowLayout>
 </template>
 
 <style scoped>

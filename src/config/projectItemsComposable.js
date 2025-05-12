@@ -14,9 +14,18 @@ export function useProjectItems() {
         month: text.projects.eieruhr.month,
         year: "2023",
         technologies: [
-          "fa-brands fa-html5",
-          "fa-brands fa-css3",
-          "fa-brands fa-js",
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
         ],
       },
       {
@@ -28,9 +37,18 @@ export function useProjectItems() {
         month: text.projects.scheresteinpapier.month,
         year: "2023",
         technologies: [
-          "fa-brands fa-html5",
-          "fa-brands fa-css3",
-          "fa-brands fa-js",
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
         ],
       },
       {
@@ -42,9 +60,18 @@ export function useProjectItems() {
         month: text.projects.whackamole.month,
         year: "2023",
         technologies: [
-          "fa-brands fa-html5",
-          "fa-brands fa-css3",
-          "fa-brands fa-js",
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
         ],
       },
       {
@@ -56,11 +83,26 @@ export function useProjectItems() {
         month: text.projects.chatwebapp.month,
         year: "2024",
         technologies: [
-          "fa-brands fa-html5",
-          "fa-brands fa-css3",
-          "fa-brands fa-js",
-          "fa-brands fa-vuejs",
-          "fa-solid fa-fire",
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
+          {
+            icon: "fa-brands fa-vuejs",
+            name: "VUE.js",
+          },
+          {
+            icon: "fa-solid fa-fire",
+            name: "FireBase",
+          },
         ],
       },
       {
@@ -72,11 +114,26 @@ export function useProjectItems() {
         month: text.projects.ham.month,
         year: "2025",
         technologies: [
-          "fa-brands fa-html5",
-          "fa-brands fa-css3",
-          "fa-brands fa-js",
-          "fa-brands fa-vuejs",
-          "fa-brands fa-node",
+          {
+            icon: "fa-brands fa-html5",
+            name: "HTML",
+          },
+          {
+            icon: "fa-brands fa-css3",
+            name: "CSS",
+          },
+          {
+            icon: "fa-brands fa-js",
+            name: "Javascript",
+          },
+          {
+            icon: "fa-brands fa-vuejs",
+            name: "VUE.js",
+          },
+          {
+            icon: "fa-brands fa-node",
+            name: "Node",
+          },
         ],
       },
     ];

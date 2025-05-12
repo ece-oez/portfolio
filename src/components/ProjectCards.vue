@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 <template>
   <div
-    class="w-70 h-110 xl:w-96 xl:h-150 p-6 border border-neutral-600 rounded-xl hover:duration-300 hover:shadow-xl hover:shadow-neutral-600 hover:border-white hover:mx-6 not-focus:duration-300">
+    class="w-70 h-110 xl:w-96 xl:h-150 p-6 border border-neutral-600 rounded-xl hover:duration-300 hover:shadow-xl hover:shadow-neutral-600 hover:border-white not-focus:duration-300">
     <div class="text-5xl">
       <i :class="props.icon"></i>
     </div>
@@ -45,8 +45,9 @@ const props = defineProps({
     <div class="border-t mt-6 flex gap-2 pt-5 text-xl">
       <IconsBorder
         v-for="technology in props.technologies"
-        :icon="technology"
-        class="text-sm" />
+        :icon="technology.icon"
+        class="text-sm"
+        :techName="technology.name" />
     </div>
   </div>
 </template>

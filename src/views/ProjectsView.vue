@@ -5,6 +5,7 @@ import ProjectCards from "../components/ProjectCards.vue";
 import SearchBar from "../components/SearchBar.vue";
 import TheHeading from "../components/TheHeading.vue";
 import TheArrow from "../components/TheArrow.vue";
+import WindowLayout from "@/components/WindowLayout.vue";
 import { useProjectItems } from "@/config/projectItemsComposable";
 
 const { projectItems } = useProjectItems();
@@ -31,6 +32,7 @@ onMounted(() => {
 let projectsIdState = 1;
 
 function slideRight() {
+  debugger;
   if (projectsIdState === projectItems.length - 2) {
     return;
   }
@@ -56,19 +58,17 @@ function slideLeft() {
 </script>
 
 <template>
-  <section
-    id="projects"
-    class="text-white w-screen h-screen flex flex-col justify-center items-center gap-10 pt-5 xl:gap-2 bild">
-    <TheHeading> Projects</TheHeading>
+  <WindowLayout id="projects" class="text-white gap-10 pt-5 xl:gap-2 bild">
+    <TheHeading>Projects</TheHeading>
 
-    <!-- <SearchBar class="ms-4" />
-    <ProjectTags
+    <!-- <SearchBar class="ms-4" /> -->
+    <!-- <ProjectTags
       class="ms-4 cursor-pointer hover:bg-amber-50 hover:duration-300 hover:text-black not-focus:duration-300"
       >Javascript</ProjectTags
     > -->
 
     <div class="flex w-full items-center justify-around px-10">
-      <TheArrow class="hidden text-6xl 2xl:flex justify-center cursor-pointer">
+      <TheArrow class="hidden text-5xl 2xl:flex justify-center cursor-pointer">
         <i
           id="leftArrow"
           class="fa-solid fa-circle-arrow-left hover:text-stone-400 hover:duration-300 not-focus:duration-300"
@@ -94,14 +94,14 @@ function slideLeft() {
         </div>
       </div>
 
-      <TheArrow class="hidden text-6xl 2xl:flex justify-center cursor-pointer">
+      <TheArrow class="hidden text-5xl 2xl:flex justify-center cursor-pointer">
         <i
           id="rightArrow"
           class="fa-solid fa-circle-arrow-right hover:text-stone-400 hover:duration-300 not-focus:duration-300"
           @click="slideRight()"></i>
       </TheArrow>
     </div>
-  </section>
+  </WindowLayout>
 </template>
 
 <style scoped>

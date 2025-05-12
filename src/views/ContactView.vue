@@ -5,15 +5,17 @@ import TextElement from "@/components/TextElement.vue";
 import TheHeading from "@/components/TheHeading.vue";
 import { useLanguageStore } from "@/stores/language";
 import { useModalStore } from "@/stores/modal";
+import WindowLayout from "@/components/WindowLayout.vue";
+
 const modalStore = useModalStore();
 
 const LanguageStore = useLanguageStore();
 </script>
 
 <template>
-  <section
+  <WindowLayout
     id="contact"
-    class="text-white bg-hellgrau h-screen w-full flex flex-col"
+    class="text-white bg-hellgrau"
     :class="{ 'opacity-85 blur-lg overflow-y-none': modalStore.modalState }">
     <div class="h-full flex flex-col xl:pt-30">
       <div class="xl:flex xl:h-2/3">
@@ -30,7 +32,7 @@ const LanguageStore = useLanguageStore();
       </div>
       <TheFooter class="p-6 text-center"></TheFooter>
     </div>
-  </section>
+  </WindowLayout>
 </template>
 
 <style scoped></style>

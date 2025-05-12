@@ -3,15 +3,14 @@ import ResponsiveIphone from "@/components/ResponsiveIphone.vue";
 import ResponsiveMac from "@/components/ResponsiveMac.vue";
 import TextElement from "@/components/TextElement.vue";
 import TheHeading from "@/components/TheHeading.vue";
+import WindowLayout from "@/components/WindowLayout.vue";
 import { useLanguageStore } from "@/stores/language";
 
 const languageStore = useLanguageStore();
 </script>
 
 <template>
-  <section
-    id="responsive"
-    class="text-white h-screen flex flex-col justify-center items-center bild">
+  <WindowLayout id="responsive" class="text-white bild">
     <TheHeading class="">{{
       languageStore.textObj.responsive.heading
     }}</TheHeading>
@@ -27,10 +26,10 @@ const languageStore = useLanguageStore();
       <ResponsiveIphone>
         <img
           src="../assets/img/iphone.png"
-          class="w-50 sm:w-90 md:w-100 lg:w-120" />
+          class="w-50 sm:w-90 md:w-100 lg:w-100" />
       </ResponsiveIphone>
     </div>
-  </section>
+  </WindowLayout>
 </template>
 
 <style scoped>

@@ -5,6 +5,7 @@ import { skillsItems } from "../config/skillsItems";
 import { onMounted, ref } from "vue";
 import TheHeading from "@/components/TheHeading.vue";
 import SkillsCards from "@/components/SkillsCards.vue";
+import WindowLayout from "@/components/WindowLayout.vue";
 
 const lines = ref(null);
 
@@ -25,9 +26,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section
-    id="skills"
-    class="text-white h-screen flex flex-col items-center justify-end bg-hellgrau">
+  <WindowLayout id="skills" class="justify-end bg-hellgrau">
     <TheHeading class="text-stone-600">Skills</TheHeading>
 
     <div class="show-bubbles items-center h-[85%] gap-30 w-full">
@@ -47,7 +46,7 @@ onMounted(() => {
     </div>
 
     <SkillsCards class="show-cards"></SkillsCards>
-  </section>
+  </WindowLayout>
 </template>
 
 <style scoped>
