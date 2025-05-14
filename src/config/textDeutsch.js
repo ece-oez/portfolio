@@ -48,13 +48,15 @@ export const textDeutsch = {
       month: "Juni",
     },
     conwaysgameoflife: {
-      title: "Conways-game-of-life",
-      beschreibung: "...",
+      title: "Das-Spiel-des-Lebens",
+      beschreibung:
+        "Das Spiel des Lebens (englisch Conway’s Game of Life) ist ein vom Mathematiker John Horton Conway 1970 entworfenes Spiel, das auf einem zweidimensionalen zellulären Automaten basiert und eine einfache und bis heute populäre Umsetzung der Automaten-Theorie von Stanisław Marcin Ulam bildet (Wikipedia). Dieses Game sollte ich nachbauen.",
       month: "November",
     },
     wichteln: {
       title: "Wichtel-Algorithmus",
-      beschreibung: "...",
+      beschreibung:
+        "Wir alle kennen das ziehen eines Namens zur Wichtelzeit, um die Person herauszufinden welche man beschenken soll. Dieses Konzept habe ich mit einem recht einfachen Algorithmus umgesetzt. Zunächst hatte ich eine statische Namensliste, jedoch habe ich dies erweitert indem man die Liste selbst füllen  ",
       month: "März",
     },
     chatwebapp: {
