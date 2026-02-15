@@ -1,11 +1,9 @@
 <script setup>
-import landingSection from "./sections/landing/index.vue";
-import aboutSection from "./sections/about/index.vue";
 import { useModalStore } from "@/stores/modal";
+import { RouterView } from "vue-router";
 const modalStore = useModalStore();
 </script>
 
 <template>
-<landingSection></landingSection>
-<aboutSection></aboutSection>
+  <RouterView></RouterView>
 </template>

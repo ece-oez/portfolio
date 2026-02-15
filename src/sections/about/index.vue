@@ -1,5 +1,6 @@
 <script setup>
 import { useLanguageStore } from "@/stores/language";
+import { RouterLink } from "vue-router";
 
 const LanguageStore = useLanguageStore();
 </script>
@@ -72,13 +73,15 @@ const LanguageStore = useLanguageStore();
       >
     </div>
 
-    <div class="flex ps-5 md:ps-10 gap-5 overflow-scroll scrollbar-hide">
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/me.jpeg"
-        alt=""
-      />
+    <div class="flex gap-5 overflow-scroll scrollbar-hide ps-5 md:ps-10">
+      <a href="/me/age">
+        <img
+          draggable="false"
+          class="h-25 w-25 md:h-50 md:w-100 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
+          src="../../assets/img/instagram/me.jpeg"
+          alt=""
+        />
+      </a>
       <img
         draggable="false"
         class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
