@@ -1,4 +1,7 @@
 <script setup>
+import ProjectCards from "@/components/ProjectCards.vue";
+import { highlights } from "@/config/highlights";
+import { projectItems } from "@/config/projectItems";
 import { useLanguageStore } from "@/stores/language";
 import { RouterLink } from "vue-router";
 
@@ -8,7 +11,7 @@ const LanguageStore = useLanguageStore();
 <template>
   <section
     id="about"
-    class="h-screen w-screen flex justify-center flex-col gap-3 md:gap-10"
+    class="h-screen w-screen flex justify-center flex-col gap-10 md:gap-10"
   >
     <div class="flex gap-5 md:gap-15 px-5 md:px-10">
       <img
@@ -73,65 +76,30 @@ const LanguageStore = useLanguageStore();
       >
     </div>
 
-    <div class="flex gap-5 overflow-scroll scrollbar-hide ps-5 md:ps-10">
-      <a href="/me/age">
-        <img
-          draggable="false"
-          class="h-25 w-25 md:h-50 md:w-100 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-          src="../../assets/img/instagram/me.jpeg"
-          alt=""
-        />
-      </a>
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/life.jpeg"
-        alt=""
-      />
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/code.jpeg"
-        alt=""
-      />
-
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/graduate.jpeg"
-        alt=""
-      />
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/job.jpeg"
-        alt=""
-      />
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/quotes.jpeg"
-        alt=""
-      />
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/travel.jpeg"
-        alt=""
-      />
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/pet.jpeg"
-        alt=""
-      />
-      <img
-        draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-4 md:border-6 border-[#FF8C40] rounded-full p-1 md:p-2"
-        src="../../assets/img/instagram/food.jpeg"
-        alt=""
-      />
+    <div
+      class="ps-5 md:ps-10 md:pb-5 gap-5 md:gap-10 flex flex-row overflow-x-scroll scrollbar-hide"
+    >
+      <div
+        v-for="(highlight, index) in highlights"
+        class="text-center flex flex-col gap-3 md:font-bold"
+      >
+        <RouterLink
+          :to="highlight.link"
+          class="w-30 h-30 md:w-58 md:h-58 rounded-full flex flex-col justify-center items-center border-5 md:border-8 border-[#FF8C40]"
+        >
+          <img
+            class="w-25 h-25 md:w-50 md:h-50 rounded-full"
+            :src="highlight.img"
+            :alt="highlight.title"
+          />
+        </RouterLink>
+        {{ highlight.title }}
+      </div>
     </div>
   </section>
 </template>
-<style scoped></style>
+<style scoped>
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+</style>
