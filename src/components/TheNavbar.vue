@@ -18,7 +18,6 @@ const languageStore = useLanguageStore();
 const menuItemsForMobile = reactive([
   { name: "AboutMe", href: "#aboutme", icon: "bi bi-person" },
   { name: "Projects", href: "#projects", icon: "bi bi-code-slash" },
-  { name: "Responsive", href: "#responsive", icon: "bi bi-laptop" },
   { name: "Skills", href: "#skills", icon: "bi bi-star" },
   { name: "Contact", href: "#contact", icon: "bi bi-envelope" },
 ]);
@@ -134,11 +133,15 @@ const showTooltip = ref(false);
   <!-- bottom -->
 
   <div
-    class="bottom-0 fixed z-[500] opacity-90 w-full h-15 text-2xl text-gray-300 pb-10 flex justify-between items-center gap-3 px-8"
+    class="bottom-0 fixed z-[500] opacity-90 w-full h-15 text-2xl text-gray-300 flex justify-center items-center gap-10 px-8"
   >
-    <button v-for="menuItem in menuItemsForMobile" :key="menuItem.name">
+    <a
+      v-for="menuItem in menuItemsForMobile"
+      :key="menuItem.name"
+      :href="menuItem.href"
+    >
       <i :class="menuItem.icon"></i>
-    </button>
+    </a>
   </div>
 </template>
 <style scoped>

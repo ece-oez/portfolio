@@ -10,13 +10,24 @@ const LanguageStore = useLanguageStore();
 
 <template>
   <section
-    id="about"
-    class="h-screen w-screen flex justify-center flex-col gap-10 md:gap-10"
+    id="aboutme"
+    class="h-screen w-screen flex justify-center flex-col gap-5 md:gap-10"
   >
+    <div class="pb-10 flex flex-col gap-5">
+      <h1 class="text-[50px] md:text-[60px] font-bold text-center">About Me</h1>
+
+      <h3
+        class="md:text-[#ffa468] text-gray-400 text-center text-[20px] md:font-bold md:text-[40px] px-5"
+      >
+        Here is my instagram profile, where I share my projects, travels and
+        daily life.
+      </h3>
+    </div>
+
     <div class="flex gap-5 md:gap-15 px-5 md:px-10">
       <img
         draggable="false"
-        class="h-25 w-25 md:h-50 md:w-50 border-1 border-gray-200 rounded-full"
+        class="h-20 w-20 md:h-50 md:w-50 border-1 border-gray-200 rounded-full"
         src="../../assets/img/drawn_profile.jpeg"
         alt=""
       />
@@ -50,7 +61,7 @@ const LanguageStore = useLanguageStore();
       </p>
 
       <p class="text-[15px] md:text-[19px] text-start">
-        😊 "Lächle jeden Tag, auch wenn es nichts zu lächeln gibt!"
+        "live, life and code."
       </p>
 
       <p class="text-[15px] md:text-[19px] text-start">

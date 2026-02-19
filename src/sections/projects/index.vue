@@ -7,6 +7,7 @@ const LanguageStore = useLanguageStore();
 
 <template>
   <section
+    id="projects"
     class="h-screen w-screen flex items-center justify-center flex-col gap-5"
   >
     <h1 class="text-[50px] md:text-[60px] font-bold">Featured Projects</h1>
@@ -36,8 +37,12 @@ const LanguageStore = useLanguageStore();
             />
           </div>
 
+          <!-- notion like -->
+          <!-- suchen -->
+          <!-- filtern -->
+
           <div
-            class="h-full w-full bg-white p-5 flex flex-col gap-5 rounded-xl"
+            class="h-full w-full bg-white p-5 flex flex-col gap-5 rounded-b-xl"
           >
             <div
               class="md:text-[#ffa468] text-gray-700 text-[20px] font-bold flex items-center gap-3"
@@ -61,18 +66,18 @@ const LanguageStore = useLanguageStore();
                 v-for="technologie in project.technologies"
                 :href="technologie.link"
                 target="_blank"
-                class="rounded-2xl flex items-center py-1 px-4 justify-center gap-2 w-max bg-[#ff8c4023] text-[#FF8C40] font-bold text-center"
+                class="rounded-2xl flex items-center py-2 px-2 justify-center gap-2 w-max bg-[#ff8c4023] text-[#FF8C40] font-bold text-center"
               >
                 <i :class="technologie.icon"></i>
-                {{ technologie.name }}
+                <!-- {{ technologie.name }} -->
               </a>
             </div>
 
-            <div class="flex gap-3 font-bold">
+            <div class="flex gap-3 font-bold w-full">
               <a
                 :href="project.github"
                 target="_blank"
-                class="rounded-xl flex items-center py-2 justify-center gap-2 w-1/3 border-1 bg-white border-[#e5e5e5] text-center"
+                class="rounded-xl w-full flex items-center py-2 justify-center gap-2 border-1 bg-white border-[#e5e5e5] text-center"
               >
                 <i class="bi bi-github"></i>
 
@@ -81,7 +86,7 @@ const LanguageStore = useLanguageStore();
               <a
                 :href="project.link"
                 target="_blank"
-                class="rounded-xl flex items-center py-2 justify-center gap-2 w-1/3 bg-[#FF8C40] text-white text-center"
+                class="rounded-xl w-full flex items-center py-2 justify-center gap-2 bg-[#FF8C40] text-white text-center"
               >
                 <i class="bi bi-eyeglasses"></i>Demo</a
               >

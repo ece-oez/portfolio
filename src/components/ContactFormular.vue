@@ -24,49 +24,62 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="contact-container" ref="formular">
+  <div class="w-full h-max" ref="formular">
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
-      class="w-full flex flex-col gap-4 p-3 md:p-4 bg-inputbox rounded-2xl shadow-xl shadow-stone-600">
+      class="w-full h-max flex flex-col gap-5 p-5 rounded-xl border-1 border-gray-200 shadow-md"
+    >
       <input
         type="hidden"
         name="access_key"
-        value="9b46dc84-bc0b-430d-8998-984d161363d0" />
+        value="9b46dc84-bc0b-430d-8998-984d161363d0"
+      />
 
-      <label for="name" class="text-stone-300">
+      <!-- <input
+        type="hidden"
+        name="access_key"
+        :value="process.env.WEB3FORMS_ACCESS_KEY"
+      /> -->
+
+      <label for="name" class="text-gray-400 font-bold">
         {{ LanguageStore.textObj.form.name.label }}</label
       >
       <input
         type="text"
         name="name"
         :placeholder="LanguageStore.textObj.form.name.placeholder"
-        class="bg-dunkelgrau text-stone-400 p-2 px-5 rounded-lg"
-        required />
-      <label for="betreff" class="text-stone-300">{{
+        class="bg-[#f3f3f5] text-gray-500 p-2 px-5 rounded-lg border-1 border-gray-200"
+        required
+      />
+      <label for="betreff" class="text-gray-400 font-bold">{{
         LanguageStore.textObj.form.email.label
       }}</label>
+
       <input
         type="text"
         name="email"
         :placeholder="LanguageStore.textObj.form.email.placeholder"
-        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg"
-        required />
+        class="bg-[#f3f3f5] text-gray-500 p-2 ps-5 rounded-lg border-1 border-gray-200"
+        required
+      />
 
-      <label for="nachricht" class="text-stone-300">{{
+      <label for="nachricht" class="text-gray-400 font-bold">{{
         LanguageStore.textObj.form.message.label
       }}</label>
       <textarea
         :placeholder="LanguageStore.textObj.form.message.placeholder"
         name="message"
-        class="bg-dunkelgrau text-stone-400 p-2 ps-5 rounded-lg resize-none scrollbar-hide"
-        required></textarea>
+        class="bg-[#f3f3f5] text-gray-500 p-2 ps-5 rounded-lg resize-none scrollbar-hide"
+        required
+      ></textarea>
 
       <button
         type="submit"
-        class="flex gap-3 p-2 rounded-lg bg-white text-stone-600 cursor-pointer w-max hover:text-white hover:bg-stone-500 hover:duration-300 not-focus:duration-300">
-        {{ LanguageStore.textObj.form.button }}
+        class="flex gap-3 p-2 rounded-lg bg-[#FF8C40] text-white text-center justify-center cursor-pointer w-full hover:text-white hover:bg-stone-500 hover:duration-300 not-focus:duration-300"
+      >
         <i class="bi bi-envelope-plus-fill"></i>
+        {{ LanguageStore.textObj.form.button }}
       </button>
     </form>
   </div>
@@ -100,11 +113,6 @@ onMounted(() => {
 @media only screen and (min-width: 1400px) {
   form {
     height: max;
-  }
-  .contact-container {
-    padding: 0;
-    padding-bottom: 20px;
-    padding-right: 20px;
   }
 }
 
