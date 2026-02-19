@@ -14,13 +14,12 @@ const LanguageStore = useLanguageStore();
     class="h-screen w-screen flex justify-center flex-col gap-5 md:gap-10"
   >
     <div class="pb-10 flex flex-col gap-5">
-      <h1 class="text-[50px] md:text-[60px] font-bold text-center">About Me</h1>
+      <h1 class="text-[50px] md:text-[60px] font-bold text-center">
+        {{ LanguageStore.textObj.about.heading }}
+      </h1>
 
-      <h3
-        class="md:text-[#ffa468] text-gray-400 text-center text-[20px] md:font-bold md:text-[40px] px-5"
-      >
-        Here is my instagram profile, where I share my projects, travels and
-        daily life.
+      <h3 class="text-gray-400 text-center text-[20px] md:text-[40px] px-5">
+        {{ LanguageStore.textObj.about.description }}
       </h3>
     </div>
 
@@ -37,15 +36,15 @@ const LanguageStore = useLanguageStore();
         <div class="flex gap-3 md:gap-20 md:text-[25px]">
           <div class="flex flex-col">
             <h3 class="font-bold">6</h3>
-            <p class="">Projects</p>
+            <p class="">{{ LanguageStore.textObj.about.info1 }}</p>
           </div>
           <div class="flex flex-col">
             <h3 class="font-bold">2 Years</h3>
-            <p class="">Experience</p>
+            <p class="">{{ LanguageStore.textObj.about.info2 }}</p>
           </div>
           <div class="flex flex-col">
             <h3 class="font-bold">3</h3>
-            <p class="">Clients</p>
+            <p class="">{{ LanguageStore.textObj.about.info3 }}</p>
           </div>
         </div>
       </div>
@@ -53,19 +52,19 @@ const LanguageStore = useLanguageStore();
 
     <div class="px-5 md:px-10">
       <p class="md:text-[19px] text-gray-400 text-start">
-        Full Stack Developer
+        {{ LanguageStore.textObj.about.jobtitle }}
       </p>
 
       <p class="text-[15px] md:text-[19px] text-start">
-        🎮 Spielentwicklung | 🌍 Reisen | 🐾 Tiere
+        {{ LanguageStore.textObj.about.bio1 }}
       </p>
 
       <p class="text-[15px] md:text-[19px] text-start">
-        "live, life and code."
+        "{{ LanguageStore.textObj.about.bio2 }}"
       </p>
 
       <p class="text-[15px] md:text-[19px] text-start">
-        👉 Folge meinen Stories für mehr!
+        {{ LanguageStore.textObj.about.bio3 }}
       </p>
     </div>
 
@@ -73,17 +72,17 @@ const LanguageStore = useLanguageStore();
       <a
         href="#projects"
         class="rounded-lg px-3 py-1 md:py-2 w-40 h-max bg-[#FF8C40] text-white text-center"
-        >Follow</a
+        >{{ LanguageStore.textObj.about.followButton }}</a
       >
       <a
         href="#contact"
         class="rounded-lg px-3 py-1 md:py-2 w-40 border-1 bg-white border-[#e5e5e5] text-center"
-        >Message</a
+        >{{ LanguageStore.textObj.about.messageButton }}</a
       >
       <a
         href="#contact"
         class="rounded-lg px-3 py-1 md:py-2 w-40 border-1 bg-white border-[#e5e5e5] text-center"
-        >Contact</a
+        >{{ LanguageStore.textObj.about.contactButton }}</a
       >
     </div>
 

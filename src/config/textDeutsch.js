@@ -1,9 +1,27 @@
 export const textDeutsch = {
   home: {
+    heading: "Hi, Ich bin ",
+    secondHeading: "Full-Stack-Entwicklerin & UI/UX-Designerin",
+    description:
+      "Ich kreiere schöne digitale Erlebnisse, die Unternehmen helfen zu wachsen und Nutzer zu begeistern. Spezialisiert auf Vue.js, Nuxt.js und moderne Webtechnologien.",
     contactBtn: "Kontaktiere mich",
     projectBtn: "Zu den Projekten",
   },
   about: {
+    heading: "Über mich",
+    description:
+      "Hier ist mein Instagram-Profil, wo ich meine Projekte, Reisen und den Alltag teile.",
+    info1: "Projekte",
+    info2: "Erfahrung",
+    info3: "Kunden",
+    jobtitle: "Full Stack Entwicklerin",
+    bio1: "🎮 Spielentwicklung | 🌍 Reisen | 🐾 Tiere",
+    bio2: "live, life and code.",
+    bio3: "👉 Folge meinen Stories für mehr!",
+    followButton: "Folgen",
+    messageButton: "Nachricht",
+    contactButton: "Kontakt",
+
     aboutme: {
       title: "Wer bin ich?",
       text: "Ich bin eine zielstrebige und technikbegeisterte Fachinformatikerin für Anwendungsentwicklung. Mein Fokus liegt stets darauf, meine Ziele effizient zu erreichen, und ich scheue mich nicht, eigenständig zu arbeiten, um bestmögliche Ergebnisse zu erzielen. Besonders liebe ich die Arbeit, die mit Programmieren und Technologie im Allgemeinen zu tun hat – sei es das Entwickeln von Software, das Forschen nach neuen Technologie-Trends oder die Optimierung von Arbeitsprozessen. Ich arbeite am liebsten konzentriert und ungestört, da ich in dieser Umgebung meine höchste Produktivität erreiche. Diese Unabhängigkeit in der Arbeit ermöglicht es mir, meine kreativen Ideen und meine Leidenschaft für IT voll auszuleben. Ich schätze es, sowohl eigenständig als auch im Team zu arbeiten. Besonders gerne übernehme ich selbstständig Aufgaben, da ich so in meinem eigenen Tempo arbeiten und die bestmöglichen Lösungen erarbeiten kann. Wenn es um technologische Trends, Tools oder Hard- und Software geht, tausche ich mich gerne mit Gleichgesinnten aus, um immer auf dem neuesten Stand zu bleiben und meine Kenntnisse zu erweitern.",
@@ -30,15 +48,19 @@ export const textDeutsch = {
   },
   projects: {
     eieruhr: {
-      title: "Eier-Uhr",
+      heading: "Ausgewählte Projekte",
+      description:
+        "Hier sind einige meiner kürzlich abgeschlossenen Projekte, die meine Fähigkeiten und Erfahrung unter Beweis stellen.",
+
+      title: "Eieruhr",
       beschreibung:
-        "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern oder andere zeitgesteuerte Aufgaben einzustellen.",
+        "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern einzustellen.",
       month: "Februar",
     },
     scheresteinpapier: {
       title: "Schere-Stein-Papier",
       beschreibung:
-        "Diese App ermöglicht es dir, Schere-Stein-Papier gegen einen Freund oder den Computer zu spielen – ideal für schnelle Entscheidungen oder einfach zum Spaß.",
+        "Schere-Stein-Papier gegen einen Freund oder gegen einen Bot spielen – ideal für schnelle Entscheidungen oder einfach zum Spaß.",
       month: "März",
     },
     whackamole: {
