@@ -1,12 +1,27 @@
 <script setup>
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import MenuItems from "./MenuItems.vue";
 import IconsBorder from "./IconsBorder.vue";
 import { useLanguageStore } from "@/stores/language";
 
+function checkForCurrentLanguageGerman() {
+  const language = languageStore.currentLanguage;
+
+  if (language === "en") languageStore.currentLanguage = "de";
+  else languageStore.currentLanguage = "en";
+}
+
 const showMenuState = ref(false);
 
 const languageStore = useLanguageStore();
+
+const menuItemsForMobile = reactive([
+  { name: "AboutMe", href: "#aboutme", icon: "bi bi-person" },
+  { name: "Projects", href: "#projects", icon: "bi bi-code-slash" },
+  { name: "Responsive", href: "#responsive", icon: "bi bi-laptop" },
+  { name: "Skills", href: "#skills", icon: "bi bi-star" },
+  { name: "Contact", href: "#contact", icon: "bi bi-envelope" },
+]);
 
 const showTooltip = ref(false);
 </script>
@@ -94,7 +109,7 @@ const showTooltip = ref(false);
   ></div>
 
   <div
-    class="top-0 fixed z-[9000] opacity-90 w-full h-1/12 flex justify-end gap-3 px-8"
+    class="top-0 fixed z-[9000] opacity-90 w-full h-15 flex justify-end md:justify-between items-center gap-3 px-8"
   >
     <!-- <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
@@ -102,46 +117,31 @@ const showTooltip = ref(false);
       </a>
     </div> -->
 
-    <button @click="showTooltip = !showTooltip">
-      <IconsBorder icon="bi bi-translate"> </IconsBorder>
-      <div
-        v-if="showTooltip"
-        class="tooltiptext absolute -translate-x-[30%] border border-stone-600 bg-stone-800 w-30 text-center rounded-lg"
-      >
-        <div
-          @click="
-            ((languageStore.currentLanguage = 'de'), (showTooltip = false))
-          "
-          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800"
-        >
-          Deutsch
-        </div>
-        <div
-          @click="
-            ((languageStore.currentLanguage = 'en'), (showTooltip = false))
-          "
-          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800"
-        >
-          Englisch
-        </div>
-      </div>
-    </button>
-
     <MenuItems
       class="w-full h-full uppercase text-md hidden 2xl:flex items-center justify-around"
     />
+    <button
+      @click="checkForCurrentLanguageGerman()"
+      class="text-[17px] w-max h-max py-2 px-1 flex gap-2"
+    >
+      <i class="bi bi-translate"></i>
+      <span>
+        {{ languageStore.currentLanguage.toUpperCase() }}
+      </span>
+    </button>
+  </div>
 
-    <button @click="showMenuState = !showMenuState" class="xl:hidden">
-      <IconsBorder icon="bi bi-list"></IconsBorder>
-      <MenuItems
-        v-if="showMenuState"
-        class="absolute -translate-x-[45%] sm:-translate-x-[35%] flex flex-col gap-2 bg-stone-800 border rounded-2xl border-stone-600"
-      />
+  <!-- bottom -->
+
+  <div
+    class="bottom-0 fixed z-[500] opacity-90 w-full h-15 text-2xl text-gray-300 pb-10 flex justify-between items-center gap-3 px-8"
+  >
+    <button v-for="menuItem in menuItemsForMobile" :key="menuItem.name">
+      <i :class="menuItem.icon"></i>
     </button>
   </div>
 </template>
 <style scoped>
-
 .tooltip {
   position: relative;
   display: inline-block;
