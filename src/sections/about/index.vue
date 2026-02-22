@@ -26,12 +26,12 @@ const LanguageStore = useLanguageStore();
     <div class="flex gap-5 md:gap-15 px-5 md:px-10">
       <img
         draggable="false"
-        class="h-20 w-20 md:h-50 md:w-50 border-1 border-gray-200 rounded-full"
+        class="h-20 w-20 md:h-40 md:w-40 border-1 border-gray-200 rounded-full"
         src="../../assets/img/drawn_profile.jpeg"
         alt=""
       />
       <div class="flex flex-col justify-between">
-        <h1 class="font-bold md:text-[50px]">Ece Özmen</h1>
+        <h1 class="font-bold md:text-[25px]">Ece Özmen</h1>
 
         <div class="flex gap-3 md:gap-20 md:text-[25px]">
           <div class="flex flex-col">
@@ -95,10 +95,10 @@ const LanguageStore = useLanguageStore();
       >
         <RouterLink
           :to="highlight.link"
-          class="w-30 h-30 md:w-58 md:h-58 rounded-full flex flex-col justify-center items-center border-5 md:border-8 border-[#FF8C40]"
+          class="w-30 h-30 md:w-46 md:h-46 rounded-full flex flex-col justify-center items-center border-5 md:border-8 border-[#FF8C40]"
         >
           <img
-            class="w-25 h-25 md:w-50 md:h-50 rounded-full"
+            class="w-25 h-25 md:w-40 md:h-40 rounded-full"
             :src="highlight.img"
             :alt="highlight.title"
           />

@@ -10,7 +10,9 @@ const LanguageStore = useLanguageStore();
 </script>
 
 <template>
-  <div class="snap-y snap-proximity">
+  <div
+    class="snap-y overflow-scroll h-screen w-screen scroll-smooth select-none"
+  >
     <TheNavbar></TheNavbar>
     <landingSection class="snap-center"></landingSection>
     <aboutSection class="snap-center"></aboutSection>
@@ -19,4 +21,15 @@ const LanguageStore = useLanguageStore();
     <contactSection class="snap-center"> </contactSection>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+</style>

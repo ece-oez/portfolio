@@ -25,11 +25,13 @@ const LanguageStore = useLanguageStore();
 
     <div class="flex gap-5">
       <a
+        draggable="none"
         href="#projects"
         class="rounded-xl p-3 w-40 bg-[#FF8C40] text-white text-center"
         >{{ LanguageStore.textObj.home.projectBtn }}</a
       >
       <a
+        draggable="none"
         href="#contact"
         class="rounded-xl p-3 w-40 border-1 bg-white border-[#e5e5e5] text-center"
         >{{ LanguageStore.textObj.home.contactBtn }}</a

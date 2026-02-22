@@ -26,99 +26,93 @@ const showTooltip = ref(false);
 </script>
 <template>
   <!-- top -->
-  <!-- <div class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-30"></div> -->
-  <!-- <div class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-28"></div> -->
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-26"
+    class="hidden bg-white top-0 fixed z-[400] blur-xl opacity-10 w-full h-30"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-24"
+    class="hidden bg-white top-0 fixed z-[400] blur-xl opacity-10 w-full h-28"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-22"
+    class="hidden bg-white top-0 fixed z-[400] blur-xl opacity-10 w-full h-26"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-20"
+    class="hidden bg-white top-0 fixed z-[400] blur-lg opacity-20 w-full h-24"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-18"
+    class="hidden bg-white top-0 fixed z-[400] blur-lg opacity-20 w-full h-22"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-16"
+    class="hidden bg-white top-0 fixed z-[400] blur-lg opacity-20 w-full h-20"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-14"
+    class="bg-white top-0 fixed z-[400] blur-md opacity-30 w-full h-18"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-12"
+    class="bg-white top-0 fixed z-[400] blur-md opacity-30 w-full h-16"
   ></div>
   <div
-    class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-10"
+    class="bg-white top-0 fixed z-[400] blur-md opacity-30 w-full h-14"
   ></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-8"></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-6"></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-4"></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-50 blur-xl w-full h-2"></div>
+  <div
+    class="bg-white top-0 fixed z-[400] blur-sm opacity-80 w-full h-12"
+  ></div>
+  <div
+    class="bg-white top-0 fixed z-[400] blur-sm opacity-80 w-full h-10"
+  ></div>
+  <div class="bg-white top-0 fixed z-[400] blur-sm opacity-80 w-full h-8"></div>
+  <div class="bg-white top-0 fixed z-[400] opacity-40 w-full h-6"></div>
+  <div class="bg-white top-0 fixed z-[400] opacity-40 w-full h-4"></div>
+  <div class="bg-white top-0 fixed z-[400] opacity-40 w-full h-2"></div>
 
   <!-- bottom -->
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-30"
+    class="hidden bg-white bottom-0 fixed z-[400] blur-xl opacity-10 w-full h-30"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-28"
+    class="hidden bg-white bottom-0 fixed z-[400] blur-xl opacity-10 w-full h-28"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-26"
+    class="hidden bg-white bottom-0 fixed z-[400] blur-xl opacity-10 w-full h-26"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-24"
+    class="hidden bg-white bottom-0 fixed z-[400] blur-lg opacity-20 w-full h-24"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-22"
+    class="hidden bg-white bottom-0 fixed z-[400] blur-lg opacity-20 w-full h-22"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-20"
+    class="hidden bg-white bottom-0 fixed z-[400] blur-lg opacity-20 w-full h-20"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-18"
+    class="bg-white bottom-0 fixed z-[400] blur-md opacity-30 w-full h-18"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-16"
+    class="bg-white bottom-0 fixed z-[400] blur-md opacity-30 w-full h-16"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-14"
+    class="bg-white bottom-0 fixed z-[400] blur-md opacity-30 w-full h-14"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-12"
+    class="bg-white bottom-0 fixed z-[400] blur-sm opacity-80 w-full h-12"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-10"
+    class="bg-white bottom-0 fixed z-[400] blur-sm opacity-80 w-full h-10"
   ></div>
   <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-8"
+    class="bg-white bottom-0 fixed z-[400] blur-sm opacity-80 w-full h-8"
   ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-6"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-4"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] opacity-50 blur-xl w-full h-2"
-  ></div>
+  <div class="bg-white bottom-0 fixed z-[400] opacity-40 w-full h-6"></div>
+  <div class="bg-white bottom-0 fixed z-[400] opacity-40 w-full h-4"></div>
+  <div class="bg-white bottom-0 fixed z-[400] opacity-40 w-full h-2"></div>
 
   <div
-    class="top-0 fixed z-[9000] opacity-90 w-full h-15 flex justify-end md:justify-between items-center gap-3 px-8"
+    class="top-0 fixed z-[9000] opacity-90 w-full h-15 flex justify-end items-center gap-3 px-8"
   >
     <!-- <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
         <img src="../assets/img/logo.png" alt="" class="w-20" />
       </a>
     </div> -->
-
-    <MenuItems
-      class="w-full h-full uppercase text-md hidden 2xl:flex items-center justify-around"
-    />
     <button
       @click="checkForCurrentLanguageGerman()"
       class="text-[17px] w-max h-max py-2 px-1 flex gap-2"
@@ -144,43 +138,4 @@ const showTooltip = ref(false);
     </a>
   </div>
 </template>
-<style scoped>
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
+<style scoped></style>
