@@ -47,11 +47,10 @@ export const textDeutsch = {
     },
   },
   projects: {
+    heading: "Ausgewählte Projekte",
+    description:
+      "Hier sind einige meiner kürzlich abgeschlossenen Projekte, die meine Fähigkeiten und Erfahrung unter Beweis stellen.",
     eieruhr: {
-      heading: "Ausgewählte Projekte",
-      description:
-        "Hier sind einige meiner kürzlich abgeschlossenen Projekte, die meine Fähigkeiten und Erfahrung unter Beweis stellen.",
-
       title: "Eieruhr",
       beschreibung:
         "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern einzustellen.",

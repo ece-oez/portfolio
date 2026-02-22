@@ -10,12 +10,14 @@ const LanguageStore = useLanguageStore();
     id="projects"
     class="h-screen w-screen flex items-center justify-center flex-col gap-5"
   >
-    <h1 class="text-[50px] md:text-[60px] font-bold">Featured Projects</h1>
+    <h1 class="text-[50px] md:text-[60px] font-bold">
+      {{ LanguageStore.textObj.projects.heading }}
+    </h1>
 
     <h3
       class="md:text-[#ffa468] text-gray-400 text-center text-[20px] md:font-bold md:text-[40px] px-5"
     >
-      Here are some of my recent works that showcase my skills and experience.
+      {{ LanguageStore.textObj.projects.description }}
     </h3>
 
     <div
@@ -27,7 +29,7 @@ const LanguageStore = useLanguageStore();
         class="snap-center w-90 h-90"
       >
         <div
-          class="w-90 h-90 border-1 bg-white border-gray-200 rounded-xl flex flex-col gap-5 text-start shadow-lg"
+          class="w-90 h-90 border-1 bg-white border-gray-200 rounded-xl flex flex-col gap-5 text-start hover:shadow-xl shadow-gray-300 hover:scale-105 transition-all duration-400"
         >
           <div class="h-25">
             <img
