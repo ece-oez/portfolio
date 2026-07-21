@@ -1,9 +1,29 @@
 export const textEnglish = {
   home: {
-    contactBtn: "Contact Me",
-    projectBtn: "View Projects",
+    heading: "Hi, I'm ",
+    secondHeading: "Full-Stack-Developer & UI/UX-Designer",
+    description:
+      "I craft beautiful digital experiences that help businesses grow and users thrive. Specialized in Vue.js, Nuxt.js and modern web technologies.",
+    contactBtn: "Get in touch",
+    projectBtn: "View my Projects",
   },
   about: {
+    heading: "About Me",
+    description:
+      "Here is my profile, where I share my projects, travels and daily life.",
+    info1: "Projects",
+    info2: {
+      "timeRangeIn": "Years",
+      "info" : "Experience"  
+    },
+    info3: "Clients",
+    jobtitle: "Full Stack Developer",
+    bio1: "🎮 Gamedevelopment | 🌍 Travel | 🐾 animals",
+    bio2: "live, life and code.",
+    bio3: "👉 Follow my stories for more!",
+    followButton: "Follow",
+    messageButton: "Message",
+    shareButton: "Share",
     aboutme: {
       title: "Who am I?",
       text: "I am a determined and technology-passionate IT specialist in application development. My focus is always on efficiently achieving my goals, and I’m not afraid to work independently to deliver the best results. I especially love working with programming and technology in general – whether it's developing software, researching new technology trends, or optimizing work processes. I thrive in a focused and undisturbed work environment, as it allows me to reach my highest productivity. This independence in my work enables me to fully express my creative ideas and passion for IT. I appreciate working both independently and in a team. I particularly enjoy taking on tasks by myself, as it allows me to work at my own pace and come up with the best possible solutions. When it comes to technological trends, tools, or hardware and software, I enjoy exchanging ideas with like-minded people to stay up to date and constantly improve my knowledge.",
@@ -30,6 +50,9 @@ export const textEnglish = {
     },
   },
   projects: {
+    heading: "Featured Projects",
+    description:
+      "Here are some of my recent works that showcase my skills and experience.",
     eieruhr: {
       title: "Egg-Timer",
       beschreibung:

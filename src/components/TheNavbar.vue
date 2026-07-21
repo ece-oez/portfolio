@@ -1,94 +1,74 @@
 <script setup>
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import MenuItems from "./MenuItems.vue";
 import IconsBorder from "./IconsBorder.vue";
 import { useLanguageStore } from "@/stores/language";
+
+function showToolTipFunc() {
+  showTooltip.value = true;
+}
+
+function checkForCurrentLanguageGerman() {
+  const language = languageStore.currentLanguage;
+
+  if (language === "en") languageStore.currentLanguage = "de";
+  else languageStore.currentLanguage = "en";
+}
 
 const showMenuState = ref(false);
 
 const languageStore = useLanguageStore();
 
+const menuItemsForMobile = reactive([
+  { name: "AboutMe", href: "#aboutme", icon: "bi bi-person" },
+  { name: "Projects", href: "#projects", icon: "bi bi-code-slash" },
+  { name: "Skills", href: "#skills", icon: "bi bi-star" },
+  { name: "Contact", href: "#contact", icon: "bi bi-envelope" },
+]);
+
 const showTooltip = ref(false);
 </script>
 <template>
   <div
-    class="top-0 fixed bg-navbar z-[9000] opacity-90 text-white w-full h-1/12 flex justify-around">
+    class="top-0 px-5 md:px-10 fixed z-[9000] w-full h-15 flex justify-between items-center bg-gradient-to-b dark:from-black/20 dark:to-black/5 light:from-white/20 light:to-white/5 backdrop-blur-xl shadow-xs text-white gap-5"
+  >
     <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
-        <img src="../assets/img/logo.png" alt="" class="w-20" />
+        <img
+          src="../assets/img/logo-light.png"
+          alt=""
+          class="w-20 hidden dark:block"
+        />
+        <img
+          src="../assets/img/logo-dark.png"
+          alt=""
+          class="w-20 dark:hidden"
+        />
       </a>
     </div>
 
-    <button @click="showTooltip = !showTooltip">
-      <IconsBorder icon="bi bi-translate"> </IconsBorder>
-      <div
-        v-if="showTooltip"
-        class="tooltiptext absolute -translate-x-[30%] border border-stone-600 bg-stone-800 w-30 text-center rounded-lg">
-        <div
-          @click="(languageStore.currentLanguage = 'de'), (showTooltip = false)"
-          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
-          Deutsch
-        </div>
-        <div
-          @click="(languageStore.currentLanguage = 'en'), (showTooltip = false)"
-          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
-          Englisch
-        </div>
-      </div>
-    </button>
+    <MenuItems class="hidden dark:text-white xl:flex gap-10"></MenuItems>
 
-    <MenuItems
-      class="w-full h-full uppercase text-md hidden 2xl:flex items-center justify-around" />
+    <div class="flex gap-2">
+      <button
+        @click="checkForCurrentLanguageGerman()"
+        @hover="showToolTipFunc()"
+        class="relative text-[17px] w-max h-max py-2 px-3 flex gap-2 cursor-pointer rounded-md text-stone-600 hover:text-black dark:hover:text-white border border-transparent hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+      >
+        <i class="bi bi-translate"></i>
+        <span v-if="showTooltip" class="hidden md:block absolute">
+          {{ languageStore.currentLanguage.toUpperCase() }}
+        </span>
+      </button>
 
-    <button @click="showMenuState = !showMenuState" class="xl:hidden">
-      <IconsBorder icon="bi bi-list"></IconsBorder>
-      <MenuItems
-        v-if="showMenuState"
-        class="absolute -translate-x-[45%] sm:-translate-x-[35%] flex flex-col gap-2 bg-stone-800 border rounded-2xl border-stone-600" />
-    </button>
+      <button
+        class="text-[17px] w-max h-max py-2 px-3 md:hidden flex gap-2 cursor-pointer rounded-md border border-transparent text-stone-600 hover:text-black dark:hover:text-white hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
   </div>
+
+  <!-- bottom -->
 </template>
-<style scoped>
-.bg-navbar {
-  background-color: #2d2d2d;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
+<style scoped></style>

@@ -8,9 +8,21 @@ export const projectItems = [
     month: "Februar",
     year: "2023",
     technologies: [
-      "fa-brands fa-html5",
-      "fa-brands fa-css3",
-      "fa-brands fa-js",
+      {
+        name: "HTML5",
+        icon: "fa-brands fa-html5",
+        link: "https://developer.mozilla.org/de/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        icon: "fa-brands fa-css3",
+        link: "https://developer.mozilla.org/de/docs/Web/CSS",
+      },
+      {
+        name: "JavaScript",
+        icon: "fa-brands fa-js",
+        link: "https://developer.mozilla.org/de/docs/Web/JavaScript",
+      },
     ],
   },
   {
@@ -22,9 +34,21 @@ export const projectItems = [
     month: "März",
     year: "2023",
     technologies: [
-      "fa-brands fa-html5",
-      "fa-brands fa-css3",
-      "fa-brands fa-js",
+      {
+        name: "HTML5",
+        icon: "fa-brands fa-html5",
+        link: "https://developer.mozilla.org/de/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        icon: "fa-brands fa-css3",
+        link: "https://developer.mozilla.org/de/docs/Web/CSS",
+      },
+      {
+        name: "JavaScript",
+        icon: "fa-brands fa-js",
+        link: "https://developer.mozilla.org/de/docs/Web/JavaScript",
+      },
     ],
   },
   {
@@ -36,9 +60,21 @@ export const projectItems = [
     month: "juni",
     year: "2023",
     technologies: [
-      "fa-brands fa-html5",
-      "fa-brands fa-css3",
-      "fa-brands fa-js",
+      {
+        name: "HTML5",
+        icon: "fa-brands fa-html5",
+        link: "https://developer.mozilla.org/de/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        icon: "fa-brands fa-css3",
+        link: "https://developer.mozilla.org/de/docs/Web/CSS",
+      },
+      {
+        name: "JavaScript",
+        icon: "fa-brands fa-js",
+        link: "https://developer.mozilla.org/de/docs/Web/JavaScript",
+      },
     ],
   },
   {
@@ -50,11 +86,31 @@ export const projectItems = [
     month: "August",
     year: "2024",
     technologies: [
-      "fa-brands fa-html5",
-      "fa-brands fa-css3",
-      "fa-brands fa-js",
-      "fa-brands fa-vuejs",
-      "fa-solid fa-fire",
+      {
+        name: "HTML5",
+        icon: "fa-brands fa-html5",
+        link: "https://developer.mozilla.org/de/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        icon: "fa-brands fa-css3",
+        link: "https://developer.mozilla.org/de/docs/Web/CSS",
+      },
+      {
+        name: "JavaScript",
+        icon: "fa-brands fa-js",
+        link: "https://developer.mozilla.org/de/docs/Web/JavaScript",
+      },
+      {
+        name: "Vue.js",
+        icon: "fa-brands fa-vuejs",
+        link: "https://vuejs.org/",
+      },
+      {
+        name: "Firebase",
+        icon: "fa-solid fa-fire",
+        link: "https://firebase.google.com/",
+      },
     ],
   },
   {
@@ -67,11 +123,31 @@ export const projectItems = [
     month: "Mai",
     year: "2025",
     technologies: [
-      "fa-brands fa-html5",
-      "fa-brands fa-css3",
-      "fa-brands fa-js",
-      "fa-brands fa-vuejs",
-      "fa-brands fa-node",
+      {
+        name: "HTML5",
+        icon: "fa-brands fa-html5",
+        link: "https://developer.mozilla.org/de/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        icon: "fa-brands fa-css3",
+        link: "https://developer.mozilla.org/de/docs/Web/CSS",
+      },
+      {
+        name: "JavaScript",
+        icon: "fa-brands fa-js",
+        link: "https://developer.mozilla.org/de/docs/Web/JavaScript",
+      },
+      {
+        name: "Vue.js",
+        icon: "fa-brands fa-vuejs",
+        link: "https://vuejs.org/",
+      },
+      {
+        name: "Node.js",
+        icon: "fa-brands fa-node",
+        link: "https://nodejs.org/",
+      },
     ],
   },
 ];
