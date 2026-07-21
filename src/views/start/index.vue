@@ -11,14 +11,14 @@ const LanguageStore = useLanguageStore();
 
 <template>
   <div
-    class="snap-y overflow-scroll h-screen w-screen scroll-smooth select-none"
+    class=" overflow-y-scroll overflow-x-hidden h-screen w-screen scroll-smooth select-none bg-[#faf9f6] dark:bg-[#191919] scrollbar-hide"
   >
     <TheNavbar></TheNavbar>
-    <landingSection class="snap-center"></landingSection>
-    <aboutSection class="snap-center"></aboutSection>
+    <landingSection class=""></landingSection>
+    <aboutSection class=""></aboutSection>
     <!-- skills -->
-    <projectsSection class="snap-center"></projectsSection>
-    <contactSection class="snap-center"> </contactSection>
+    <projectsSection class=""></projectsSection>
+    <contactSection class=""> </contactSection>
   </div>
 </template>
 <style scoped>

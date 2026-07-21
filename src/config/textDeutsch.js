@@ -10,9 +10,12 @@ export const textDeutsch = {
   about: {
     heading: "Über mich",
     description:
-      "Hier ist mein Instagram-Profil, wo ich meine Projekte, Reisen und den Alltag teile.",
+      "Hier ist mein Profil, wo ich meine Projekte, Reisen und den Alltag teile.",
     info1: "Projekte",
-    info2: "Erfahrung",
+    info2: {
+      "timeRangeIn": "Jahre",
+      "info" : "Erfahrung"  
+    },
     info3: "Kunden",
     jobtitle: "Full Stack Entwicklerin",
     bio1: "🎮 Spielentwicklung | 🌍 Reisen | 🐾 Tiere",
@@ -20,7 +23,7 @@ export const textDeutsch = {
     bio3: "👉 Folge meinen Stories für mehr!",
     followButton: "Folgen",
     messageButton: "Nachricht",
-    contactButton: "Kontakt",
+    shareButton: "Teilen",
 
     aboutme: {
       title: "Wer bin ich?",

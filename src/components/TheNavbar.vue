@@ -4,6 +4,10 @@ import MenuItems from "./MenuItems.vue";
 import IconsBorder from "./IconsBorder.vue";
 import { useLanguageStore } from "@/stores/language";
 
+function showToolTipFunc() {
+  showTooltip.value = true;
+}
+
 function checkForCurrentLanguageGerman() {
   const language = languageStore.currentLanguage;
 
@@ -25,117 +29,46 @@ const menuItemsForMobile = reactive([
 const showTooltip = ref(false);
 </script>
 <template>
-  <!-- top -->
   <div
-    class="hidden bg-white top-0 fixed z-[400] blur-xl opacity-10 w-full h-30"
-  ></div>
-  <div
-    class="hidden bg-white top-0 fixed z-[400] blur-xl opacity-10 w-full h-28"
-  ></div>
-  <div
-    class="hidden bg-white top-0 fixed z-[400] blur-xl opacity-10 w-full h-26"
-  ></div>
-  <div
-    class="hidden bg-white top-0 fixed z-[400] blur-lg opacity-20 w-full h-24"
-  ></div>
-  <div
-    class="hidden bg-white top-0 fixed z-[400] blur-lg opacity-20 w-full h-22"
-  ></div>
-  <div
-    class="hidden bg-white top-0 fixed z-[400] blur-lg opacity-20 w-full h-20"
-  ></div>
-  <div
-    class="bg-white top-0 fixed z-[400] blur-md opacity-30 w-full h-18"
-  ></div>
-  <div
-    class="bg-white top-0 fixed z-[400] blur-md opacity-30 w-full h-16"
-  ></div>
-  <div
-    class="bg-white top-0 fixed z-[400] blur-md opacity-30 w-full h-14"
-  ></div>
-  <div
-    class="bg-white top-0 fixed z-[400] blur-sm opacity-80 w-full h-12"
-  ></div>
-  <div
-    class="bg-white top-0 fixed z-[400] blur-sm opacity-80 w-full h-10"
-  ></div>
-  <div class="bg-white top-0 fixed z-[400] blur-sm opacity-80 w-full h-8"></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-40 w-full h-6"></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-40 w-full h-4"></div>
-  <div class="bg-white top-0 fixed z-[400] opacity-40 w-full h-2"></div>
-
-  <!-- bottom -->
-  <div
-    class="hidden bg-white bottom-0 fixed z-[400] blur-xl opacity-10 w-full h-30"
-  ></div>
-  <div
-    class="hidden bg-white bottom-0 fixed z-[400] blur-xl opacity-10 w-full h-28"
-  ></div>
-  <div
-    class="hidden bg-white bottom-0 fixed z-[400] blur-xl opacity-10 w-full h-26"
-  ></div>
-  <div
-    class="hidden bg-white bottom-0 fixed z-[400] blur-lg opacity-20 w-full h-24"
-  ></div>
-  <div
-    class="hidden bg-white bottom-0 fixed z-[400] blur-lg opacity-20 w-full h-22"
-  ></div>
-  <div
-    class="hidden bg-white bottom-0 fixed z-[400] blur-lg opacity-20 w-full h-20"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] blur-md opacity-30 w-full h-18"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] blur-md opacity-30 w-full h-16"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] blur-md opacity-30 w-full h-14"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] blur-sm opacity-80 w-full h-12"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] blur-sm opacity-80 w-full h-10"
-  ></div>
-  <div
-    class="bg-white bottom-0 fixed z-[400] blur-sm opacity-80 w-full h-8"
-  ></div>
-  <div class="bg-white bottom-0 fixed z-[400] opacity-40 w-full h-6"></div>
-  <div class="bg-white bottom-0 fixed z-[400] opacity-40 w-full h-4"></div>
-  <div class="bg-white bottom-0 fixed z-[400] opacity-40 w-full h-2"></div>
-
-  <div
-    class="top-0 fixed z-[9000] opacity-90 w-full h-15 flex justify-end items-center gap-3 px-8"
+    class="top-0 px-5 md:px-10 fixed z-[9000] w-full h-15 flex justify-between items-center bg-gradient-to-b dark:from-black/20 dark:to-black/5 light:from-white/20 light:to-white/5 backdrop-blur-xl shadow-xs text-white gap-5"
   >
-    <!-- <div class="flex items-center w-1/2 xl:w-full">
+    <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" class="select-none">
-        <img src="../assets/img/logo.png" alt="" class="w-20" />
+        <img
+          src="../assets/img/logo-light.png"
+          alt=""
+          class="w-20 hidden dark:block"
+        />
+        <img
+          src="../assets/img/logo-dark.png"
+          alt=""
+          class="w-20 dark:hidden"
+        />
       </a>
-    </div> -->
-    <button
-      @click="checkForCurrentLanguageGerman()"
-      class="text-[17px] w-max h-max py-2 px-1 flex gap-2"
-    >
-      <i class="bi bi-translate"></i>
-      <span>
-        {{ languageStore.currentLanguage.toUpperCase() }}
-      </span>
-    </button>
+    </div>
+
+    <MenuItems class="hidden dark:text-white xl:flex gap-10"></MenuItems>
+
+    <div class="flex gap-2">
+      <button
+        @click="checkForCurrentLanguageGerman()"
+        @hover="showToolTipFunc()"
+        class="relative text-[17px] w-max h-max py-2 px-3 flex gap-2 cursor-pointer rounded-md text-stone-600 hover:text-black dark:hover:text-white border border-transparent hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+      >
+        <i class="bi bi-translate"></i>
+        <span v-if="showTooltip" class="hidden md:block absolute">
+          {{ languageStore.currentLanguage.toUpperCase() }}
+        </span>
+      </button>
+
+      <button
+        class="text-[17px] w-max h-max py-2 px-3 md:hidden flex gap-2 cursor-pointer rounded-md border border-transparent text-stone-600 hover:text-black dark:hover:text-white hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
   </div>
 
   <!-- bottom -->
-
-  <div
-    class="bottom-0 fixed z-[500] opacity-90 w-full h-15 text-2xl text-gray-300 flex justify-center items-center gap-10 px-8"
-  >
-    <a
-      v-for="menuItem in menuItemsForMobile"
-      :key="menuItem.name"
-      :href="menuItem.href"
-    >
-      <i :class="menuItem.icon"></i>
-    </a>
-  </div>
 </template>
 <style scoped></style>
