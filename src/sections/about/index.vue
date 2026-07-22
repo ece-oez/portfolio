@@ -4,9 +4,12 @@ import { highlights } from "@/config/highlights";
 import { projectItems } from "@/config/projectItems";
 import { useLanguageStore } from "@/stores/language";
 import { RouterLink } from "vue-router";
+import { RouterView } from "vue-router";
+import { ref } from "vue";
 
 const LanguageStore = useLanguageStore();
 
+const showDialog = ref(false);
 </script>
 
 <template>
@@ -15,17 +18,20 @@ const LanguageStore = useLanguageStore();
     class="h-screen w-screen flex justify-center flex-col gap-5 md:gap-10"
   >
     <div class="pb-10 flex flex-col gap-5">
-      <h1 class="text-[50px] md:text-[60px] font-bold text-center dark:text-white">
+      <h1
+        class="text-[50px] md:text-[60px] font-bold text-center dark:text-white"
+      >
         {{ LanguageStore.textObj.about.heading }}
       </h1>
 
-      <h3 class="text-stone-600 dark:text-stone-200 text-center text-[20px] md:text-[30px] px-5">
+      <h3
+        class="text-stone-600 dark:text-stone-200 text-center text-[20px] md:text-[30px] px-5"
+      >
         {{ LanguageStore.textObj.about.description }}
       </h3>
     </div>
 
-    <div class="flex gap-5 md:gap-15 px-5 md:px-10 ">
-
+    <div class="flex gap-5 md:gap-15 px-5 md:px-10">
       <img
         draggable="false"
         class="h-20 w-20 md:h-40 md:w-40 border-1 border-gray-200 rounded-full"
@@ -41,7 +47,9 @@ const LanguageStore = useLanguageStore();
             <p class="">{{ LanguageStore.textObj.about.info1 }}</p>
           </div>
           <div class="flex flex-col">
-            <h3 class="font-bold">2 {{LanguageStore.textObj.about.info2.timeRangeIn}}</h3>
+            <h3 class="font-bold">
+              2 {{ LanguageStore.textObj.about.info2.timeRangeIn }}
+            </h3>
             <p class="">{{ LanguageStore.textObj.about.info2.info }}</p>
           </div>
           <div class="flex flex-col">
@@ -53,7 +61,9 @@ const LanguageStore = useLanguageStore();
     </div>
 
     <div class="px-5 md:px-10">
-      <p class="md:text-[19px] text-gray-400 dark:text-stone-200 font-bold text-start">
+      <p
+        class="md:text-[19px] text-gray-400 dark:text-stone-200 font-bold text-start"
+      >
         {{ LanguageStore.textObj.about.jobtitle }}
       </p>
 
@@ -90,13 +100,14 @@ const LanguageStore = useLanguageStore();
     </div>
 
     <div
-      class="ps-5 md:ps-10 md:pb-5 gap-5 md:gap-10 flex flex-row overflow-x-scroll scrollbar-hide"
+      class="ps-5 md:ps-10 py-5 gap-5 md:gap-10 flex flex-row overflow-x-scroll scrollbar-hide"
     >
       <div
         v-for="(highlight, index) in highlights"
         class="text-center flex flex-col gap-3 font-medium md:font-bold dark:text-white"
       >
         <RouterLink
+          @click="showDialog = true"
           :to="highlight.link"
           class="w-30 h-30 md:w-46 md:h-46 rounded-full flex flex-col justify-center items-center border-5 md:border-8 border-[#FF8C40]"
         >
@@ -106,8 +117,22 @@ const LanguageStore = useLanguageStore();
             :alt="highlight.title"
           />
         </RouterLink>
-        
+
         {{ highlight.title }}
+      </div>
+    </div>
+
+    <div
+      v-if="showDialog"
+      class="absolute top-0 w-screen h-screen flex justify-center items-center backdrop-blur-xl bg-white/10 border-white/20 shadow-2xl"
+    >
+      <div
+        class="w-2/3 h-2/3 z-500 dark:text-white border border-stone-300 dark:border-stone-600 shadow-lg dark:shadow-stone-800 rounded-xl bg-white dark:bg-[#000000] p-10"
+      >
+        REEL
+        <button class="border p-5" @click="showDialog = false">HERE</button>
+
+        <RouterView></RouterView>
       </div>
     </div>
   </section>

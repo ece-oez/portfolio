@@ -11,7 +11,7 @@ const LanguageStore = useLanguageStore();
   >
     <a
       class="absolute left-0 bg-red-300 w-1/2 h-full opacity-50 text-center flex items-center justify-center font-bold"
-      href="/#about"
+      href="/#aboutme"
       >back</a
     >
     <div class="w-full h-full bg-blue-500 font-bold">Me</div>
