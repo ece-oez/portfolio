@@ -7,7 +7,7 @@ const LanguageStore = useLanguageStore();
 <template>
   <section
     id="home"
-    class="h-screen w-screen flex items-center justify-center flex-col gap-10"
+    class="h-screen w-screen flex items-center justify-center flex-col pt-20 gap-6 md:gap-10"
   >
     <h1 class="text-[50px] md:text-[80px] font-bold dark:text-white">
       {{ LanguageStore.textObj.home.heading }}
@@ -21,7 +21,7 @@ const LanguageStore = useLanguageStore();
     </h3>
 
     <p
-      class="text-center  w-100 md:w-150 h-25 flex items-center dark:text-white light:text-stone-500"
+      class="text-center w-100 md:w-150 h-25 flex items-center dark:text-white light:text-stone-500"
     >
       {{ LanguageStore.textObj.home.description }}
     </p>
@@ -42,22 +42,24 @@ const LanguageStore = useLanguageStore();
     </div>
 
     <div class="flex gap-10 text-[30px] text-stone-500">
-  <a
-      class="hover:text-black dark:hover:text-white transition-all duration-500"
-      href="https://github.com/ece-oez"
-      target="_blank"
+      <a
+        class="hover:text-black dark:hover:text-white transition-all duration-500"
+        href="https://github.com/ece-oez"
+        target="_blank"
       >
-      <i class="bi bi-github"></i>
-
+        <i class="bi bi-github"></i>
       </a>
       <a
-      class="hover:text-black dark:hover:text-white transition-all duration-500"
-      href="mailto:oezmen.ece@gmail.com"
+        class="hover:text-black dark:hover:text-white transition-all duration-500"
+        href="mailto:oezmen.ece@gmail.com"
       >
-      <i class="bi bi-envelope"></i>
-
+        <i class="bi bi-envelope"></i>
       </a>
     </div>
+
+    <a class="text-3xl text-stone-500 animate-bounce" href="#aboutme">
+      <i class="bi bi-arrow-down"></i>
+    </a>
   </section>
 </template>
 <style scoped></style>

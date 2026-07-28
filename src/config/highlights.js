@@ -29,29 +29,29 @@ export const highlights = [
     img: jobImgLink,
     title: "Job",
   },
-  {
-    link: "/life",
-    img: lifeImgLink,
-    title: "Life",
-  },
-  {
-    link: "/pet",
-    img: petImgLink,
-    title: "Pet",
-  },
+  // {
+  //   link: "/life",
+  //   img: lifeImgLink,
+  //   title: "Life",
+  // },
+  // {
+  //   link: "/pet",
+  //   img: petImgLink,
+  //   title: "Pet",
+  // },
+  // {
+  //   link: "/food",
+  //   img: foodImgLink,
+  //   title: "Food",
+  // },
+  // {
+  //   link: "/travel",
+  //   img: travelImgLink,
+  //   title: "Travel",
+  // },
   {
     link: "/quotes",
     img: quotesImgLink,
     title: "Quotes",
-  },
-  {
-    link: "/food",
-    img: foodImgLink,
-    title: "Food",
-  },
-  {
-    link: "/travel",
-    img: travelImgLink,
-    title: "Travel",
   },
 ];
