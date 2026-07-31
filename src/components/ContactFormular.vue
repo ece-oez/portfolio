@@ -3,28 +3,9 @@ import { onMounted, ref } from "vue";
 import { useLanguageStore } from "@/stores/language";
 
 const LanguageStore = useLanguageStore();
-
-const formular = ref(false);
-
-onMounted(() => {
-  // Create the observer
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio > 0.9) {
-      // Add the animation class
-      entries[0].target.classList.add("slide-formular");
-      entries[0].target.classList.remove("scale-0");
-      return;
-    }
-    entries[0].target.classList.add("scale-0");
-    entries[0].target.classList.remove("slide-formular");
-  });
-
-  // Tell the observer which elements to track
-  observer.observe(formular.value);
-});
 </script>
 <template>
-  <div class="w-full h-max" ref="formular">
+  <div class="w-full h-max">
     <form
       action="https://api.web3forms.com/submit"
       method="POST"

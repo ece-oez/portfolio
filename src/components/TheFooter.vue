@@ -8,72 +8,76 @@ const LanguageStore = useLanguageStore();
 
 const footer = ref(false);
 
-onMounted(() => {
-  // Create the observer
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      // Add the animation class
-      entries[0].target.classList.add("slide-footer");
-      entries[0].target.classList.remove("scale-0");
-      return;
-    }
-    entries[0].target.classList.add("scale-0");
-    entries[0].target.classList.remove("slide-footer");
-  });
-
-  // Tell the observer which elements to track
-  observer.observe(footer.value);
-});
-
 const modalStore = useModalStore();
 </script>
 <template>
-  <div
-    ref="footer"
-    class="bg-dunkelgrau h-full flex flex-col justify-center items-center gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-9">
-    <div class="text-sm sm:text-md md:text-lg lg:text-xl">
-      © 2025 Ece Özmen.
-      {{ LanguageStore.textObj.footer.rights }}
-    </div>
+  <footer
+    class="relative mt-20 bg-stone-950 text-stone-300 px-6 py-10 overflow-hidden flex flex-col gap-4 items-center w-full"
+  >
+    <!-- Decorative blur -->
+    <div
+      class="absolute -top-20 left-1/2 -translate-x-1/2 w-100 h-60 bg-orange-500/20 blur-3xl rounded-full"
+    ></div>
 
     <div
-      class="w-1/2 xl:w-1/3 flex justify-between items-center text-2xl lg:text-3xl xl:text-5xl">
-      <FooterIcon
-        icon="bi bi-envelope-fill"
-        link="mailto:oezmen.ece@gmail.com" />
-      <FooterIcon
-        icon="bi bi-linkedin"
-        target="_blank"
-        link="https://linkedin.com/in/eceoezmen" />
-      <FooterIcon
-        icon="bi bi-github"
-        target="_blank"
-        link="https://github.com/ece-oez" />
-      <FooterIcon
-        @click="(modalStore.modalState = true), modalStore.showLinks()"
-        icon="bi bi-link-45deg"
-        class="cursor-pointer" />
+      class="relative flex flex-col md:flex-row gap-20 max-w-5xl mx-auto h-full w-full"
+    >
+      <div class="flex flex-col w-full text-center">
+        <h1 class="text-2xl md:text-3xl text-center font-semibold text-white">
+          Quick Links
+        </h1>
+        <a href="#home">Home</a>
+        <a href="#aboutme">{{ LanguageStore.textObj.navigation.about }}</a>
+        <a href="#projects">{{ LanguageStore.textObj.navigation.projects }}</a>
+        <a href="#skills">{{ LanguageStore.textObj.navigation.skills }}</a>
+        <a href="#contact">{{ LanguageStore.textObj.navigation.contact }}</a>
+      </div>
+
+      <!-- Logo / Name -->
+      <div class="flex flex-col w-full text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold text-white">Ece Özmen</h2>
+        <p class="text-sm md:text-base text-stone-400">Full Stack Developer</p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex flex-col w-full text-center">
+        <h1 class="text-2xl md:text-3xl font-semibold text-white">Connect</h1>
+        <div class="flex gap-4 text-2xl justify-center">
+          <FooterIcon
+            icon="bi bi-envelope-fill"
+            link="mailto:oezmen.ece@gmail.com"
+            class="footer-icon"
+          />
+
+          <FooterIcon
+            icon="bi bi-linkedin"
+            target="_blank"
+            link="https://linkedin.com/in/eceoezmen"
+            class="footer-icon"
+          />
+
+          <FooterIcon
+            icon="bi bi-github"
+            target="_blank"
+            link="https://github.com/ece-oez"
+            class="footer-icon"
+          />
+        </div>
+      </div>
     </div>
 
-    <div class="text-sm sm:text-md md:text-lg lg:text-xl">
-      {{ LanguageStore.textObj.footer.made }} Ece Özmen
+    <!-- Divider -->
+    <div class="w-1/2 h-px bg-stone-800 bg"></div>
+
+    <!-- Copyright -->
+    <div
+      class="flex flex-col md:flex-row justify-center items-center w-full text-sm text-stone-500"
+    >
+      <span>
+        {{ LanguageStore.textObj.footer.made }} Ece Özmen © 2026
+        {{ LanguageStore.textObj.footer.rights }}
+      </span>
     </div>
-  </div>
+  </footer>
 </template>
-<style scoped>
-.slide-footer {
-  animation-name: slide-footer;
-  animation-duration: 1s;
-}
-
-@media only screen and (min-width: 1440px) {
-  @keyframes slide-footer {
-    0% {
-      transform: translate(0px, 150px);
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
-  }
-}
-</style>
+<style scoped></style>
