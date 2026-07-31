@@ -2,6 +2,9 @@
 import { useLanguageStore } from "@/stores/language";
 import { useProjectItems } from "@/config/projectItemsComposable";
 import { RouterLink } from "vue-router";
+import { usePreferredDark } from "@vueuse/core";
+
+const isDark = usePreferredDark();
 
 const { projectItems } = useProjectItems();
 
