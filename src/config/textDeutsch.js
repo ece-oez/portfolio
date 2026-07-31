@@ -64,8 +64,32 @@ export const textDeutsch = {
     heading: "Ausgewählte Projekte",
     description:
       "Hier sind einige meiner kürzlich abgeschlossenen Projekte, die meine Fähigkeiten und Erfahrung unter Beweis stellen.",
+    rct: {
+      title: "Remote Config Tool",
+      beschreibung:
+        "Für mein Abschlussprojekt zum Fachinformatiker Anwendungsentwicklung habe ich ein Feature‑Flag/Feature‑Toggle‑System entwickelt (ähnlich wie Flagsmith) zur zentralen Steuerung von Feature‑Flags und Konfigurationen über mehrere Systeme hinweg. Das Tool ermöglicht konsistentes State‑Management, gezielte Rollouts und Umgebungssteuerung.",
+      month: "Juni",
+    },
+    filmdb: {
+      title: "Film Bibliothek",
+      beschreibung:
+        "Eine moderne Filmbibliothek zum Verwalten und Entdecken von Filmen. Die Anwendung ermöglicht das Durchsuchen, Suchen und Organisieren einer Filmsammlung sowie das Anzeigen detaillierter Informationen wie Bewertung, Genre, Erscheinungsjahr und Beschreibung. Der Fokus lag auf einer übersichtlichen Benutzeroberfläche und einer intuitiven Nutzererfahrung.",
+      month: "November",
+    },
+    nwdb: {
+      title: "Netzwerk Dashboard (Monitoring System)",
+      beschreibung:
+        "Ein webbasiertes Netzwerk-Monitoring-Dashboard zur zentralen Überwachung von Systemen und Netzwerkgeräten. Die Anwendung stellt wichtige Informationen wie Gerätestatus, Leistungsmetriken und Ereignisse übersichtlich dar und unterstützt Administratoren dabei, Probleme frühzeitig zu erkennen. Ziel des Projekts ist eine einfache, intuitive und effiziente Überwachung der gesamten Infrastruktur.",
+      month: "April",
+    },
+    cafebizbize: {
+      title: "Cafe Webseite modernisieren für Kunden",
+      beschreibung:
+        "Modernes Redesign und Entwicklung einer Café-Website für einen Kunden. Der Fokus lag auf einem zeitgemäßen Design, einer verbesserten Benutzerfreundlichkeit, responsivem Layout sowie einer optimierten Performance, um Besuchern ein ansprechendes Online-Erlebnis zu bieten.",
+      month: "Dezember",
+    },
     eieruhr: {
-      title: "Eieruhr",
+      title: "Eier Uhr",
       beschreibung:
         "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern einzustellen.",
       month: "Februar",

@@ -1,7 +1,6 @@
 <script setup>
 import ProjectCards from "@/components/ProjectCards.vue";
 import { highlights } from "@/config/highlights";
-import { projectItems } from "@/config/projectItems";
 import { useLanguageStore } from "@/stores/language";
 import { RouterLink } from "vue-router";
 import { RouterView } from "vue-router";
@@ -147,7 +146,7 @@ const currentTextObj = computed(() => {
         <Transition name="fade" mode="out-in">
           <div
             :key="currentHighlight"
-            class="w-full 2xl:px-40:w-2/3 h-max 2xl:h-full p-10 2xl:p-15 border-b border-t 2xl:border border-stone-200 dark:border-stone-600 2xl:shadow-md 2xl:rounded-xl bg-white dark:bg-black flex flex-col gap-5"
+            class="w-full 2xl:w-2/3 h-max 2xl:h-full p-10 2xl:p-15 border-b border-t 2xl:border border-stone-200 dark:border-stone-600 2xl:shadow-md 2xl:rounded-xl bg-white dark:bg-black flex flex-col gap-5"
           >
             <h3 class="font-bold text-2xl dark:text-white">
               {{ currentTextObj.title }}

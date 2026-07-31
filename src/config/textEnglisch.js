@@ -63,6 +63,30 @@ export const textEnglish = {
     heading: "Featured Projects",
     description:
       "Here are some of my recent works that showcase my skills and experience.",
+    rct: {
+      title: "Remote Config Tool",
+      beschreibung:
+        "Developed a feature flag/feature toggle management system (similar to Flagsmith) as part of my final apprenticeship project as an Application Development Specialist. The system provides centralized management of feature flags and configurations across multiple systems, enabling consistent state management, targeted rollouts, and environment-specific control.",
+      month: "June",
+    },
+    filmdb: {
+      title: "Film library",
+      beschreibung:
+        "A modern movie library application for managing and discovering films. It allows users to browse, search, and organize a movie collection while displaying detailed information such as ratings, genres, release dates, and descriptions. The project focuses on a clean user interface and an intuitive user experience.",
+      month: "November",
+    },
+    nwdb: {
+      title: "Network Dashboard (Monitoring System)",
+      beschreibung:
+        "A web-based network monitoring dashboard designed to centrally monitor systems and network devices. The application provides a clear overview of device status, performance metrics, and events, helping administrators identify issues at an early stage. The goal of the project is to offer a simple, intuitive, and efficient way to monitor the entire infrastructure.",
+      month: "April",
+    },
+    cafebizbize: {
+      title: "Cafe Website Remake for Client",
+      beschreibung:
+        "Modern redesign and development of a café website for a client. The project focused on creating a clean, responsive, and user-friendly interface while improving performance and providing an engaging experience across desktop and mobile devices.",
+      month: "December",
+    },
     eieruhr: {
       title: "Egg-Timer",
       beschreibung:
