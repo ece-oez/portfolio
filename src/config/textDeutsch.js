@@ -170,6 +170,8 @@ export const textDeutsch = {
   },
 
   skills: {
+    heading: "Fähigkeiten & Expertise",
+    text: "Ich arbeite mit verschiedenen Technologien und Tools, um Ideen zum Leben zu erwecken",
     git: {
       ability: "Verwalte Versionen und Quellcode.",
       description:

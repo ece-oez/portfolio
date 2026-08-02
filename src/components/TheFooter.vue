@@ -72,7 +72,7 @@ const modalStore = useModalStore();
           <FooterIcon
             icon="bi bi-linkedin"
             target="_blank"
-            link="https://linkedin.com/in/eceoezmen"
+            link="https://www.linkedin.com/in/ece-oezmen/"
             class="footer-icon"
           />
 

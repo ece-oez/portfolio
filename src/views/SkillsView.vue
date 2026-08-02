@@ -8,21 +8,6 @@ import SkillsCards from "@/components/SkillsCards.vue";
 import WindowLayout from "@/components/WindowLayout.vue";
 
 const lines = ref(null);
-
-onMounted(() => {
-  // Create the observer
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio > 0.9) {
-      // Add the animation class
-      entries[0].target.classList.add("lines-anim");
-      return;
-    }
-    entries[0].target.classList.remove("lines-anim");
-  });
-
-  // Tell the observer which elements to track
-  observer.observe(lines.value);
-});
 </script>
 
 <template>
@@ -37,11 +22,13 @@ onMounted(() => {
         :icon-width="aboutmeItem.iconWidth"
         :text="aboutmeItem.text"
         :text-width="aboutmeItem.textWidth"
-        :class="aboutmeItem.styling">
+        :class="aboutmeItem.styling"
+      >
       </TheSphere>
       <div ref="lines" class="absolute w-full lines-anim">
         <div
-          class="absolute left-20 w-420 border-b border-2 border-stone-600"></div>
+          class="absolute left-20 w-420 border-b border-2 border-stone-600"
+        ></div>
       </div>
     </div>
 

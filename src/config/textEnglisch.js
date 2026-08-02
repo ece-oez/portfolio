@@ -170,6 +170,8 @@ export const textEnglish = {
   },
 
   skills: {
+    heading: "Skills & Expertise",
+    text: "I work with a variety of technologies and tools to bring ideas to life",
     git: {
       ability: "Manage versions and source code.",
       description:

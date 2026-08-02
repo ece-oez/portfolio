@@ -44,7 +44,7 @@ const menuItemsForMobile = computed(() => {
 </script>
 <template>
   <div
-    class="top-0 px-5 md:px-10 fixed z-[400] w-full h-15 flex justify-between items-center bg-gradient-to-b dark:from-black/20 dark:to-black/5 light:from-white/20 light:to-white/5 backdrop-blur-xl shadow-xs text-white gap-5"
+    class="top-0 md:px-20 2xl:px-60 fixed z-[400] w-full h-15 flex justify-between items-center bg-gradient-to-b dark:from-black/20 dark:to-black/5 light:from-white/20 light:to-white/5 backdrop-blur-xl shadow-xs text-white gap-5"
   >
     <div class="flex items-center w-1/2 xl:w-full">
       <a href="#home" @click="menuVisibility = false" class="select-none">
@@ -78,7 +78,7 @@ const menuItemsForMobile = computed(() => {
 
       <button
         @click="menuVisibility = !menuVisibility"
-        class="text-[17px] w-max h-max py-2 px-3 md:hidden flex gap-2 cursor-pointer rounded-md border border-transparent text-stone-600 hover:text-black dark:hover:text-white hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+        class="text-[17px] w-max h-max py-2 px-3 xl:hidden flex gap-2 cursor-pointer rounded-md border border-transparent text-stone-600 hover:text-black dark:hover:text-white hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
       >
         <i v-if="!menuVisibility" class="bi bi-list"></i>
         <i v-if="menuVisibility" class="bi bi-x-lg"></i>
@@ -105,7 +105,7 @@ const menuItemsForMobile = computed(() => {
         @click="menuVisibility = false"
         v-for="item in menuItemsForMobile"
         :href="item.href"
-        class="p-4 border-b-1 border-stone-300 dark:border-stone-600"
+        class="p-4 border-b border-stone-300 dark:border-stone-600"
       >
         {{ item.name }}
       </a>
