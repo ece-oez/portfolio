@@ -137,21 +137,30 @@ export const textEnglish = {
   contact: {
     heading: "Contact",
     text: "If you would like to learn more about my work or are interested in collaborating, feel free to contact me via the contact form. I will get back to you as soon as possible.",
+    info: {
+      email: "Email",
+      phone: "Phone",
+      location: {
+        header: "Location",
+        country: "Germany",
+      },
+    },
   },
+
   form: {
     name: {
       label: "Name",
-      placeholder: "John Doe",
+      placeholder: "Your Name",
     },
     email: {
       label: "Email",
-      placeholder: "doe@gmail.com",
+      placeholder: "your.email@example.com",
     },
     message: {
       label: "Message",
-      placeholder: "We would like to invite you to a job interview.",
+      placeholder: "Tell me about your project...",
     },
-    button: "Send",
+    button: "Send Message",
   },
   footer: {
     rights: "All rights reserved.",

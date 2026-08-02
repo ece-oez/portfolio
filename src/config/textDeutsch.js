@@ -138,22 +138,29 @@ export const textDeutsch = {
   contact: {
     heading: "Kontakt",
     text: "Wenn Sie mehr über meine Arbeit erfahren möchten oder an einer Zusammenarbeit interessiert sind, können Sie mich jederzeit über das Kontaktformular erreichen. Ich werde mich schnellstmöglich bei Ihnen melden.",
+    info: {
+      email: "E-Mail",
+      phone: "Telefon",
+      location: {
+        header: "Standort",
+        country: "Deutschland",
+      },
+    },
   },
   form: {
     name: {
       label: "Name",
-      placeholder: "Max Mustermann",
+      placeholder: "Ihr Name",
     },
     email: {
       label: "Email",
-      placeholder: "mustermann@gmail.com",
+      placeholder: "ihre.email@beispiel.de",
     },
     message: {
       label: "Nachricht",
-      placeholder:
-        "Hiermit würden wir Sie gerne zum Vorstellungsgespräch einladen.",
+      placeholder: "Erzählen Sie mir von Ihrem Projekt...",
     },
-    button: "Senden",
+    button: "Nachricht Senden",
   },
   footer: {
     rights: " Alle Rechte vorbehalten.",

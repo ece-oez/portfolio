@@ -1,27 +1,18 @@
 <script setup>
-import { onMounted, ref } from "vue";
 import { useLanguageStore } from "@/stores/language";
 
 const LanguageStore = useLanguageStore();
+
+const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 </script>
 <template>
   <div class="w-full h-max">
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
-      class="w-full h-max flex flex-col gap-5 p-5 rounded-xl border-1 border-gray-200 shadow-md"
+      class="w-full h-max flex flex-col gap-5 p-5 rounded-xl border border-stone-300 dark:border-stone-700 bg-white dark:bg-black shadow-md dark:shadow-stone-800"
     >
-      <input
-        type="hidden"
-        name="access_key"
-        value="9b46dc84-bc0b-430d-8998-984d161363d0"
-      />
-
-      <!-- <input
-        type="hidden"
-        name="access_key"
-        :value="process.env.WEB3FORMS_ACCESS_KEY"
-      /> -->
+      <input type="hidden" name="access_key" :value="accessKey" />
 
       <label for="name" class="text-gray-400 font-bold">
         {{ LanguageStore.textObj.form.name.label }}</label
@@ -30,7 +21,7 @@ const LanguageStore = useLanguageStore();
         type="text"
         name="name"
         :placeholder="LanguageStore.textObj.form.name.placeholder"
-        class="bg-[#f3f3f5] text-gray-500 p-2 px-5 rounded-lg border-1 border-gray-200"
+        class="outline-none focus:border-stone-800 focus:shadow-lg dark:focus:dark:shadow-stone-700 dark:focus:border-stone-300 bg-[#f3f3f5] dark:bg-[#2B2B2F] text-stone-500 dark:text-[#EAEAEA] p-2 px-5 rounded-lg border border-stone-300 dark:border-stone-600"
         required
       />
       <label for="betreff" class="text-gray-400 font-bold">{{
@@ -41,7 +32,7 @@ const LanguageStore = useLanguageStore();
         type="text"
         name="email"
         :placeholder="LanguageStore.textObj.form.email.placeholder"
-        class="bg-[#f3f3f5] text-gray-500 p-2 ps-5 rounded-lg border-1 border-gray-200"
+        class="outline-none focus:border-stone-800 focus:shadow-lg dark:focus:dark:shadow-stone-700 dark:focus:border-stone-300 bg-[#f3f3f5] dark:bg-[#2B2B2F] text-stone-500 dark:text-[#EAEAEA] p-2 ps-5 rounded-lg border border-stone-300 dark:border-stone-600"
         required
       />
 
@@ -51,15 +42,14 @@ const LanguageStore = useLanguageStore();
       <textarea
         :placeholder="LanguageStore.textObj.form.message.placeholder"
         name="message"
-        class="bg-[#f3f3f5] text-gray-500 p-2 ps-5 rounded-lg resize-none scrollbar-hide"
+        class="outline-none focus:border-stone-800 focus:shadow-lg dark:focus:dark:shadow-stone-700 dark:focus:border-stone-300 bg-[#f3f3f5] dark:bg-[#2B2B2F] text-stone-500 dark:text-[#EAEAEA] p-2 ps-5 rounded-lg border border-stone-300 dark:border-stone-600 resize-none scrollbar-hide"
         required
       ></textarea>
 
       <button
         type="submit"
-        class="flex gap-3 p-2 rounded-lg bg-[#FF8C40] text-white text-center justify-center cursor-pointer w-full hover:text-white hover:bg-stone-500 hover:duration-300 not-focus:duration-300"
+        class="flex gap-3 p-2 rounded-lg bg-[#FF8C40] dark:bg-[#fe9046] text-white dark:text-[#191919] text-center hover:bg-stone-200 dark:hover:bg-[#ffb888] hover:text-black transition-all duration-500 justify-center cursor-pointer w-full"
       >
-        <i class="bi bi-envelope-plus-fill"></i>
         {{ LanguageStore.textObj.form.button }}
       </button>
     </form>
