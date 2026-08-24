@@ -85,10 +85,13 @@ const LanguageStore = useLanguageStore();
 
               Code</a
             >
+            <!-- TODO: Demo links hinzufügen für bg-[#FF8C40] dark:bg-[#fe9046] -->
             <a
+            disabled
+            
               :href="project.link"
               target="_blank"
-              class="rounded-xl w-full flex items-center py-2 justify-center gap-2 bg-[#FF8C40] dark:bg-[#fe9046] text-white dark:text-black text-center hover:bg-stone-200 dark:hover:bg-[#ffb888] hover:text-black transition-all duration-500"
+              class="pointer-events-none rounded-xl w-full flex items-center py-2 justify-center gap-2 bg-stone-300 dark:bg-stone-800 text-white dark:text-black text-center hover:bg-stone-200 dark:hover:bg-[#ffb888] hover:text-black transition-all duration-500"
             >
               <i class="bi bi-eyeglasses"></i>Demo</a
             >
