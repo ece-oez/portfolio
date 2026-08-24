@@ -4,7 +4,6 @@ import aboutSection from "@/sections/about/index.vue";
 import projectsSection from "@/sections/projects/index.vue";
 import contactSection from "@/sections/contact/index.vue";
 import skillsSection from "@/sections/skills/index.vue";
-import SkillsView from "../SkillsView.vue";
 </script>
 
 <template>

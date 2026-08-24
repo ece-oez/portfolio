@@ -9,6 +9,13 @@ export function useSkillsItemsCards() {
         header: "Frontend Development",
         text: "Build modern, responsive and intuitive user interfaces.",
         tech: [
+             {
+            text: "HTML",
+            icon: "fa-brands fa-html",
+            ability: text.skills.css.ability,
+            description: text.skills.css.description,
+            cardType: text.skills.css.cardType,
+          },
           {
             text: "CSS",
             icon: "fa-brands fa-css3",
@@ -45,7 +52,7 @@ export function useSkillsItemsCards() {
             cardType: text.skills.bootstrap.cardType,
           },
           {
-            text: "Tailwind",
+            text: "Tailwind CSS",
             icon: "fa-brands fa-bootstrap",
             ability: text.skills.bootstrap.ability,
             description: text.skills.bootstrap.description,
@@ -67,6 +74,13 @@ export function useSkillsItemsCards() {
           },
           {
             text: "VueUse",
+            icon: "fa-brands fa-bootstrap",
+            ability: text.skills.bootstrap.ability,
+            description: text.skills.bootstrap.description,
+            cardType: text.skills.bootstrap.cardType,
+          },
+              {
+            text: "MaterialUI",
             icon: "fa-brands fa-bootstrap",
             ability: text.skills.bootstrap.ability,
             description: text.skills.bootstrap.description,
