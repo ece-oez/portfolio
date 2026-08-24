@@ -1,29 +1,102 @@
-# portfolio
+# 🌐 Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+<img src="readme-screenshots/landing-page-light-mode.png#gh-light-mode-only"/>
+<img src="readme-screenshots/landing-page-dark-mode.png#gh-dark-mode-only"/>
 
-## Recommended IDE Setup
+Ein modernes und responsives Portfolio, entwickelt mit Vue 3 und Vite. Das Projekt dient als persönliche Website, um Projekte, Fähigkeiten und Kontaktinformationen übersichtlich zu präsentieren.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ Features
 
-## Customize configuration
+- 📱 Responsives Design
+- ⚡ Schnelle Ladezeiten dank Vite
+- 🎨 Modernes UI
+- 🧩 Komponentenbasierte Architektur mit Vue 3
+- 🌙 Optional: Dark Mode
+- 🚀 Optimiert für Deployment
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Tech Stack
 
-## Project Setup
+- Vue 3
+- Vite
+- Pinia *(falls verwendet)*
+- Vue Router
+- Tailwind CSS
 
-```sh
+## 📂 Projekt starten
+
+### Installation
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Entwicklungsserver
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+Die Anwendung läuft anschließend unter:
 
-```sh
+```
+http://localhost:5173
+```
+
+### Production Build
+
+```bash
 npm run build
 ```
+
+### Vorschau des Builds
+
+```bash
+npm run preview
+```
+
+## 📁 Projektstruktur
+
+```
+src/
+├── assets/
+├── components/
+├── views/
+├── router/
+├── App.vue
+└── main.js
+```
+
+## 🚀 Live Demo
+
+👉 https://deine-domain.de
+
+oder
+
+👉 https://ece-oez.github.io/portfolio
+
+## 📸 Screenshot
+
+### Landing-Page
+<img src="readme-screenshots/landing-page-light-mode.png#gh-light-mode-only"/>
+<img src="readme-screenshots/landing-page-dark-mode.png#gh-dark-mode-only"/>
+
+
+### About-Page
+<img src="readme-screenshots/about-page-light-mode.png#gh-light-mode-only"/>
+<img src="readme-screenshots/about-page-dark-mode.png#gh-dark-mode-only"/>
+
+### Projects-Page
+<img src="readme-screenshots/projects-page-light-mode.png#gh-light-mode-only"/>
+<img src="readme-screenshots/projects-page-dark-mode.png#gh-dark-mode-only"/>
+
+### Skills-Page
+<img src="readme-screenshots/skills-page-light-mode.png#gh-light-mode-only"/>
+<img src="readme-screenshots/skills-page-dark-mode.png#gh-dark-mode-only"/>
+
+### Contact-Page
+<img src="readme-screenshots/contact-page-light-mode.png#gh-light-mode-only"/>
+<img src="readme-screenshots/contact-page-dark-mode.png#gh-dark-mode-only"/>
+
+## 📄 Lizenz
+
+Dieses Projekt dient als persönliches Portfolio und steht unter der MIT-Lizenz.

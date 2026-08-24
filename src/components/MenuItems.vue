@@ -1,30 +1,30 @@
-<script setup></script>
+<script setup>
+import { useLanguageStore } from "@/stores/language";
+
+const LanguageStore = useLanguageStore();
+</script>
 <template>
-  <div>
+  <div class="flex items-center gap-3">
     <a
-      href="#aboutme"
-      class="select-none w-full p-2 xl:w-1/5 text-center xl:p-0 rounded-xl xl:rounded-none xl:hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-      >AboutMe</a
+      href="/#aboutme"
+      class="select-none w-max p-2 px-5 text-md font-medium text-center rounded-md text-stone-400 dark:text-stone-500 hover:text-black dark:hover:text-white transition-all duration-500"
+      >{{ LanguageStore.textObj.navigation.about }}</a
     >
     <a
-      href="#projects"
-      class="select-none w-full p-2 xl:w-1/5 text-center xl:p-0 rounded-xl xl:rounded-none xl:hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-      >Projects</a
+      href="/#projects"
+      class="select-none w-max p-2 px-5 text-md font-medium text-center rounded-md text-stone-400 dark:text-stone-500 hover:text-black dark:hover:text-white transition-all duration-500"
+      >{{ LanguageStore.textObj.navigation.projects }}</a
     >
     <a
-      href="#responsive"
-      class="select-none w-full p-2 xl:w-1/5 text-center xl:p-0 rounded-xl xl:rounded-none xl:hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-      >Responsive</a
+      href="/#skills"
+      class="select-none w-max p-2 px-5 text-md font-medium text-center rounded-md text-stone-400 dark:text-stone-500 hover:text-black dark:hover:text-white transition-all duration-500"
+      >{{ LanguageStore.textObj.navigation.skills }}</a
     >
+
     <a
-      href="#skills"
-      class="select-none w-full p-2 xl:w-1/5 text-center xl:p-0 rounded-xl xl:rounded-none xl:hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-      >Skills</a
-    >
-    <a
-      href="#contact"
-      class="select-none w-full p-2 xl:w-1/5 text-center xl:p-0 rounded-xl xl:rounded-none xl:hover:text-stone-400 hover:duration-300 not-focus:duration-300"
-      >Contact</a
+      href="/#contact"
+      class="select-none w-max p-2 px-5 text-md font-medium text-center rounded-md text-stone-400 dark:text-stone-500 hover:text-black dark:hover:text-white transition-all duration-500"
+      >{{ LanguageStore.textObj.navigation.contact }}</a
     >
   </div>
 </template>

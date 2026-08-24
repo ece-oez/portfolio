@@ -1,44 +1,103 @@
 export const textDeutsch = {
+  navigation: {
+    about: "Über mich",
+    projects: "Projekte",
+    skills: "Fähigkeiten",
+    contact: "Kontakt",
+  },
   home: {
+    heading: "Hi, Ich bin ",
+    secondHeading: "Full-Stack-Entwicklerin & UI/UX-Designerin",
+    description:
+      "Ich kreiere schöne digitale Erlebnisse, die Unternehmen helfen zu wachsen und Nutzer zu begeistern. Spezialisiert auf Vue.js, Nuxt.js und moderne Webtechnologien.",
     contactBtn: "Kontaktiere mich",
     projectBtn: "Zu den Projekten",
   },
   about: {
+    heading: "Über mich",
+    description:
+      "Hier ist mein Profil, wo ich meine Projekte, Reisen und den Alltag teile.",
+    info1: "Projekte",
+    info2: {
+      timeRangeIn: "Jahre",
+      info: "Erfahrung",
+    },
+    info3: "Kunden",
+    jobtitle: "Full-Stack Entwicklerin",
+    bio1: "🇩🇪 Deutschland | 🎈 24 | 💻 Software Development",
+    bio2: "🎓 Fachinformatikerin für Anwendungsentwicklung",
+    bio3: "👉 Entdecke meine Developer Journey",
+    followButton: "Folgen",
+    messageButton: "Nachricht",
+    shareButton: "Teilen",
+
     aboutme: {
-      title: "Wer bin ich?",
-      text: "Ich bin eine zielstrebige und technikbegeisterte Fachinformatikerin für Anwendungsentwicklung. Mein Fokus liegt stets darauf, meine Ziele effizient zu erreichen, und ich scheue mich nicht, eigenständig zu arbeiten, um bestmögliche Ergebnisse zu erzielen. Besonders liebe ich die Arbeit, die mit Programmieren und Technologie im Allgemeinen zu tun hat – sei es das Entwickeln von Software, das Forschen nach neuen Technologie-Trends oder die Optimierung von Arbeitsprozessen. Ich arbeite am liebsten konzentriert und ungestört, da ich in dieser Umgebung meine höchste Produktivität erreiche. Diese Unabhängigkeit in der Arbeit ermöglicht es mir, meine kreativen Ideen und meine Leidenschaft für IT voll auszuleben. Ich schätze es, sowohl eigenständig als auch im Team zu arbeiten. Besonders gerne übernehme ich selbstständig Aufgaben, da ich so in meinem eigenen Tempo arbeiten und die bestmöglichen Lösungen erarbeiten kann. Wenn es um technologische Trends, Tools oder Hard- und Software geht, tausche ich mich gerne mit Gleichgesinnten aus, um immer auf dem neuesten Stand zu bleiben und meine Kenntnisse zu erweitern.",
+      title: "whoami",
+      text: "Technologie begeistert mich – und genau deshalb habe ich meine Leidenschaft zum Beruf gemacht. Als Fachinformatikerin für Anwendungsentwicklung liebe ich es, Ideen in funktionierende Software zu verwandeln und dabei immer wieder neue Herausforderungen zu meistern.\n\nBesonders faszinieren mich moderne Webtechnologien, saubere Code-Strukturen und die Möglichkeit, mit jeder Zeile Code etwas Neues zu erschaffen. Gleichzeitig verfolge ich mit großem Interesse aktuelle Technologie-Trends, probiere neue Tools aus und erweitere kontinuierlich mein Wissen.\n\nAm produktivsten bin ich, wenn ich mich voll und ganz auf eine Aufgabe konzentrieren kann. Ich arbeite gerne eigenständig, schätze aber ebenso den Austausch mit anderen Entwicklerinnen und Entwicklern. Gemeinsam über technische Lösungen zu diskutieren, Erfahrungen auszutauschen und voneinander zu lernen, gehört für mich genauso zur IT wie das Programmieren selbst.\n\nMein Ziel ist es, Software zu entwickeln, die nicht nur funktioniert, sondern durchdacht, effizient und benutzerfreundlich ist. Die IT-Welt entwickelt sich ständig weiter – und genau das macht sie für mich so spannend. Es gibt immer etwas Neues zu entdecken, zu lernen und umzusetzen.",
     },
     aboutdo: {
-      title: "Was mache ich?",
-      text: "Im Rahmen meiner Ausbildung habe ich bereits verschiedene spannende Projekte realisiert, die mein technisches Können und meine Kreativität unter Beweis stellen. Besonders interessiert mich die Spieleentwicklung, weshalb ich eigenständig kleine Spiele in JavaScript programmiert habe. Diese Projekte haben nicht nur meine technischen Fähigkeiten gestärkt, sondern auch meine Leidenschaft für interaktive Anwendungen vertieft. Zusätzlich habe ich mich in den Bereichen Webentwicklung (HTML, CSS) und Anwendungsentwicklung (C#) weitergebildet. Schon zu Beginn meiner Ausbildung habe ich begonnen, mit C# Konsolenanwendungen zu entwickeln, was mich sofort fasziniert hat. Im Unternehmen habe ich dann Web-Anwendungen mit Technologien wie Vue.js, TailwindCSS, PHP und C# entwickelt. Dabei habe ich besonders viel über UI- und UX-Design gelernt und versuche, meine kreativen Ideen in benutzerfreundliche Lösungen umzusetzen, auch wenn ich in diesem Bereich nicht offiziell geschult bin. Ich habe ebenfalls vertieftes Wissen in Bereichen wie REST-APIs, Datenbanken, Linux, Docker und Git erlangt, was mein Interesse an modernen Softwarearchitekturen und DevOps-Praktiken nur noch verstärkt hat.",
+      title: "Projekte & Fähigkeiten",
+      text: "Während meiner Ausbildung konnte ich an vielfältigen Projekten arbeiten und dabei wertvolle praktische Erfahrungen sammeln. Besonders begeistert mich die Spieleentwicklung, weshalb ich in meiner Freizeit eigene kleine Spiele mit JavaScript entwickelt habe. Diese Projekte haben nicht nur meine Programmierkenntnisse erweitert, sondern auch meine Begeisterung für interaktive Anwendungen weiter gestärkt.\n\nSchon zu Beginn meiner Ausbildung habe ich begonnen, Konsolenanwendungen in C# zu entwickeln. Schnell wurde mir klar, wie viel Freude es mir macht, Probleme durch sauberen Code zu lösen und Anwendungen von der Idee bis zur fertigen Umsetzung zu begleiten.\n\nIm Unternehmen war ich an der Entwicklung moderner Webanwendungen beteiligt und arbeitete unter anderem mit Vue.js, Tailwind CSS, PHP und C#. Dabei konnte ich nicht nur meine technischen Fähigkeiten ausbauen, sondern auch ein gutes Gespür für benutzerfreundliche Oberflächen und eine angenehme User Experience entwickeln. Obwohl ich keine klassische Designausbildung habe, macht es mir großen Spaß, kreative Ideen in intuitive und ansprechende Anwendungen umzusetzen.\n\nDarüber hinaus habe ich praktische Erfahrungen mit REST-APIs, Datenbanken, Linux, Docker und Git gesammelt. Besonders spannend finde ich moderne Softwarearchitekturen sowie DevOps-Themen, da sie zeigen, wie aus einzelnen Komponenten leistungsfähige und skalierbare Anwendungen entstehen.",
     },
 
     aboutlearned: {
-      title: "Meine Schullaufbahn",
-      text: "Schon während meiner Schulzeit war ich stark von technischen und naturwissenschaftlichen Themen begeistert. In der Sekundarstufe 1 war ich Mitglied der MINT-Klasse, was meine Leidenschaft für Mathematik, Informatik, Naturwissenschaften und Technik weiter verstärkte. Dieses Interesse vertiefte sich im Laufe meiner Schuljahre, und im Rahmen meines Abiturs entschied ich mich, Informatik als viertes Fach zu wählen. Die Themen aus der Informatik faszinierten mich so sehr, dass ich mich entschloss, nach dem Abitur eine Ausbildung zur Fachinformatikerin für Anwendungsentwicklung zu beginnen, um mein Wissen in diesem Bereich weiter auszubauen und praktisch anzuwenden.",
+      title: "Schulzeit",
+      text: "Meine Begeisterung für Technik begann schon früh. Bereits in der Schulzeit haben mich logisches Denken, mathematische Zusammenhänge und technische Themen besonders fasziniert. Durch die MINT-Klasse konnte ich diese Interessen intensiv vertiefen und erste Einblicke in verschiedene naturwissenschaftliche Bereiche gewinnen.\n\nMit der Zeit rückte die Informatik immer stärker in den Mittelpunkt. Je mehr ich über Programmierung und Softwareentwicklung lernte, desto klarer wurde mir, dass ich diesen Weg beruflich einschlagen möchte. Deshalb entschied ich mich im Abitur für Informatik als Prüfungsfach und legte damit den Grundstein für meine spätere Ausbildung.\n\nDie Ausbildung zur Fachinformatikerin für Anwendungsentwicklung war für mich der nächste logische Schritt. Dort konnte ich meine Begeisterung für das Programmieren in die Praxis umsetzen, neue Technologien kennenlernen und mein Wissen kontinuierlich erweitern. Heute motiviert mich genau diese Mischung aus Kreativität, logischem Denken und technischem Fortschritt jeden Tag aufs Neue.",
     },
 
     aboutwork: {
-      title: "Mein Beruflicher Werdegang?",
-      text: "Im August 2022 habe ich meine Ausbildung zur Fachinformatikerin für Anwendungsentwicklung bei der Roller GmbH & Co. KG begonnen. Derzeit befinde ich mich im dritten Lehrjahr und werde meine Ausbildung voraussichtlich im Juli 2025 erfolgreich abschließen. Während meiner Ausbildung habe ich Web-Anwendungen für den internen Bedarf programmiert, wobei die Hauptanwender meine Kolleginnen und Kollegen waren. In enger Zusammenarbeit mit meinem Ausbilder konnte ich nicht nur meine technischen Fähigkeiten in der Entwicklung vertiefen, sondern auch wertvolle Einblicke in das Projektmanagement gewinnen. Dabei habe ich verschiedene Projektphasen wie Planung, Umsetzung und Testing begleitet und so meine Fähigkeiten in der Organisation und Koordination von Entwicklungsprojekten weiter ausgebaut.",
+      title: "Beruflicher Werdegang",
+      text: "Im August 2022 begann ich meine Ausbildung zur Fachinformatikerin für Anwendungsentwicklung bei der Roller GmbH & Co. KG, die ich erfolgreich abschloss. Im Anschluss wurde ich übernommen und konnte meine ersten Erfahrungen als Softwareentwicklerin sammeln.\n\nNach einiger Zeit entschied ich mich bewusst für eine neue Herausforderung, um meinen fachlichen Horizont zu erweitern und weitere Technologien sowie Arbeitsweisen kennenzulernen. Heute arbeite ich an der Entwicklung einer modernen Parkraummanagement-Software und sammle dabei täglich neue Erfahrungen.\n\nBesonders schätze ich die Möglichkeit, mich kontinuierlich weiterzuentwickeln, neue Technologien kennenzulernen und mein Wissen in anspruchsvollen Projekten einzusetzen. Jeder Tag bringt neue Herausforderungen mit sich – genau das macht die Softwareentwicklung für mich so spannend.",
     },
 
     aboutfuture: {
-      title: "Wo sehe ich mich in Zukunft?",
-      text: "Ich strebe danach, in einem Unternehmen zu arbeiten, in dem ich meine Fähigkeiten und Kenntnisse gezielt einsetzen kann, um den Arbeitsalltag meiner Kollegen zu erleichtern und innovative Lösungen zu entwickeln. Ich möchte aktiv dazu beitragen, das Unternehmen sowohl intern als auch nach außen hin positiv zu vertreten und durch kreative Ideen und technologische Innovationen einen Mehrwert zu bieten. Für mich ist es wichtig, mich gut ins Team zu integrieren, mit meinen Kollegen auf Augenhöhe zu kommunizieren und gemeinsam erfolgreich zu sein. Ich bin davon überzeugt, dass ein freundlicher und respektvoller Umgang im Team die Grundlage für kreative und produktive Zusammenarbeit schafft.",
+      title: "Meine Motivation",
+      text: "Ich möchte Software entwickeln, die einen echten Mehrwert schafft – sei es durch die Vereinfachung von Arbeitsabläufen, die Automatisierung von Prozessen oder die Umsetzung neuer Ideen. Mich motiviert es, Lösungen zu entwickeln, die Menschen ihre tägliche Arbeit erleichtern und langfristig einen positiven Unterschied machen.\n\nGenauso wichtig ist mir ein offenes und respektvolles Miteinander. Ich arbeite gerne eigenverantwortlich, schätze aber ebenso den Austausch im Team. Unterschiedliche Perspektiven, gemeinsames Tüfteln und das Lernen voneinander führen für mich oft zu den besten Ergebnissen.\n\nMein Ziel ist es, mich kontinuierlich weiterzuentwickeln, neue Technologien kennenzulernen und mein Wissen in spannende Projekte einzubringen. Ich freue mich auf Herausforderungen, bei denen ich sowohl fachlich als auch persönlich wachsen und gemeinsam mit einem motivierten Team innovative Lösungen entwickeln kann.",
+    },
+
+    aboutquotes: {
+      title: "Inspiration & Gedanken",
+      text: 'Eine Sammlung von Gedanken und Ideen, die mich inspirieren und meine Sichtweise auf Technologie, Kreativität und Entwicklung prägen.\n\n"Logik bringt dich von A nach B. Deine Vorstellungskraft bringt dich überall hin."\n\n— Albert Einstein\n\n"Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen."\n\n— Alan Kay\n\n"Programme sollten für Menschen geschrieben werden, damit sie sie verstehen können – und nur nebenbei für Maschinen, damit sie ausgeführt werden können."\n\n— Harold Abelson\n\n"Einfachheit ist die Seele der Effizienz."\n\n— Austin Freeman',
     },
   },
   projects: {
-    eieruhr: {
-      title: "Eier-Uhr",
+    heading: "Ausgewählte Projekte",
+    description:
+      "Hier sind einige meiner kürzlich abgeschlossenen Projekte, die meine Fähigkeiten und Erfahrung unter Beweis stellen.",
+    rct: {
+      title: "Remote Config Tool",
       beschreibung:
-        "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern oder andere zeitgesteuerte Aufgaben einzustellen.",
+        "Für mein Abschlussprojekt zum Fachinformatiker Anwendungsentwicklung habe ich ein Feature‑Flag/Feature‑Toggle‑System entwickelt (ähnlich wie Flagsmith) zur zentralen Steuerung von Feature‑Flags und Konfigurationen über mehrere Systeme hinweg. Das Tool ermöglicht konsistentes State‑Management, gezielte Rollouts und Umgebungssteuerung.",
+      month: "Juni",
+    },
+    filmdb: {
+      title: "Film Bibliothek",
+      beschreibung:
+        "Eine moderne Filmbibliothek zum Verwalten und Entdecken von Filmen. Die Anwendung ermöglicht das Durchsuchen, Suchen und Organisieren einer Filmsammlung sowie das Anzeigen detaillierter Informationen wie Bewertung, Genre, Erscheinungsjahr und Beschreibung. Der Fokus lag auf einer übersichtlichen Benutzeroberfläche und einer intuitiven Nutzererfahrung.",
+      month: "November",
+    },
+    nwdb: {
+      title: "Netzwerk Dashboard (Monitoring System)",
+      beschreibung:
+        "Ein webbasiertes Netzwerk-Monitoring-Dashboard zur zentralen Überwachung von Systemen und Netzwerkgeräten. Die Anwendung stellt wichtige Informationen wie Gerätestatus, Leistungsmetriken und Ereignisse übersichtlich dar und unterstützt Administratoren dabei, Probleme frühzeitig zu erkennen. Ziel des Projekts ist eine einfache, intuitive und effiziente Überwachung der gesamten Infrastruktur.",
+      month: "April",
+    },
+    cafebizbize: {
+      title: "Cafe Webseite modernisieren für Kunden",
+      beschreibung:
+        "Modernes Redesign und Entwicklung einer Café-Website für einen Kunden. Der Fokus lag auf einem zeitgemäßen Design, einer verbesserten Benutzerfreundlichkeit, responsivem Layout sowie einer optimierten Performance, um Besuchern ein ansprechendes Online-Erlebnis zu bieten.",
+      month: "Dezember",
+    },
+    eieruhr: {
+      title: "Eier Uhr",
+      beschreibung:
+        "Diese App dient als digitale Eieruhr und ermöglicht es dir, präzise Timer für das Kochen von Eiern einzustellen.",
       month: "Februar",
     },
     scheresteinpapier: {
       title: "Schere-Stein-Papier",
       beschreibung:
-        "Diese App ermöglicht es dir, Schere-Stein-Papier gegen einen Freund oder den Computer zu spielen – ideal für schnelle Entscheidungen oder einfach zum Spaß.",
+        "Schere-Stein-Papier gegen einen Freund oder gegen einen Bot spielen – ideal für schnelle Entscheidungen oder einfach zum Spaß.",
       month: "März",
     },
     whackamole: {
@@ -79,22 +138,29 @@ export const textDeutsch = {
   contact: {
     heading: "Kontakt",
     text: "Wenn Sie mehr über meine Arbeit erfahren möchten oder an einer Zusammenarbeit interessiert sind, können Sie mich jederzeit über das Kontaktformular erreichen. Ich werde mich schnellstmöglich bei Ihnen melden.",
+    info: {
+      email: "E-Mail",
+      phone: "Telefon",
+      location: {
+        header: "Standort",
+        country: "Deutschland",
+      },
+    },
   },
   form: {
     name: {
       label: "Name",
-      placeholder: "Max Mustermann",
+      placeholder: "Ihr Name",
     },
     email: {
       label: "Email",
-      placeholder: "mustermann@gmail.com",
+      placeholder: "ihre.email@beispiel.de",
     },
     message: {
       label: "Nachricht",
-      placeholder:
-        "Hiermit würden wir Sie gerne zum Vorstellungsgespräch einladen.",
+      placeholder: "Erzählen Sie mir von Ihrem Projekt...",
     },
-    button: "Senden",
+    button: "Nachricht Senden",
   },
   footer: {
     rights: " Alle Rechte vorbehalten.",
@@ -104,6 +170,8 @@ export const textDeutsch = {
   },
 
   skills: {
+    heading: "Fähigkeiten & Expertise",
+    text: "Ich arbeite mit verschiedenen Technologien und Tools, um Ideen zum Leben zu erwecken",
     git: {
       ability: "Verwalte Versionen und Quellcode.",
       description:

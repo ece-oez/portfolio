@@ -1,94 +1,142 @@
 <script setup>
-import { ref } from "vue";
+import { reactive, ref, computed } from "vue";
 import MenuItems from "./MenuItems.vue";
 import IconsBorder from "./IconsBorder.vue";
 import { useLanguageStore } from "@/stores/language";
+
+const menuVisibility = ref(false);
+
+function checkForCurrentLanguageGerman() {
+  const language = languageStore.currentLanguage;
+
+  if (language === "en") languageStore.currentLanguage = "de";
+  else languageStore.currentLanguage = "en";
+}
 
 const showMenuState = ref(false);
 
 const languageStore = useLanguageStore();
 
-const showTooltip = ref(false);
+const menuItemsForMobile = computed(() => {
+  return [
+    {
+      name: languageStore.textObj.navigation.about,
+      href: "#aboutme",
+      icon: "bi bi-person",
+    },
+    {
+      name: languageStore.textObj.navigation.projects,
+      href: "#projects",
+      icon: "bi bi-code-slash",
+    },
+    {
+      name: languageStore.textObj.navigation.skills,
+      href: "#skills",
+      icon: "bi bi-star",
+    },
+    {
+      name: languageStore.textObj.navigation.contact,
+      href: "#contact",
+      icon: "bi bi-envelope",
+    },
+  ];
+});
 </script>
 <template>
   <div
-    class="top-0 fixed bg-navbar z-[9000] opacity-90 text-white w-full h-1/12 flex justify-around">
+    class="top-0 md:px-20 2xl:px-60 fixed z-[400] w-full h-15 flex justify-between items-center bg-gradient-to-b dark:from-black/20 dark:to-black/5 light:from-white/20 light:to-white/5 backdrop-blur-xl shadow-xs text-white gap-5"
+  >
     <div class="flex items-center w-1/2 xl:w-full">
-      <a href="#home" class="select-none">
-        <img src="../assets/img/logo.png" alt="" class="w-20" />
+      <a href="#home" @click="menuVisibility = false" class="select-none">
+        <img
+          draggable="false"
+          src="../assets/img/logo-light.png"
+          alt=""
+          class="w-20 hidden dark:block"
+        />
+        <img
+          draggable="false"
+          src="../assets/img/logo-dark.png"
+          alt=""
+          class="w-20 dark:hidden"
+        />
       </a>
     </div>
 
-    <button @click="showTooltip = !showTooltip">
-      <IconsBorder icon="bi bi-translate"> </IconsBorder>
-      <div
-        v-if="showTooltip"
-        class="tooltiptext absolute -translate-x-[30%] border border-stone-600 bg-stone-800 w-30 text-center rounded-lg">
-        <div
-          @click="(languageStore.currentLanguage = 'de'), (showTooltip = false)"
-          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
-          Deutsch
-        </div>
-        <div
-          @click="(languageStore.currentLanguage = 'en'), (showTooltip = false)"
-          class="p-2 rounded-lg cursor-pointer select-none hover:bg-stone-300 hover:text-stone-800">
-          Englisch
-        </div>
-      </div>
-    </button>
+    <MenuItems class="hidden dark:text-white xl:flex gap-10"></MenuItems>
 
-    <MenuItems
-      class="w-full h-full uppercase text-md hidden 2xl:flex items-center justify-around" />
+    <div class="flex gap-2">
+      <button
+        @click="checkForCurrentLanguageGerman()"
+        class="relative text-[17px] w-max h-max py-2 px-3 flex gap-2 cursor-pointer rounded-md text-stone-600 hover:text-black dark:hover:text-white border border-transparent hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+      >
+        <i class="bi bi-translate"></i>
+        <span class="w-6">
+          {{ languageStore.currentLanguage.toUpperCase() }}
+        </span>
+      </button>
 
-    <button @click="showMenuState = !showMenuState" class="xl:hidden">
-      <IconsBorder icon="bi bi-list"></IconsBorder>
-      <MenuItems
-        v-if="showMenuState"
-        class="absolute -translate-x-[45%] sm:-translate-x-[35%] flex flex-col gap-2 bg-stone-800 border rounded-2xl border-stone-600" />
-    </button>
+      <button
+        @click="menuVisibility = !menuVisibility"
+        class="text-[17px] w-max h-max py-2 px-3 xl:hidden flex gap-2 cursor-pointer rounded-md border border-transparent text-stone-600 hover:text-black dark:hover:text-white hover:border-stone-600 dark:hover:border-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 transition-all duration-500"
+      >
+        <i v-if="!menuVisibility" class="bi bi-list"></i>
+        <i v-if="menuVisibility" class="bi bi-x-lg"></i>
+      </button>
+    </div>
   </div>
+
+  <Transition name="fade" mode="out-in">
+    <div
+      @click="menuVisibility = false"
+      v-if="menuVisibility"
+      :key="menuVisibility"
+      class="absolute xl:hidden z-[300] w-screen h-screen bg-gradient-to-b dark:from-black/20 dark:to-black/5 light:from-white/20 light:to-white/5 backdrop-blur-xl"
+    ></div>
+  </Transition>
+
+  <Transition name="slide-right">
+    <div
+      :key="menuVisibility"
+      v-if="menuVisibility"
+      class="absolute xl:hidden pt-15 top-0 right-0 z-[300] p-5 rounded-l-xl shadow-2xl w-1/2 h-screen bg-white dark:bg-black flex flex-col text-xl dark:text-white"
+    >
+      <a
+        @click="menuVisibility = false"
+        v-for="item in menuItemsForMobile"
+        :href="item.href"
+        class="p-4 border-b border-stone-300 dark:border-stone-600"
+      >
+        {{ item.name }}
+      </a>
+    </div>
+  </Transition>
+
+  <!-- bottom -->
 </template>
 <style scoped>
-.bg-navbar {
-  background-color: #2d2d2d;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
-  transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: transform 0.3s ease;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.slide-right-enter-from,
+.slide-right-leave-to {
+  transform: translateX(100%);
+}
+
+.slide-right-enter-to,
+.slide-right-leave-from {
+  transform: translateX(0);
 }
 </style>
