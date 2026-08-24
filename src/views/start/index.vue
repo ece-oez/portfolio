@@ -10,8 +10,8 @@ import SkillsView from "../SkillsView.vue";
 <template>
   <landingSection class=""></landingSection>
   <aboutSection class=""></aboutSection>
-  <skillsSection></skillsSection>
   <projectsSection class=""></projectsSection>
+  <skillsSection></skillsSection>
   <contactSection class=""> </contactSection>
 </template>
 <style scoped></style>

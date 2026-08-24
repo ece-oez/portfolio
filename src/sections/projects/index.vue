@@ -12,7 +12,10 @@ const LanguageStore = useLanguageStore();
 </script>
 
 <template>
-  <section id="projects" class="h-max w-screen flex flex-col gap-1 pt-20">
+  <section
+    id="projects"
+    class="max-2xl:h-max h-screen w-screen flex flex-col gap-1 pt-20 max-2xl:pb-10"
+  >
     <h1
       class="text-[50px] md:text-[60px] font-bold dark:text-white text-center"
     >
@@ -94,7 +97,9 @@ const LanguageStore = useLanguageStore();
       </div>
     </div>
 
-    <div class="flex gap-5 flex-col justify-center md:flex-row w-full px-10">
+    <div
+      class="hidden flex gap-5 flex-col justify-center md:flex-row w-full px-10"
+    >
       <RouterLink
         draggable="none"
         to="/projects"

@@ -48,8 +48,9 @@ const modalStore = useModalStore();
         >
           Ece Özmen
         </h2>
+
         <p class="text-sm md:text-base text-stone-400 dark:text-stone-500">
-          Full Stack Developer
+          Fullstack Developer | Web Developer
         </p>
       </div>
 

@@ -10,7 +10,7 @@ const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
-      class="w-full h-max flex flex-col gap-5 p-5 rounded-xl border border-stone-300 dark:border-stone-700 bg-white dark:bg-black shadow-md dark:shadow-stone-800"
+      class="w-full h-max flex flex-col gap-5 p-5 rounded-xl border border-stone-300 dark:border-stone-700 bg-white dark:bg-black shadow-md dark:shadow-black/50"
     >
       <input type="hidden" name="access_key" :value="accessKey" />
 
